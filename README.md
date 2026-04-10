@@ -12,9 +12,9 @@
 html{scroll-behavior:smooth}
 
 :root{
-  --navy:#93d3e9;
+  --navy:#4f709c;
   --navy-dark:#213555;
-  --blue:#93d3e9;
+  --blue:#4f709c;
   --cream:#FAF8F2;
   --cream-dark:#F0EDE3;
   --gold:#C9A84C;
