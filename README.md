@@ -82,7 +82,7 @@ body{font-family:var(--sans);background:var(--cream);color:var(--ink);overflow-x
   width: 100%;
   height: 100%;
   /* Force the background to cover the area while centered */
-  background-image: url('https://images.unsplash.com/photo-1673295716958-b1dc96e5b24f?auto=format&fit=crop&w=1920&q=80');
+  background-image: url('https://images.unsplash.com/photo-1673295716958-b1dc96e5b24f?auto=format&fit=crop&w=2560&q=80');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
