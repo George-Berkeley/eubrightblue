@@ -62,14 +62,35 @@ body{font-family:var(--sans);background:var(--cream);color:var(--ink);overflow-x
 #nav.light .nav-btn:hover{background:var(--blue)}
 
 /* HERO */
-#home{
-  position:relative;height:100vh;min-height:680px;
-  display:flex;align-items:flex-end;overflow:hidden;
+#home {
+  position: relative;
+  /* Use 100% width and height to ensure it grabs the full viewport */
+  width: 100%; 
+  height: 100vh;
+  /* Optional: 100dvh (dynamic viewport height) helps on mobile to account for URL bars */
+  height: 100dvh; 
+  min-height: 680px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
 }
-.hero-img{
-  position:absolute;inset:0;
-  background:url('https://images.unsplash.com/photo-1673295716958-b1dc96e5b24f?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
-  transform:scale(1.06);transition:transform 8s ease;
+.hero-img {
+  position: absolute;
+  /* Classic fallback for 'inset: 0' to ensure maximum compatibility */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Force the background to cover the area while centered */
+  background-image: url('https://images.unsplash.com/photo-1673295716958-b1dc96e5b24f?auto=format&fit=crop&w=1920&q=80');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* Keeps the image behind your text/overlay */
+  z-index: 0; 
+  /* Your existing zoom animation */
+  transform: scale(1.06);
+  transition: transform 8s ease;
 }
 .hero-img.loaded{transform:scale(1)}
 .hero-overlay{
