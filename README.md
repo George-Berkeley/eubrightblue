@@ -27,8 +27,9 @@ html{scroll-behavior:smooth}
 
 body{margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;       /* Force body to browser width */
+  overflow-x: hidden; /* Prevents unwanted horizontal scrolling */
+  background: var(--cream);
      font-family:var(--sans);background:var(--cream);color:var(--ink);overflow-x:hidden;font-size:17px;line-height:1.7}
 
 /* NAV */
@@ -68,14 +69,17 @@ body{margin: 0;
 /* HERO */
 #home {
   position: relative;
-  width: 100%;
+  width: 100vw;      /* Uses the full width of the browser window */
+  margin-left: 0;    /* Ensures no left offset */
+  margin-right: 0;
   height: 100vh;
   height: 100dvh; 
-  margin: 0;
-  padding: 0; /* Ensure no internal padding is pushing the image */
+  min-height: 680px;
   display: flex;
   align-items: flex-end;
   overflow: hidden;
+  left: 50%;         /* Centering hack to ensure it stays pinned if parented */
+  transform: translateX(-50%); 
 }
 .hero-img {
   position: absolute;
@@ -91,8 +95,12 @@ body{margin: 0;
   position:absolute;inset:0;
   background:linear-gradient(to top,rgba(0,18,60,0.9) 0%,rgba(0,18,60,0.42) 52%,rgba(0,18,60,0.12) 100%);
 }
-.hero-content{
-  position:relative;z-index:2;padding:0 4rem 5.5rem;max-width:1100px;
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 4rem 5.5rem;
+  max-width: 100%;    /* Allow content to use the full width of the hero */
+  width: 100%;
 }
 .hero-eyebrow{
   font-family:var(--sans);font-size:11px;font-weight:400;letter-spacing:0.22em;text-transform:uppercase;
