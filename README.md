@@ -395,6 +395,7 @@ footer{
     <span class="nav-brand-sub">Centre-Right Think Tank</span>
   </a>
   <ul class="nav-links">
+    <li><a href="#"> </a></li>    
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#staff">Our team</a></li>
