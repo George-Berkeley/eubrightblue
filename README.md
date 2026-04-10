@@ -621,7 +621,7 @@ footer{
         </div>
         <div class="contact-item reveal d3">
           <span class="contact-item-label">Phone</span>
-          <span class="contact-item-val"><a href="tel:+48732434093">+48 732 434 093</a><br><a href="tel:+491758370796">+49 175 8370796</a></span>
+          <span class="contact-item-val"><a href="tel:+48732434093">+48 732 434 093</a><br><a href="tel:+4915126961354">+49 151 26961354</a></span>
         </div>
         <div class="contact-item reveal d4">
           <span class="contact-item-label">Parent organisation</span>
