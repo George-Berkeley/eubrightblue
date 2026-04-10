@@ -805,10 +805,12 @@
     <div>
       <div class="hero-eyebrow fade-up">European Think Tank</div>
       <h1 class="hero-title fade-up delay-1">
-        Defending<br><em>liberal society</em><br>across Europe
+        Home<br><em>of liberal conservatism</em><br>across Europe
       </h1>
       <p class="hero-body fade-up delay-2">
-        Bright Blue Europe is an independent, non-partisan centre-right think tank dedicated to promoting liberal, progressive conservatism across the European continent.
+        Bright Blue is an independent think tank that seeks to change government policy and public attitudes across Europe.
+Created in 2026, we are a home for members of all political parties and none who have centre-right, conservative and liberal values. 
+A sister think tank to Bright Blue established in 2014 in the UK, we are here to solve policy issues which cannot be tackled by any one government alone.
       </p>
       <div class="hero-actions fade-up delay-3">
         <a href="#publications" class="btn-primary">Read our research</a>
@@ -818,24 +820,23 @@
 
     <div class="hero-right fade-up delay-4">
       <div class="hero-stat-block">
-        <div class="hero-stat-number">27</div>
-        <div class="hero-stat-label">EU member states engaged</div>
+        <div class="hero-stat-number">something here1</div>
+        <div class="hero-stat-label">something here2</div>
       </div>
       <div class="hero-stat-block">
-        <div class="hero-stat-number">40+</div>
-        <div class="hero-stat-label">Publications to date</div>
+        <div class="hero-stat-number">something here3</div>
+        <div class="hero-stat-label">something here4</div>
       </div>
       <div class="hero-stat-block">
-        <div class="hero-stat-number">5</div>
-        <div class="hero-stat-label">Core research themes</div>
+        <div class="hero-stat-number">something here5</div>
+        <div class="hero-stat-label">something here6</div>
       </div>
       <div class="hero-stat-block">
-        <div class="hero-stat-number">2019</div>
-        <div class="hero-stat-label">Year established</div>
+        <div class="hero-stat-number">something here7</div>
+        <div class="hero-stat-label">something here8</div>
       </div>
     </div>
   </div>
-  <div class="scroll-indicator">Scroll</div>
 </section>
 
 <!-- ABOUT -->
@@ -844,12 +845,12 @@
     <div class="about-grid">
       <div>
         <div class="section-label">About us</div>
-        <h2 class="section-heading">A liberal, centre-right voice for Europe</h2>
+        <h2 class="section-heading">Home of liberalism conservatism across Europe</h2>
         <p class="about-lead">We produce rigorous, independent research to shape the future of centre-right politics across European democracies.</p>
-        <p class="about-body">Bright Blue Europe was established as an offshoot of Bright Blue UK, bringing the same commitment to evidence-based, liberal conservative policy to the broader European stage. We believe in open societies, free markets, strong institutions, and the defence of individual rights.</p>
-        <p class="about-body">Our fellows, researchers and associates span the continent — from Stockholm to Lisbon, Warsaw to Lisbon — united by a commitment to practical, humane policy-making that works for ordinary citizens.</p>
+        <p class="about-body">Bright Blue Europe was established as an offshoot of Bright Blue UK, bringing the same commitment to evidence-based, liberal conservative policy to the broader European stage. </p>
+        <p class="about-body">We are focused on tackling policy issues shared by European governments across the continent, spanning from social through economic to defence problems. </p>
         <div class="about-parent-note">
-          <p>Bright Blue Europe is an affiliate of <a href="https://www.brightblue.org.uk" target="_blank">Bright Blue UK</a>, the leading centre-right think tank in Britain, which has shaped Conservative Party policy since 2011.</p>
+          <p>Bright Blue Europe is an affiliate of <a href="https://www.brightblue.org.uk" target="_blank">Bright Blue UK</a>, the leading centre-right think tank in Britain, which has shaped UK policy since 2014.</p>
         </div>
       </div>
 
@@ -859,8 +860,8 @@
             <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
           </div>
           <div>
-            <div class="pillar-title">Rigorous research</div>
-            <p class="pillar-text">Independent, evidence-based analysis that transcends party political lines and speaks to the genuine challenges facing European democracies.</p>
+            <div class="pillar-title">Conservatism</div>
+            <p class="pillar-text">Some text about pillar 1</p>
           </div>
         </div>
         <div class="pillar">
@@ -868,8 +869,8 @@
             <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
           </div>
           <div>
-            <div class="pillar-title">Pan-European perspective</div>
-            <p class="pillar-text">We engage policymakers, academics and civil society leaders across the continent to produce research grounded in diverse national contexts.</p>
+            <div class="pillar-title">Liberty/div>
+            <p class="pillar-text">Some text about pillar 2</p>
           </div>
         </div>
         <div class="pillar">
@@ -877,8 +878,8 @@
             <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
           </div>
           <div>
-            <div class="pillar-title">Policy influence</div>
-            <p class="pillar-text">Our work reaches the offices of European Commissioners, national ministers and Members of the European Parliament who share our values.</p>
+            <div class="pillar-title">Internationalism</div>
+            <p class="pillar-text">Some text about pillar 3</p>
           </div>
         </div>
         <div class="pillar">
@@ -886,11 +887,101 @@
             <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
           <div>
-            <div class="pillar-title">Liberal values</div>
-            <p class="pillar-text">We champion individual liberty, open economies and the rule of law — a principled alternative to both populist nationalism and statist progressivism.</p>
+            <div class="pillar-title">Neutrality</div>
+            <p class="pillar-text">Some text about pillar 4</p>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- STAFF -->
+<section id="staff">
+  <div class="section-inner">
+    <div class="section-label">Our team</div>
+    <h2 class="section-heading">The people behind the research</h2>
+
+    <div class="staff-intro">
+      <p>Bright Blue Europe is led by a dedicated team of researchers, policy analysts and communications professionals who share a commitment to liberal, centre-right ideas across the European continent.</p>
+    </div>
+
+    <div class="staff-grid">
+
+      <!-- Jane Doe -->
+      <div class="staff-card">
+        <div class="staff-photo">
+          <div class="staff-photo-pattern" style="background: radial-gradient(circle at 30% 70%, #c5d5ea 1.5px, transparent 1.5px) center/18px 18px var(--blue-light);"></div>
+          <div class="staff-avatar">
+            <div class="staff-avatar-initials">JD</div>
+          </div>
+          <div class="staff-photo-bar">
+            <span class="staff-role-badge">Director</span>
+          </div>
+        </div>
+        <div class="staff-body">
+          <div class="staff-name">Jane Doe</div>
+          <div class="staff-title">Executive Director</div>
+          <p class="staff-bio">Jane leads Bright Blue Europe's research programme and external partnerships. Previously a senior policy adviser at the European Commission and a fellow at a leading Brussels-based think tank, she brings over fifteen years of experience in EU affairs and centre-right politics.</p>
+          <div class="staff-divider"></div>
+          <div class="staff-expertise">
+            <span class="expertise-tag">EU institutions</span>
+            <span class="expertise-tag">Democracy</span>
+            <span class="expertise-tag">Trade policy</span>
+            <span class="expertise-tag">Migration</span>
+          </div>
+          <div class="staff-divider"></div>
+          <div class="staff-socials">
+            <a href="#" class="staff-social-link" title="LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" class="staff-social-link" title="X / Twitter">
+              <svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>
+            </a>
+            <a href="mailto:jane.doe@brightblueeurope.eu" class="staff-social-link" title="Email">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- John Smith -->
+      <div class="staff-card">
+        <div class="staff-photo">
+          <div class="staff-photo-pattern" style="background: repeating-linear-gradient(-45deg, transparent, transparent 10px, #c5d5ea 10px, #c5d5ea 11px); background-color: var(--blue-light);"></div>
+          <div class="staff-avatar">
+            <div class="staff-avatar-initials" style="background: #0c3d7a;">JS</div>
+          </div>
+          <div class="staff-photo-bar">
+            <span class="staff-role-badge">Research</span>
+          </div>
+        </div>
+        <div class="staff-body">
+          <div class="staff-name">John Smith</div>
+          <div class="staff-title">Head of Research</div>
+          <p class="staff-bio">John oversees Bright Blue Europe's publications and manages the think tank's network of associate fellows. He holds a doctorate in European political economy from Sciences Po Paris and has written extensively on fiscal policy, competitiveness and the future of the European single market.</p>
+          <div class="staff-divider"></div>
+          <div class="staff-expertise">
+            <span class="expertise-tag">Economic policy</span>
+            <span class="expertise-tag">Single market</span>
+            <span class="expertise-tag">Fiscal reform</span>
+            <span class="expertise-tag">Competitiveness</span>
+          </div>
+          <div class="staff-divider"></div>
+          <div class="staff-socials">
+            <a href="#" class="staff-social-link" title="LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" class="staff-social-link" title="X / Twitter">
+              <svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>
+            </a>
+            <a href="mailto:john.smith@brightblueeurope.eu" class="staff-social-link" title="Email">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -899,15 +990,13 @@
 <section id="publications">
   <div class="section-inner">
     <div class="section-label">Research & publications</div>
-    <h2 class="section-heading">Our latest thinking</h2>
+    <h2 class="section-heading">Our thinking to-date</h2>
 
     <div class="pub-filter">
       <button class="filter-btn active" onclick="filterPubs('all', this)">All</button>
       <button class="filter-btn" onclick="filterPubs('economy', this)">Economy</button>
-      <button class="filter-btn" onclick="filterPubs('climate', this)">Climate</button>
-      <button class="filter-btn" onclick="filterPubs('democracy', this)">Democracy</button>
-      <button class="filter-btn" onclick="filterPubs('migration', this)">Migration</button>
-      <button class="filter-btn" onclick="filterPubs('security', this)">Security</button>
+      <button class="filter-btn" onclick="filterPubs('climate', this)">Society</button>
+      <button class="filter-btn" onclick="filterPubs('democracy', this)">Security</button>
     </div>
 
     <div class="pub-grid" id="pub-grid">
@@ -919,9 +1008,9 @@
         </div>
         <div class="pub-body">
           <div class="pub-date">March 2026</div>
-          <div class="pub-title">Renewing the centre: how European centre-right parties can rebuild democratic legitimacy</div>
-          <p class="pub-excerpt">Across Europe, centre-right parties face an existential challenge from populist movements. This report examines how liberal conservative parties can reconnect with alienated voters through credible, humane policy reform — drawing on case studies from Germany, Sweden and the Netherlands.</p>
-          <a href="#" class="pub-link">
+          <div class="pub-title">The right road: The future of the European centre-righty</div>
+          <p class="pub-excerpt">For much of the postwar era, centre-right political parties dominated European parliaments. European centre-right parties in the time since the Second World War benefited from and presided over strong economic growth, rising living standards and relatively generous social security systems. But today they are struggling, facing challenges to their political survival and the national interest.<br> It is time to reboot and reunify the centre-right across Europe to defeat both the populist right and the statist centre-left.<br>This report seeks to better define and shape the centre-right across Europe. It details the philosophy, principles and history of the European centre-right before providing distinctive priorities – the ten Cs – and effective policies so the centre-right can return again to be the engine of peace and prosperity across Europe.</p>
+          <a href="https://www.brightblue.org.uk/portfolio/right-road/" class="pub-link">
             Read report
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
@@ -1009,7 +1098,7 @@
             </div>
             <div>
               <div class="contact-item-label">Address</div>
-              <div class="contact-item-value">Rue de la Loi 81, 1040 Brussels, Belgium</div>
+              <div class="contact-item-value">Sokratesa 6/20, Warsaw, Poland</div>
             </div>
           </div>
           <div class="contact-item">
@@ -1018,76 +1107,23 @@
             </div>
             <div>
               <div class="contact-item-label">Email</div>
-              <div class="contact-item-value"><a href="mailto:info@brightblueeurope.eu">info@brightblueeurope.eu</a></div>
+              <div class="contact-item-value"><a href="mailto:bartek@eubrightblue.org">bartek@eubrightblue.org</a></div>
             </div>
           </div>
           <div class="contact-item">
             <div class="contact-item-icon">
               <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.09 6.09l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
             </div>
-            <div>
-              <div class="contact-item-label">Phone</div>
-              <div class="contact-item-value"><a href="tel:+3227001234">+32 2 700 1234</a></div>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-item-icon">
-              <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-            </div>
-            <div>
-              <div class="contact-item-label">Follow us</div>
-              <div class="contact-item-value">@BrightBlueEurope</div>
-            </div>
           </div>
         </div>
       </div>
-
-      <form class="contact-form" onsubmit="handleSubmit(event)">
-        <div class="form-row">
-          <div class="form-group">
-            <label class="form-label">First name</label>
-            <input class="form-input" type="text" placeholder="Anna" required>
-          </div>
-          <div class="form-group">
-            <label class="form-label">Last name</label>
-            <input class="form-input" type="text" placeholder="Müller" required>
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="form-label">Email address</label>
-          <input class="form-input" type="email" placeholder="anna@example.com" required>
-        </div>
-        <div class="form-group">
-          <label class="form-label">Organisation</label>
-          <input class="form-input" type="text" placeholder="Your institution or affiliation">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Enquiry type</label>
-          <select class="form-select" style="background:#0c2d6e; color:white;">
-            <option value="">Select a topic</option>
-            <option>Research collaboration</option>
-            <option>Media enquiry</option>
-            <option>Events & speaking</option>
-            <option>Partnership</option>
-            <option>General enquiry</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label class="form-label">Message</label>
-          <textarea class="form-textarea" placeholder="Tell us about your enquiry…" required></textarea>
-        </div>
-        <button type="submit" class="form-submit">Send message</button>
-        <div class="form-success" id="form-success">
-          Thank you — we'll be in touch shortly.
-        </div>
-      </form>
     </div>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo"><strong>Bright Blue Europe</strong> &nbsp;·&nbsp; An affiliate of Bright Blue UK</div>
+  <div class="footer-logo"><strong>Bright Blue Europe</strong> &nbsp;·&nbsp; The home of liberal conservatism in Europe</div>
   <ul class="footer-links">
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
