@@ -83,7 +83,7 @@ body{margin: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('your-image-url.jpg') center/cover no-repeat;
+  background: url('https://images.unsplash.com/photo-1673295716958-b1dc96e5b24f?auto=format&fit=crop&w=960&q=80') center/cover no-repeat;
   z-index: 0;
 }
 .hero-img.loaded{transform:scale(1)}
