@@ -392,7 +392,7 @@ footer{
 <nav id="nav" class="solid">
   <a class="nav-brand" href="#home">
     <span class="nav-brand-name">Bright Blue Europe</span>
-    <span class="nav-brand-sub">Centre-Right Think Tank</span>
+    <span class="nav-brand-sub">The home of liberal conservatism across Europe</span>
   </a>
   <ul class="nav-links">
     <li><a href="#"> </a></li>    
