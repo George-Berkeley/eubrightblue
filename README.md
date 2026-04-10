@@ -518,7 +518,7 @@ footer{
           loading="lazy">
         <div class="staff-overlay"></div>
         <div class="staff-body">
-          <div class="staff-role">Co-Founder/div>
+          <div class="staff-role">Co-Founder</div>
           <div class="staff-name">Bartek Staniszewski</div>
           <div class="staff-bio">Before Bright Blue Europe, Bartek was Bright Blue's Head of Research in London. He graduated with a BA in Philosophy and Theology from the University of Oxford in 2021 and with an MSt in Philosophical Theology in 2022. He has been featured, among others, in the Guardian, the Telegraph, the Critic, City A.M., the Spectator and on the BBC and GB News. He is the author of numerous think-tank reports, including on democratic business, planning policy, young people’s political priorities, affordable housing, social security and race inequality.</div>
           <div class="staff-tags">
