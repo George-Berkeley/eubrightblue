@@ -449,7 +449,7 @@ footer{
         </div>
         <div class="pillar-item reveal d2">
           <div class="pillar-num">02</div>
-          <div class="pillar-name">Liberty/div>
+          <div class="pillar-name">Liberty</div>
           <p class="pillar-desc">People generally know what is best for them better than the state. We champion free trade, competitive markets and enterprise as the surest route to broad-based prosperity.</p>
         </div>
         <div class="pillar-item reveal d3">
