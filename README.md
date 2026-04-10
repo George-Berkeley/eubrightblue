@@ -409,9 +409,9 @@ footer{
   <div class="hero-img" id="heroImg"></div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <div class="hero-eyebrow">An affiliate of Bright Blue UK</div>
-    <h1 class="hero-headline">Defending<br><em>liberal society</em><br>across Europe</h1>
-    <p class="hero-sub">An independent centre-right think tank advancing open societies, free markets and strong democratic institutions across the European continent.</p>
+    <div class="hero-eyebrow">Bright Blue Europe</div>
+    <h1 class="hero-headline">The home of<br><em>liberal conservatism</em><br>across Europe</h1>
+    <p class="hero-sub">An independent centre-right think tank solving public policy challenges across the European continent.</p>
     <div class="hero-actions">
       <a href="#publications" class="btn-gold">Read our research</a>
       <a href="#about" class="btn-ghost">Who we are</a>
@@ -428,10 +428,9 @@ footer{
     </div>
     <div class="about-text-side">
       <div class="section-label reveal">About us</div>
-      <h2 class="section-heading reveal d1">We champion <em>liberal,<br>centre-right</em><br>ideas in Europe</h2>
-      <p class="about-lead reveal d2">Independent research. Principled politics. A Europe that works for everyone.</p>
-      <p class="about-body reveal d3">Bright Blue Europe was established as an affiliate of Bright Blue UK — Britain's leading centre-right think tank — bringing the same commitment to evidence-based, principled policy to the broader European stage.</p>
-      <p class="about-body reveal d3">Our researchers, fellows and associates span the continent, united by a belief in open societies, competitive markets, strong institutions and the protection of individual rights.</p>
+      <h2 class="section-heading reveal d1">We champion <em>liberal<br>conservative</em><br>ideas in Europe</h2>
+      <p class="about-body reveal d3">Bright Blue Europe was established in 2026 by Lukas Wick and Bartek Staniszewski as an affiliate of Bright Blue UK — Britain's leading centre-right think tank — bringing the same commitment to non-partisan, liberal conservative policy to the European stage.</p>
+      <p class="about-body reveal d3">We have affiliates in Brussels, Berlin, Warsaw and Madrid working on challenges common to European governments across social, economic and security policy.</p>
       <a href="#staff" class="about-cta-link reveal d4">Meet our team</a>
     </div>
   </div>
@@ -445,23 +444,23 @@ footer{
       <div class="pillars-grid">
         <div class="pillar-item reveal d1">
           <div class="pillar-num">01</div>
-          <div class="pillar-name">Open economies</div>
-          <p class="pillar-desc">We champion free trade, competitive markets and enterprise as the surest route to broad-based prosperity across Europe.</p>
+          <div class="pillar-name">Conservatism</div>
+          <p class="pillar-desc">It is easier to destroy than build. Cherished traditions and institutions must be protected against populist vandalism.</p>
         </div>
         <div class="pillar-item reveal d2">
           <div class="pillar-num">02</div>
-          <div class="pillar-name">Liberal democracy</div>
-          <p class="pillar-desc">We defend the rule of law, democratic institutions and civil liberties against encroachment from both left and right.</p>
+          <div class="pillar-name">Liberty/div>
+          <p class="pillar-desc">People generally know what is best for them better than the state. We champion free trade, competitive markets and enterprise as the surest route to broad-based prosperity.</p>
         </div>
         <div class="pillar-item reveal d3">
           <div class="pillar-num">03</div>
-          <div class="pillar-name">Sustainable societies</div>
-          <p class="pillar-desc">We support climate action and social cohesion, pursued through market mechanisms and individual freedom rather than state control.</p>
+          <div class="pillar-name">Internationalism</div>
+          <p class="pillar-desc">Most policy issues require international cooperation to be succesfully addressed. Strong countries are only possible with strong allies.</p>
         </div>
         <div class="pillar-item reveal d4">
           <div class="pillar-num">04</div>
-          <div class="pillar-name">Managed migration</div>
-          <p class="pillar-desc">We advocate humane, ordered and legally rigorous migration policy that builds public trust and upholds human dignity.</p>
+          <div class="pillar-name">Neutrality</div>
+          <p class="pillar-desc">The good of Europe, not party politics, guide our work. We retain full editorial control over all of our outputs.</p>
         </div>
       </div>
     </div>
@@ -474,28 +473,28 @@ footer{
     <div class="staff-header">
       <div>
         <div class="section-label reveal">Our team</div>
-        <h2 class="section-heading reveal d1">The <em>people</em> behind<br>the research</h2>
+        <h2 class="section-heading reveal d1">The <em>people</em> behind the project</h2>
       </div>
     </div>
 
     <div class="staff-grid">
 
-      <!-- Jane Doe -->
+      <!-- Lukas Wick -->
       <div class="staff-card reveal">
         <img class="staff-card-img"
           src="https://images.unsplash.com/photo-1673295716958-b1dc96e5b24f?auto=format&fit=crop&w=900&q=80"
-          alt="Jane Doe"
+          alt="Lukas Wick"
           loading="lazy">
         <div class="staff-overlay"></div>
         <div class="staff-body">
-          <div class="staff-role">Executive Director</div>
-          <div class="staff-name">Jane Doe</div>
-          <div class="staff-bio">A former senior policy adviser at the European Commission, Jane brings fifteen years of experience in EU affairs and centre-right politics. She leads our research programme and external partnerships.</div>
+          <div class="staff-role">Co-Founder</div>
+          <div class="staff-name">Lukas Wick</div>
+          <div class="staff-bio">Before  Bright Blue Europe, Lukas was a Project Manager and Research Associate at the Konrad-Adenauer-Stiftung in London (UK & Ireland office), specializing in German–British and German–Irish relations with a focus on foreign policy, security and the coordination of high-profile international conferences. He also worked at the Konrad-Adenauer-Stiftung in Brussels, advising on EU and NATO security and defence policy and supporting senior-level political engagement and events. Before that, he served as Head of Unit at the Representation of the State of Hesse to the EU, leading policy monitoring and speechwriting for the Hessian Minister for European Affairs, with a focus on Brexit, foreign policy and transatlantic relations. He holds a Master’s in International Security from the Institut Barcelona d’Estudis Internacionals (IBEI).</div>
           <div class="staff-tags">
-            <span class="staff-tag">EU institutions</span>
-            <span class="staff-tag">Democracy</span>
-            <span class="staff-tag">Trade policy</span>
-            <span class="staff-tag">Migration</span>
+            <span class="staff-tag">Communications</span>
+            <span class="staff-tag">Engagement</span>
+            <span class="staff-tag">Security</span>
+            <span class="staff-tag">EU</span>
           </div>
           <div class="staff-socials">
             <a href="#" class="staff-social" aria-label="LinkedIn">
@@ -504,14 +503,14 @@ footer{
             <a href="#" class="staff-social" aria-label="X">
               <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
             </a>
-            <a href="mailto:jane.doe@brightblueeurope.eu" class="staff-social" aria-label="Email">
+            <a href="mailto:lukas@eubrightblue.org" class="staff-social" aria-label="Email">
               <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
             </a>
           </div>
         </div>
       </div>
 
-      <!-- John Smith -->
+      <!-- Bartek Staniszewski -->
       <div class="staff-card reveal d2">
         <img class="staff-card-img"
           src="https://images.unsplash.com/photo-1673295716958-b1dc96e5b24f?auto=format&fit=crop&w=900&q=80&sat=-30"
@@ -519,14 +518,14 @@ footer{
           loading="lazy">
         <div class="staff-overlay"></div>
         <div class="staff-body">
-          <div class="staff-role">Head of Research</div>
-          <div class="staff-name">John Smith</div>
-          <div class="staff-bio">Holding a doctorate from Sciences Po Paris in European political economy, John oversees our publications and manages our network of associate fellows. He has written extensively on fiscal policy and the future of the single market.</div>
+          <div class="staff-role">Co-Founder/div>
+          <div class="staff-name">Bartek Staniszewski</div>
+          <div class="staff-bio">Before Bright Blue Europe, Bartek was Bright Blue's Head of Research in London. He graduated with a BA in Philosophy and Theology from the University of Oxford in 2021 and with an MSt in Philosophical Theology in 2022. He has been featured, among others, in the Guardian, the Telegraph, the Critic, City A.M., the Spectator and on the BBC and GB News. He is the author of numerous think-tank reports, including on democratic business, planning policy, young people’s political priorities, affordable housing, social security and race inequality.</div>
           <div class="staff-tags">
-            <span class="staff-tag">Economic policy</span>
-            <span class="staff-tag">Single market</span>
-            <span class="staff-tag">Fiscal reform</span>
-            <span class="staff-tag">Competitiveness</span>
+            <span class="staff-tag">Social policy</span>
+            <span class="staff-tag">Research</span>
+            <span class="staff-tag">Poland</span>
+            <span class="staff-tag">UK</span>
           </div>
           <div class="staff-socials">
             <a href="#" class="staff-social" aria-label="LinkedIn">
@@ -535,7 +534,7 @@ footer{
             <a href="#" class="staff-social" aria-label="X">
               <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
             </a>
-            <a href="mailto:john.smith@brightblueeurope.eu" class="staff-social" aria-label="Email">
+            <a href="mailto:bartek@eubrightblue.org" class="staff-social" aria-label="Email">
               <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
             </a>
           </div>
@@ -559,46 +558,44 @@ footer{
 
     <div class="pub-filters reveal">
       <button class="pub-filter-btn active" onclick="filterPubs('all',this)">All</button>
-      <button class="pub-filter-btn" onclick="filterPubs('democracy',this)">Democracy</button>
+      <button class="pub-filter-btn" onclick="filterPubs('social',this)">Social policy</button>
       <button class="pub-filter-btn" onclick="filterPubs('economy',this)">Economy</button>
-      <button class="pub-filter-btn" onclick="filterPubs('climate',this)">Climate</button>
-      <button class="pub-filter-btn" onclick="filterPubs('migration',this)">Migration</button>
       <button class="pub-filter-btn" onclick="filterPubs('security',this)">Security</button>
     </div>
 
     <div class="pub-grid reveal" id="pubGrid">
 
-      <div class="pub-card large" data-tag="democracy">
-        <div class="pub-cat cat-democracy">Democracy</div>
-        <div class="pub-title">Renewing the centre: how European centre-right parties can rebuild democratic legitimacy after the populist surge</div>
-        <p class="pub-excerpt">Across Europe, centre-right parties face an existential challenge from populist movements. This report examines how liberal conservative parties can reconnect with alienated voters through credible, humane policy reform — drawing on case studies from Germany, Sweden and the Netherlands.</p>
-        <div class="pub-meta"><span class="pub-date">March 2026</span><span class="pub-arrow">→</span></div>
+      <div class="pub-card large" data-tag="economy">
+        <div class="pub-cat cat-economy">Economy</div>
+        <div class="pub-title">The right road: The future of the European centre-right</div>
+        <p class="pub-excerpt">It is time to reboot and reunify the centre-right across Europe to defeat both the populist right and the statist centre-left. This report seeks to better define and shape the centre-right across Europe. It details the philosophy, principles and history of the European centre-right before providing distinctive priorities — the ten Cs — and effective policies so the centre-right can return again to be the engine of peace and prosperity across Europe.</p>
+        <div class="pub-meta"><span class="pub-date">June 2025</span><span class="pub-arrow">→</span></div>
       </div>
 
       <div class="pub-card" data-tag="economy">
         <div class="pub-cat cat-economy">Economy</div>
-        <div class="pub-title">Single market, shared prosperity: deepening European economic integration</div>
-        <p class="pub-excerpt">Completing the single market in services could unlock over a trillion euros in economic value for European citizens.</p>
-        <div class="pub-meta"><span class="pub-date">January 2026</span><span class="pub-arrow">→</span></div>
+        <div class="pub-title">Made up title</div>
+        <p class="pub-excerpt">Made up description</p>
+        <div class="pub-meta"><span class="pub-date">November 2026</span><span class="pub-arrow">→</span></div>
       </div>
 
-      <div class="pub-card" data-tag="climate">
-        <div class="pub-cat cat-climate">Climate</div>
-        <div class="pub-title">Green growth: a market-led European climate agenda</div>
-        <p class="pub-excerpt">A pro-competition framework for achieving net zero without stifling the enterprise needed to get us there.</p>
-        <div class="pub-meta"><span class="pub-date">February 2026</span><span class="pub-arrow">→</span></div>
+      <div class="pub-card" data-tag="social">
+        <div class="pub-cat cat-climate">Social policy</div>
+        <div class="pub-title">Another made up title</div>
+        <p class="pub-excerpt">Another made up description.</p>
+        <div class="pub-meta"><span class="pub-date">December 2026</span><span class="pub-arrow">→</span></div>
       </div>
 
-      <div class="pub-card" data-tag="migration">
-        <div class="pub-cat cat-migration">Migration</div>
-        <div class="pub-title">A fair and managed approach to European migration policy</div>
-        <div class="pub-meta"><span class="pub-date">November 2025</span><span class="pub-arrow">→</span></div>
+      <div class="pub-card" data-tag="security">
+        <div class="pub-cat cat-migration">Security</div>
+        <div class="pub-title">Third made up title</div>
+        <div class="pub-meta"><span class="pub-date">August 2027</span><span class="pub-arrow">→</span></div>
       </div>
 
       <div class="pub-card" data-tag="security">
         <div class="pub-cat cat-security">Security</div>
-        <div class="pub-title">European defence after Ukraine: a new strategic compact for the continent</div>
-        <div class="pub-meta"><span class="pub-date">October 2025</span><span class="pub-arrow">→</span></div>
+        <div class="pub-title">Fourth made up title</div>
+        <div class="pub-meta"><span class="pub-date">October 2027</span><span class="pub-arrow">→</span></div>
       </div>
 
     </div>
@@ -610,20 +607,20 @@ footer{
   <div class="contact-split">
     <div class="contact-info">
       <div class="section-label reveal">Contact us</div>
-      <h2 class="section-heading reveal d1">Let's start a <em>conversation</em></h2>
-      <p class="contact-intro reveal d2">We welcome enquiries from researchers, policymakers, journalists and partner organisations across Europe.</p>
+      <h2 class="section-heading reveal d1">Work with <em>us</em></h2>
+      <p class="contact-intro reveal d2">We welcome enquiries from policymakers, journalists and partner organisations across Europe.</p>
       <div class="contact-details">
         <div class="contact-item reveal d2">
           <span class="contact-item-label">Address</span>
-          <span class="contact-item-val">Rue de la Loi 81<br>1040 Brussels, Belgium</span>
+          <span class="contact-item-val">Sokratesa 6/20<br>01-909 Warsaw, Poland</span>
         </div>
         <div class="contact-item reveal d3">
           <span class="contact-item-label">Email</span>
-          <span class="contact-item-val"><a href="mailto:info@brightblueeurope.eu">info@brightblueeurope.eu</a></span>
+          <span class="contact-item-val"><a href="mailto:bartek@eubrightblue.org">mailto:bartek@eubrightblue.org</a><br><a href="mailto:lukas@eubrightblue.org">mailto:lukas@eubrightblue.org</a></span>
         </div>
         <div class="contact-item reveal d3">
           <span class="contact-item-label">Phone</span>
-          <span class="contact-item-val"><a href="tel:+3227001234">+32 2 700 1234</a></span>
+          <span class="contact-item-val"><a href="tel:+48732434093">+48 732 434 093</a><br><a href="tel:+491758370796">+49 175 8370796</a></span>
         </div>
         <div class="contact-item reveal d4">
           <span class="contact-item-label">Parent organisation</span>
@@ -677,7 +674,7 @@ footer{
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-brand"><strong>Bright Blue Europe</strong> &nbsp;·&nbsp; An affiliate of Bright Blue UK</div>
+  <div class="footer-brand"><strong>Bright Blue Europe</strong> &nbsp;·&nbsp; The home of liberal conservatism across Europe</div>
   <ul class="footer-nav">
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
