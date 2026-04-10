@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -11,13 +10,13 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --navy: #4073af;
-    --blue: #6db2e3;
-    --blue-mid: #64c7ea;
-    --blue-light: #9cd6ea;
-    --gold: #eab51f;
+    --navy: #002366;
+    --blue: #0038A8;
+    --blue-mid: #1a4fc4;
+    --blue-light: #e8eef8;
+    --gold: #f1e3a4;
     --gold-light: #f1e3a4;
-    --cream: #f5efe7;
+    --cream: #fffae5;
     --ink: #111827;
     --muted: #5a6478;
     --border: #dde3ef;
