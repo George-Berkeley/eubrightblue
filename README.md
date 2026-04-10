@@ -14,6 +14,9 @@ html{scroll-behavior:smooth}
 .anchorjs-link {
     display: none !important;
 }
+h1:has(a[href*="eubrightblue"]) {
+    display: none !important;
+}
   
 :root{
   --navy:#4f709c;
@@ -29,8 +32,8 @@ html{scroll-behavior:smooth}
   --sans:'Outfit',system-ui,sans-serif;
 }
 
-body{margin: 0;
-  padding: 0;
+body{margin: 0 !important;
+  padding: 0 !important;
   width: 100vw;       /* Force body to browser width */
   overflow-x: hidden; /* Prevents unwanted horizontal scrolling */
   background: var(--cream);
@@ -73,9 +76,10 @@ body{margin: 0;
 /* HERO */
 #home {
   position: relative;
-  width: 100vw;      /* Uses the full width of the browser window */
+  width: 100vw !important;      /* Uses the full width of the browser window */
   margin-left: 0;    /* Ensures no left offset */
   margin-right: 0;
+  margin-top: -50px
   height: 100vh;
   height: 100dvh; 
   min-height: 680px;
