@@ -17,7 +17,7 @@ html{scroll-behavior:smooth}
   --blue:#4f709c;
   --cream:#FAF8F2;
   --cream-dark:#F0EDE3;
-  --gold:#C9A84C;
+  --gold:#f5efe7;
   --ink:#111217;
   --muted:#6b7280;
   --border:#e2ddd4;
