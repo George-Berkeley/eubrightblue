@@ -12,9 +12,9 @@
 html{scroll-behavior:smooth}
 
 :root{
-  --navy:#002366;
-  --navy-dark:#001540;
-  --blue:#1a4fc4;
+  --navy:#93d3e9;
+  --navy-dark:#213555;
+  --blue:#93d3e9;
   --cream:#FAF8F2;
   --cream-dark:#F0EDE3;
   --gold:#C9A84C;
@@ -617,7 +617,7 @@ footer{
         </div>
         <div class="contact-item reveal d3">
           <span class="contact-item-label">Email</span>
-          <span class="contact-item-val"><a href="mailto:bartek@eubrightblue.org">mailto:bartek@eubrightblue.org</a><br><a href="mailto:lukas@eubrightblue.org">mailto:lukas@eubrightblue.org</a></span>
+          <span class="contact-item-val"><a href="mailto:bartek@eubrightblue.org">bartek@eubrightblue.org</a><br><a href="mailto:lukas@eubrightblue.org">lukas@eubrightblue.org</a></span>
         </div>
         <div class="contact-item reveal d3">
           <span class="contact-item-label">Phone</span>
