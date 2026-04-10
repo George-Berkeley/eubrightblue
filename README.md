@@ -16,7 +16,7 @@
     --blue-light: #e8eef8;
     --gold: #f1e3a4;
     --gold-light: #f1e3a4;
-    --cream: #fffae5;
+    --cream: #f5efe7;
     --ink: #111827;
     --muted: #5a6478;
     --border: #dde3ef;
@@ -869,7 +869,7 @@ A sister think tank to Bright Blue established in 2014 in the UK, we are here to
             <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"/></svg>
           </div>
           <div>
-            <div class="pillar-title">Liberty/div>
+            <div class="pillar-title">Liberty</div>
             <p class="pillar-text">Some text about pillar 2</p>
           </div>
         </div>
@@ -894,21 +894,20 @@ A sister think tank to Bright Blue established in 2014 in the UK, we are here to
       </div>
     </div>
   </div>
-</section>
 
 <!-- STAFF -->
 <section id="staff">
   <div class="section-inner">
     <div class="section-label">Our team</div>
-    <h2 class="section-heading">The people behind the research</h2>
+    <h2 class="section-heading">The founders</h2>
 
     <div class="staff-intro">
-      <p>Bright Blue Europe is led by a dedicated team of researchers, policy analysts and communications professionals who share a commitment to liberal, centre-right ideas across the European continent.</p>
+      <p>Bright Blue Europe is led by Lukas Wick and Bartek Staniszewski who co-founded Bright Blue Europe with help from Bright Blue in the UK in 2026.</p>
     </div>
 
     <div class="staff-grid">
 
-      <!-- Jane Doe -->
+      <!-- Lukas Wick -->
       <div class="staff-card">
         <div class="staff-photo">
           <div class="staff-photo-pattern" style="background: radial-gradient(circle at 30% 70%, #c5d5ea 1.5px, transparent 1.5px) center/18px 18px var(--blue-light);"></div>
@@ -920,16 +919,9 @@ A sister think tank to Bright Blue established in 2014 in the UK, we are here to
           </div>
         </div>
         <div class="staff-body">
-          <div class="staff-name">Jane Doe</div>
-          <div class="staff-title">Executive Director</div>
-          <p class="staff-bio">Jane leads Bright Blue Europe's research programme and external partnerships. Previously a senior policy adviser at the European Commission and a fellow at a leading Brussels-based think tank, she brings over fifteen years of experience in EU affairs and centre-right politics.</p>
-          <div class="staff-divider"></div>
-          <div class="staff-expertise">
-            <span class="expertise-tag">EU institutions</span>
-            <span class="expertise-tag">Democracy</span>
-            <span class="expertise-tag">Trade policy</span>
-            <span class="expertise-tag">Migration</span>
-          </div>
+          <div class="staff-name">Lukas Wick</div>
+          <div class="staff-title">Co-Founder</div>
+          <p class="staff-bio">Luke oversees Bright Blue Europe's activities in Brussels, Germany and Spain. Before Bright Blue Europe, Lukas was a Project Manager and Research Associate at the Konrad-Adenauer-Stiftung in London (UK & Ireland office), specializing in German–British and German–Irish relations with a focus on foreign policy, security and the coordination of high-profile international conferences. His work involved diplomatic engagement with stakeholders across the UK, Germany, and Europe, alongside the publication of reports and essays on German–British/Irish relations. Lukas also worked at the Konrad-Adenauer-Stiftung in Brussels, advising on EU and NATO security and defence policy and supporting senior-level political engagement and events. Before that, he served as Head of Unit at the Representation of the State of Hesse to the EU, leading policy monitoring and speechwriting for the Hessian Minister for European Affairs, with a focus on Brexit, foreign policy and transatlantic relations. He holds a Master’s in International Security from the Institut Barcelona d’Estudis Internacionals (IBEI). He is also the Founder of the European Foresight Group.</p>
           <div class="staff-divider"></div>
           <div class="staff-socials">
             <a href="#" class="staff-social-link" title="LinkedIn">
@@ -938,14 +930,14 @@ A sister think tank to Bright Blue established in 2014 in the UK, we are here to
             <a href="#" class="staff-social-link" title="X / Twitter">
               <svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>
             </a>
-            <a href="mailto:jane.doe@brightblueeurope.eu" class="staff-social-link" title="Email">
+            <a href="mailto:lukas@eubrightblue.org" class="staff-social-link" title="Email">
               <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
             </a>
           </div>
         </div>
       </div>
 
-      <!-- John Smith -->
+      <!-- Bartek Staniszewski -->
       <div class="staff-card">
         <div class="staff-photo">
           <div class="staff-photo-pattern" style="background: repeating-linear-gradient(-45deg, transparent, transparent 10px, #c5d5ea 10px, #c5d5ea 11px); background-color: var(--blue-light);"></div>
@@ -957,16 +949,9 @@ A sister think tank to Bright Blue established in 2014 in the UK, we are here to
           </div>
         </div>
         <div class="staff-body">
-          <div class="staff-name">John Smith</div>
-          <div class="staff-title">Head of Research</div>
-          <p class="staff-bio">John oversees Bright Blue Europe's publications and manages the think tank's network of associate fellows. He holds a doctorate in European political economy from Sciences Po Paris and has written extensively on fiscal policy, competitiveness and the future of the European single market.</p>
-          <div class="staff-divider"></div>
-          <div class="staff-expertise">
-            <span class="expertise-tag">Economic policy</span>
-            <span class="expertise-tag">Single market</span>
-            <span class="expertise-tag">Fiscal reform</span>
-            <span class="expertise-tag">Competitiveness</span>
-          </div>
+          <div class="staff-name">Bartek Staniszewski</div>
+          <div class="staff-title">Co-Founder</div>
+          <p class="staff-bio">Bartek oversees Bright Blue Europe's research activities as well as operations in Poland. Formerly the Head of Research at Bright Blue in London, he graduated with a BA in Philosophy and Theology from the University of Oxford in 2021 and with an MSt in Philosophical Theology in 2022. He has been featured, among others, in the Guardian, the Telegraph, the Critic, City A.M., the Spectator and on the BBC and GB News. He is the author of numerous think-tank reports, including on democratic business, planning policy, young people’s political priorities, affordable housing, social security and race inequality.</p>
           <div class="staff-divider"></div>
           <div class="staff-socials">
             <a href="#" class="staff-social-link" title="LinkedIn">
