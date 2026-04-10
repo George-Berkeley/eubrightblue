@@ -25,7 +25,11 @@ html{scroll-behavior:smooth}
   --sans:'Outfit',system-ui,sans-serif;
 }
 
-body{font-family:var(--sans);background:var(--cream);color:var(--ink);overflow-x:hidden;font-size:17px;line-height:1.7}
+body{margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+     font-family:var(--sans);background:var(--cream);color:var(--ink);overflow-x:hidden;font-size:17px;line-height:1.7}
 
 /* NAV */
 #nav{
@@ -64,31 +68,29 @@ body{font-family:var(--sans);background:var(--cream);color:var(--ink);overflow-x
 /* HERO */
 #home {
   position: relative;
-  /* Use 100% width and height to ensure it grabs the full viewport */
+  /* Explicitly force full width to remove side margins */
   width: 100%; 
+  /* Use dvh (dynamic viewport height) to prevent mobile browser gaps */
   height: 100vh;
-  /* Optional: 100dvh (dynamic viewport height) helps on mobile to account for URL bars */
   height: 100dvh; 
   min-height: 680px;
   display: flex;
   align-items: flex-end;
   overflow: hidden;
+  /* Prevent 'margin collapse' from pushing the section down */
+  margin: 0;
 }
 .hero-img {
   position: absolute;
-  /* Classic fallback for 'inset: 0' to ensure maximum compatibility */
+  /* Replace 'inset: 0' with explicit coordinates for better compatibility */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  /* Force the background to cover the area while centered */
-  background-image: url('https://images.unsplash.com/photo-1673295716958-b1dc96e5b24f?auto=format&fit=crop&w=2560&q=80');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  /* Keeps the image behind your text/overlay */
-  z-index: 0; 
-  /* Your existing zoom animation */
+  /* Your existing background settings */
+  background: url('https://images.unsplash.com/photo-1673295716958-b1dc96e5b24f?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+  /* Ensure it stays behind the text content */
+  z-index: 0;
   transform: scale(1.06);
   transition: transform 8s ease;
 }
