@@ -68,31 +68,23 @@ body{margin: 0;
 /* HERO */
 #home {
   position: relative;
-  /* Explicitly force full width to remove side margins */
-  width: 100%; 
-  /* Use dvh (dynamic viewport height) to prevent mobile browser gaps */
+  width: 100%;
   height: 100vh;
   height: 100dvh; 
-  min-height: 680px;
+  margin: 0;
+  padding: 0; /* Ensure no internal padding is pushing the image */
   display: flex;
   align-items: flex-end;
   overflow: hidden;
-  /* Prevent 'margin collapse' from pushing the section down */
-  margin: 0;
 }
 .hero-img {
   position: absolute;
-  /* Replace 'inset: 0' with explicit coordinates for better compatibility */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  /* Your existing background settings */
-  background: url('https://images.unsplash.com/photo-1673295716958-b1dc96e5b24f?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
-  /* Ensure it stays behind the text content */
+  background: url('your-image-url.jpg') center/cover no-repeat;
   z-index: 0;
-  transform: scale(1.06);
-  transition: transform 8s ease;
 }
 .hero-img.loaded{transform:scale(1)}
 .hero-overlay{
@@ -184,7 +176,7 @@ body{margin: 0;
 .about-cta-link::after{content:'→';font-size:15px}
 
 .pillars-band{background:var(--cream-dark);padding:5.5rem 4rem}
-.pillars-inner{max-width:1200px;margin:0 auto}
+.pillars-inner{max-width:2715px;margin:0 auto}
 .pillars-top{text-align:center;margin-bottom:3.5rem}
 .pillars-top .section-label{justify-content:center}
 .pillars-top .section-label::before{display:none}
@@ -209,7 +201,7 @@ body{margin: 0;
 
 /* STAFF */
 #staff{background:var(--cream);padding:7rem 4rem}
-.staff-inner{max-width:1200px;margin:0 auto}
+.staff-inner{max-width:2715px;margin:0 auto}
 .staff-header{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:4rem;gap:2rem;flex-wrap:wrap}
 .staff-header .section-heading{color:var(--navy);margin-bottom:0}
 .staff-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px}
@@ -257,7 +249,7 @@ body{margin: 0;
 
 /* PUBLICATIONS */
 #publications{background:var(--navy);padding:7rem 4rem}
-.pub-inner{max-width:1200px;margin:0 auto}
+.pub-inner{max-width:2715px;margin:0 auto}
 .pub-header{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:1.5rem;gap:2rem;flex-wrap:wrap}
 .pub-header .section-heading{color:#fff;margin-bottom:0}
 .pub-header .section-label{color:var(--gold)}
