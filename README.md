@@ -15,9 +15,9 @@ html{scroll-behavior:smooth}
   --navy:#4f709c;
   --navy-dark:#213555;
   --blue:#4f709c;
-  --cream:#FAF8F2;
-  --cream-dark:#F0EDE3;
-  --gold:#f5efe7;
+  --cream:#f5efe7;
+  --cream-dark:#fffae5;
+  --gold:#eab51f;
   --ink:#111217;
   --muted:#6b7280;
   --border:#e2ddd4;
