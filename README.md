@@ -11,7 +11,10 @@
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-
+.anchorjs-link {
+    display: none !important;
+}
+  
 :root{
   --navy:#4f709c;
   --navy-dark:#213555;
@@ -203,9 +206,9 @@ body{margin: 0;
 .pillar-item:hover{background:var(--cream)}
 .pillar-num{
   font-family:var(--serif);font-size:44px;font-weight:300;
-  color:var(--navy);opacity:0.13;line-height:1;margin-bottom:1rem;
+  color:var(--dark-navy);opacity:0.13;line-height:1;margin-bottom:1rem;
 }
-.pillar-name{font-family:var(--serif);font-size:19px;font-weight:400;color:var(--navy);margin-bottom:0.75rem}
+.pillar-name{font-family:var(--serif);font-size:19px;font-weight:400;color:var(--dark-navy);margin-bottom:0.75rem}
 .pillar-desc{font-size:14px;font-weight:300;color:var(--muted);line-height:1.75}
 
 /* STAFF */
