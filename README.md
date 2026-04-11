@@ -24,7 +24,7 @@ h1:has(a[href*="eubrightblue"]) {
   --blue:#d3dadc;
   --cream:#f5fdff;
   --cream-dark:#e8e2da;
-  --gold:#d6c9b4;
+  --gold:#fdb515;
   --ink:#111217;
   --muted:#6b7280;
   --border:#e2ddd4;
