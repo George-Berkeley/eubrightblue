@@ -19,12 +19,12 @@ h1:has(a[href*="eubrightblue"]) {
 }
   
 :root{
-  --navy:#4f709c;
-  --navy-dark:#213555;
-  --blue:#4f709c;
-  --cream:#f5efe7;
-  --cream-dark:#f5efe7;
-  --gold:#eab51f;
+  --navy:#0388A6;
+  --navy-dark:#0367A6;
+  --blue:#0388A6;
+  --cream:#F2D49B;
+  --cream-dark:#F2D49B;
+  --gold:#F2DA63;
   --ink:#111217;
   --muted:#6b7280;
   --border:#e2ddd4;
