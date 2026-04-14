@@ -410,7 +410,7 @@ footer{
     <li><a href="#publications">Publications</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <a class="nav-btn" href="#contact">Get in touch</a>
+  <a class="nav-btn" href="https://www.brightblue.org.uk">Bright Blue UK</a>
 </nav>
 
 <!-- HERO -->
@@ -562,7 +562,7 @@ footer{
         <div class="section-label reveal">Research &amp; publications</div>
         <h2 class="section-heading reveal d1">Bright Blue's <em>latest</em> thinking</h2>
       </div>
-      <a href="#" class="pub-all-link reveal">View all publications</a>
+      <a href="https://www.brightblue.org.uk/libary-new/" class="pub-all-link reveal">View all publications</a>
     </div>
 
     <div class="pub-filters reveal">
@@ -688,6 +688,7 @@ footer{
 <footer>
   <div class="footer-brand"><strong>Bright Blue Europe</strong> &nbsp;·&nbsp; The home of liberal conservatism across Europe</div>
   <ul class="footer-nav">
+          <li><a href="#"> </a></li>
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#staff">Team</a></li>
