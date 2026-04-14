@@ -462,7 +462,7 @@ footer{
         <div class="staff-body">
           <div class="staff-role">Co-Founder</div>
           <div class="staff-name">Bartek Staniszewski</div>
-          <div class="staff-bio">Bartek worked as Head of Research for Bright Blue in London. He is a frequent columnist for the Spectator and Critic, the Editor-in-Chief of Centre Write, an IPR Policy Fellow of the University of Bath and an Fellow of the Centre for Family and Education.</div>
+          <div class="staff-bio">Bartek worked as Head of Research for Bright Blue in London. He is a frequent columnist for the Spectator and Critic, the Editor-in-Chief of Centre Write, an IPR Policy Fellow of the University of Bath and a Fellow of the Centre for Family and Education.</div>
           <div class="staff-tags">
             <span class="staff-tag">Social policy</span>
             <span class="staff-tag">Research</span>
