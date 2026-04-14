@@ -410,7 +410,7 @@ footer{
     <li><a href="#publications">Publications</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <a class="nav-btn" href="https://www.brightblue.org.uk">Bright Blue UK</a>
+  <a class="nav-btn" href="https://www.brightblue.org.uk">BB UK</a>
 </nav>
 
 <!-- HERO -->
