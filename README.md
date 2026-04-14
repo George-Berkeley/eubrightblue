@@ -111,6 +111,8 @@ body{margin: 0 !important;
   position:absolute;inset:0;
   background:url('https://www.brightblue.org.uk/wp-content/uploads/2026/04/influence.jpg?auto=format&fit=crop&w=960&q=80') center/cover no-repeat;
   transform:scale(1.05);transition:transform 1.1s ease;
+  outline: 5px solid var(--ink); /* Your golden border */
+  outline-offset: -5px;           /* Pulls the border inside the image */
 }
 .about-photo.revealed{transform:scale(1)}
 .about-text-side{
@@ -507,7 +509,7 @@ footer{
     <div class="pub-grid reveal" id="pubGrid">
  
       <!-- LARGE CARD — replace href with the real link -->
-      <a class="pub-card large" data-tag="politics" href="https://www.brightblue.org.uk/the-right-road/" target="_blank" rel="noopener">
+      <a class="pub-card large" data-tag="politics" href="https://www.brightblue.org.uk/portfolio/right-road/" target="_blank" rel="noopener">
         <div class="pub-cat cat-politics">Politics</div>
         <div class="pub-title">The right road</div>
         <!-- Replace src with your own publication cover image if you have one -->
@@ -520,28 +522,28 @@ footer{
       </a>
  
       <!-- Replace each href with the real publication URL -->
-      <a class="pub-card" data-tag="economy" href="https://www.brightblue.org.uk/higher-ground/" target="_blank" rel="noopener">
+      <a class="pub-card" data-tag="economy" href="https://www.brightblue.org.uk/portfolio/higher-ground-living-standards/" target="_blank" rel="noopener">
         <div class="pub-cat cat-economy">Economy</div>
         <div class="pub-title">Higher ground</div>
         <p class="pub-excerpt">A centre-right vision to raise living standards</p>
         <div class="pub-meta"><span class="pub-date">March 2026</span><span class="pub-arrow">→</span></div>
       </a>
  
-      <a class="pub-card" data-tag="security" href="https://www.brightblue.org.uk/properly-protected/" target="_blank" rel="noopener">
+      <a class="pub-card" data-tag="security" href="https://www.brightblue.org.uk/portfolio/properly-protected/" target="_blank" rel="noopener">
         <div class="pub-cat cat-migration">Security</div>
         <div class="pub-title">Properly protected</div>
         <p class="pub-excerpt">Reducing victims and abuses of modern slavery in the UK's asylum system</p>
         <div class="pub-meta"><span class="pub-date">December 2025</span><span class="pub-arrow">→</span></div>
       </a>
  
-      <a class="pub-card" data-tag="economy" href="https://www.brightblue.org.uk/tax-reforms-for-growth/" target="_blank" rel="noopener">
+      <a class="pub-card" data-tag="economy" href="https://www.brightblue.org.uk/portfolio/tax-reform-growth/" target="_blank" rel="noopener">
         <div class="pub-cat cat-economy">Economy</div>
         <div class="pub-title">Tax Reforms for Growth</div>
         <p class="pub-excerpt">7 packages of reform</p>
         <div class="pub-meta"><span class="pub-date">November 2025</span><span class="pub-arrow">→</span></div>
       </a>
  
-      <a class="pub-card" data-tag="social" href="https://www.brightblue.org.uk/mending-the-net/" target="_blank" rel="noopener">
+      <a class="pub-card" data-tag="social" href="https://www.brightblue.org.uk/portfolio/mending-the-net/" target="_blank" rel="noopener">
         <div class="pub-cat cat-social">Social policy</div>
         <div class="pub-title">Mending the net?</div>
         <p class="pub-excerpt">A new centre-right approach to social security</p>
