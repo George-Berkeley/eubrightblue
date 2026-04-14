@@ -426,7 +426,7 @@ footer{
       <a href="#about" class="btn-ghost">Who we are</a>
     </div>
   </div>
-  <div class="hero-scroll-hint">Scroll</div>
+  <div class="hero-scroll-hint"></div>
 </section>
 
 <!-- ABOUT -->
@@ -439,7 +439,7 @@ footer{
       <div class="section-label reveal">About us</div>
       <h2 class="section-heading reveal d1">We champion <em>liberal<br>conservative</em><br>ideas in Europe</h2>
       <p class="about-body reveal d3">Bright Blue Europe was established in 2026 by Lukas Wick and Bartek Staniszewski as an affiliate of Bright Blue UK — Britain's leading centre-right think tank — bringing the same commitment to non-partisan, liberal conservative policy to the European stage.</p>
-      <p class="about-body reveal d3">We have affiliates in Brussels, Berlin, Warsaw and Madrid working on challenges common to European governments across social, economic and security policy.</p>
+      <p class="about-body reveal d3">We have affiliates in Germany, Poland, Belgium, the Netherlands, Spain and the UK working on challenges common to European governments across social, economic and security policy.</p>
       <a href="#staff" class="about-cta-link reveal d4">Meet our team</a>
     </div>
   </div>
@@ -491,14 +491,14 @@ footer{
       <!-- Lukas Wick -->
       <div class="staff-card reveal">
         <img class="staff-card-img"
-          src="https://images.unsplash.com/photo-1673295716958-b1dc96e5b24f?auto=format&fit=crop&w=900&q=80"
-          alt="Lukas Wick"
+          src="https://www.brightblue.org.uk/wp-content/uploads/2026/04/lukas-bbe.jpg?auto=format&fit=crop&w=900&q=80"
+          alt="LW"
           loading="lazy">
         <div class="staff-overlay"></div>
         <div class="staff-body">
           <div class="staff-role">Co-Founder</div>
           <div class="staff-name">Lukas Wick</div>
-          <div class="staff-bio">Before  Bright Blue Europe, Lukas was a Project Manager and Research Associate at the Konrad-Adenauer-Stiftung in London (UK & Ireland office), specializing in German–British and German–Irish relations with a focus on foreign policy, security and the coordination of high-profile international conferences. He also worked at the Konrad-Adenauer-Stiftung in Brussels, advising on EU and NATO security and defence policy and supporting senior-level political engagement and events. Before that, he served as Head of Unit at the Representation of the State of Hesse to the EU, leading policy monitoring and speechwriting for the Hessian Minister for European Affairs, with a focus on Brexit, foreign policy and transatlantic relations. He holds a Master’s in International Security from the Institut Barcelona d’Estudis Internacionals (IBEI).</div>
+          <div class="staff-bio">Lukas worked at the Konrad-Adenauer-Stiftung in London and in Brussels, advising on EU and NATO security and defence policy. He had also served as Head of Unit at the Representation of the State of Hesse to the EU and holds a Master’s in International Security from the IBEI.</div>
           <div class="staff-tags">
             <span class="staff-tag">Communications</span>
             <span class="staff-tag">Engagement</span>
@@ -522,14 +522,14 @@ footer{
       <!-- Bartek Staniszewski -->
       <div class="staff-card reveal d2">
         <img class="staff-card-img"
-          src="https://images.unsplash.com/photo-1673295716958-b1dc96e5b24f?auto=format&fit=crop&w=900&q=80&sat=-30"
-          alt="John Smith"
+          src="https://www.brightblue.org.uk/wp-content/uploads/2026/04/bartek-bbe.png?auto=format&fit=crop&w=900&q=80&sat=-30"
+          alt="BGS"
           loading="lazy">
         <div class="staff-overlay"></div>
         <div class="staff-body">
           <div class="staff-role">Co-Founder</div>
           <div class="staff-name">Bartek Staniszewski</div>
-          <div class="staff-bio">Before Bright Blue Europe, Bartek was Bright Blue's Head of Research in London. He graduated with a BA in Philosophy and Theology from the University of Oxford in 2021 and with an MSt in Philosophical Theology in 2022. He has been featured, among others, in the Guardian, the Telegraph, the Critic, City A.M., the Spectator and on the BBC and GB News. He is the author of numerous think-tank reports, including on democratic business, planning policy, young people’s political priorities, affordable housing, social security and race inequality.</div>
+          <div class="staff-bio">Bartek worked as Head of Research for Bright Blue in London. He is a frequent columnist for the Spectator and Critic, the Editor-in-Chief of Centre Write, an IPR Policy Fellow of the University of Bath and an Fellow of the Centre for Family and Education. He gradueated from Oxford in Philosophy and Theology in 2021 and in Philosophical Theology in 2022.</div>
           <div class="staff-tags">
             <span class="staff-tag">Social policy</span>
             <span class="staff-tag">Research</span>
@@ -560,13 +560,14 @@ footer{
     <div class="pub-header">
       <div>
         <div class="section-label reveal">Research &amp; publications</div>
-        <h2 class="section-heading reveal d1">Our <em>latest</em> thinking</h2>
+        <h2 class="section-heading reveal d1">Bright Blue's <em>latest</em> thinking</h2>
       </div>
       <a href="#" class="pub-all-link reveal">View all publications</a>
     </div>
 
     <div class="pub-filters reveal">
       <button class="pub-filter-btn active" onclick="filterPubs('all',this)">All</button>
+      <button class="pub-filter-btn" onclick="filterPubs('politics',this)">Politics</button>
       <button class="pub-filter-btn" onclick="filterPubs('social',this)">Social policy</button>
       <button class="pub-filter-btn" onclick="filterPubs('economy',this)">Economy</button>
       <button class="pub-filter-btn" onclick="filterPubs('security',this)">Security</button>
@@ -574,37 +575,37 @@ footer{
 
     <div class="pub-grid reveal" id="pubGrid">
 
-      <div class="pub-card large" data-tag="economy">
-        <div class="pub-cat cat-economy">Economy</div>
+      <div class="pub-card large" data-tag="politics">
+        <div class="pub-cat cat-politics">Politics</div>
         <div class="pub-title">The right road: The future of the European centre-right</div>
-        <p class="pub-excerpt">It is time to reboot and reunify the centre-right across Europe to defeat both the populist right and the statist centre-left. This report seeks to better define and shape the centre-right across Europe. It details the philosophy, principles and history of the European centre-right before providing distinctive priorities — the ten Cs — and effective policies so the centre-right can return again to be the engine of peace and prosperity across Europe.</p>
+        <p class="pub-excerpt">It is time to reboot and reunify the centre-right across Europe to defeat both the populist right and the statist centre-left.</p>
         <div class="pub-meta"><span class="pub-date">June 2025</span><span class="pub-arrow">→</span></div>
       </div>
 
       <div class="pub-card" data-tag="economy">
         <div class="pub-cat cat-economy">Economy</div>
-        <div class="pub-title">Made up title</div>
-        <p class="pub-excerpt">Made up description</p>
-        <div class="pub-meta"><span class="pub-date">November 2026</span><span class="pub-arrow">→</span></div>
-      </div>
-
-      <div class="pub-card" data-tag="social">
-        <div class="pub-cat cat-climate">Social policy</div>
-        <div class="pub-title">Another made up title</div>
-        <p class="pub-excerpt">Another made up description.</p>
-        <div class="pub-meta"><span class="pub-date">December 2026</span><span class="pub-arrow">→</span></div>
+        <div class="pub-title">Higher ground: A centre-right vision to raise living standards</div>
+        <p class="pub-excerpt">Fixing the cost of living in the UK</p>
+        <div class="pub-meta"><span class="pub-date">March 2026</span><span class="pub-arrow">→</span></div>
       </div>
 
       <div class="pub-card" data-tag="security">
         <div class="pub-cat cat-migration">Security</div>
-        <div class="pub-title">Third made up title</div>
-        <div class="pub-meta"><span class="pub-date">August 2027</span><span class="pub-arrow">→</span></div>
+        <div class="pub-title">Properly protected: Reducing victims and abuses of modern slavery in the UK’s asylum system</div>
+        <div class="pub-meta"><span class="pub-date">December 2025</span><span class="pub-arrow">→</span></div>
       </div>
 
-      <div class="pub-card" data-tag="security">
-        <div class="pub-cat cat-security">Security</div>
-        <div class="pub-title">Fourth made up title</div>
-        <div class="pub-meta"><span class="pub-date">October 2027</span><span class="pub-arrow">→</span></div>
+            <div class="pub-card" data-tag="economy">
+        <div class="pub-cat cat-economy">Economy</div>
+        <div class="pub-title">Tax Reforms for Growth</div>
+        <p class="pub-excerpt">Consensus on fixing UK taxes</p>
+        <div class="pub-meta"><span class="pub-date">November 2025</span><span class="pub-arrow">→</span></div>
+      </div>
+
+      <div class="pub-card" data-tag="social">
+        <div class="pub-cat cat-social">Social policy</div>
+        <div class="pub-title">Mending the net? A new centre-right approach to social security</div>
+        <div class="pub-meta"><span class="pub-date">October 2025</span><span class="pub-arrow">→</span></div>
       </div>
 
     </div>
