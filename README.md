@@ -109,7 +109,7 @@ body{margin: 0 !important;
 .about-photo-side{position:relative;overflow:hidden;min-height:500px}
 .about-photo{
   position:absolute;inset:0;
-  background:url('https://images.unsplash.com/photo-1673295716958-b1dc96e5b24f?auto=format&fit=crop&w=960&q=80') center/cover no-repeat;
+  background:url('https://www.brightblue.org.uk/wp-content/uploads/2026/04/influence.jpg?auto=format&fit=crop&w=960&q=80') center/cover no-repeat;
   transform:scale(1.05);transition:transform 1.1s ease;
 }
 .about-photo.revealed{transform:scale(1)}
@@ -338,10 +338,11 @@ footer{
 <!-- HERO -->
 <section id="home">
   <!-- Slideshow slides — add/remove slides here as needed -->
-  <div class="hero-slide active" style="background-image:url('https://www.brightblue.org.uk/wp-content/uploads/2026/04/slideshow-1-scaled.jpg?auto=format&fit=crop&w=1600&q=80')"></div>
-  <div class="hero-slide" style="background-image:url('https://www.brightblue.org.uk/wp-content/uploads/2026/04/slideshow-2-scaled.jpg?auto=format&fit=crop&w=1600&q=80')"></div>
-  <div class="hero-slide" style="background-image:url('https://www.brightblue.org.uk/wp-content/uploads/2026/04/slideshow-3-scaled.jpg?auto=format&fit=crop&w=1600&q=80')"></div>
-  <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1541447271487-09612b3f49f7?auto=format&fit=crop&w=1600&q=80')"></div>
+  <div class="hero-slide active" style="background-image:url('https://www.brightblue.org.uk/wp-content/uploads/2026/04/slideshow-1-1-scaled.jpg?auto=format&fit=crop&w=1600&q=80')"></div>
+  <div class="hero-slide" style="background-image:url('https://www.brightblue.org.uk/wp-content/uploads/2026/04/slideshow-2-1-scaled.jpg?auto=format&fit=crop&w=1600&q=80')"></div>
+  <div class="hero-slide" style="background-image:url('https://www.brightblue.org.uk/wp-content/uploads/2026/04/slideshow-3-1-scaled.jpg?auto=format&fit=crop&w=1600&q=80')"></div>
+  <div class="hero-slide" style="background-image:url('https://www.brightblue.org.uk/wp-content/uploads/2026/04/slideshow-4-scaled.jpg?auto=format&fit=crop&w=1600&q=80')"></div>
+      <div class="hero-slide" style="background-image:url('https://www.brightblue.org.uk/wp-content/uploads/2026/04/slideshow-5-scaled.jpg?auto=format&fit=crop&w=1600&q=80')"></div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="hero-eyebrow">Bright Blue Europe</div>
@@ -511,7 +512,7 @@ footer{
         <div class="pub-title">The right road</div>
         <!-- Replace src with your own publication cover image if you have one -->
         <img class="pub-card-img"
-          src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=900&q=80"
+          src="https://www.brightblue.org.uk/wp-content/uploads/2025/06/1750170935311-a998c987-2e67-4fce-bf3f-c3db503e380d_1.png?auto=format&fit=crop&w=900&q=80"
           alt="The right road publication cover"
           loading="lazy">
         <p class="pub-excerpt">The future of the European centre-right</p>
