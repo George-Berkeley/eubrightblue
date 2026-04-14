@@ -294,7 +294,7 @@ body{margin: 0 !important;
 .pub-card:hover{background:rgba(255,255,255,0.04);border-color:var(--gold)}
 .pub-card.large{grid-row:span 2;padding:3rem}
 .pub-cat{font-size:10px;font-weight:400;letter-spacing:0.18em;text-transform:uppercase;margin-bottom:1rem}
-.cat-democracy{color:#93b4f0}.cat-economy{color:#86d9b0}.cat-climate{color:#7dd9c1}
+.cat-politics{color:#93b4f0}.cat-economy{color:#86d9b0}.cat-social{color:#7dd9c1}
 .cat-migration{color:#c9a8f0}.cat-security{color:#f0b893}
 .pub-title{font-family:var(--serif);font-weight:300;color:#fff;line-height:1.25;flex:1;margin-bottom:1.5rem}
 .pub-card.large .pub-title{font-size:28px;margin-bottom:2rem}
@@ -491,7 +491,7 @@ footer{
       <!-- Lukas Wick -->
       <div class="staff-card reveal">
         <img class="staff-card-img"
-          src="https://www.brightblue.org.uk/wp-content/uploads/2026/04/lukas-bbe.jpg?auto=format&fit=crop&w=900&q=80"
+          src="https://www.brightblue.org.uk/wp-content/uploads/2026/04/da04e0a3-b201-41b3-8170-08742eb27e3b.png?auto=format&fit=crop&w=900&q=80"
           alt="LW"
           loading="lazy">
         <div class="staff-overlay"></div>
@@ -506,7 +506,7 @@ footer{
             <span class="staff-tag">EU</span>
           </div>
           <div class="staff-socials">
-            <a href="#" class="staff-social" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/lukaswick/" class="staff-social" aria-label="LinkedIn">
               <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
             </a>
             <a href="#" class="staff-social" aria-label="X">
@@ -529,7 +529,7 @@ footer{
         <div class="staff-body">
           <div class="staff-role">Co-Founder</div>
           <div class="staff-name">Bartek Staniszewski</div>
-          <div class="staff-bio">Bartek worked as Head of Research for Bright Blue in London. He is a frequent columnist for the Spectator and Critic, the Editor-in-Chief of Centre Write, an IPR Policy Fellow of the University of Bath and an Fellow of the Centre for Family and Education. He gradueated from Oxford in Philosophy and Theology in 2021 and in Philosophical Theology in 2022.</div>
+          <div class="staff-bio">Bartek worked as Head of Research for Bright Blue in London. He is a frequent columnist for the Spectator and Critic, the Editor-in-Chief of Centre Write, an IPR Policy Fellow of the University of Bath and an Fellow of the Centre for Family and Education.</div>
           <div class="staff-tags">
             <span class="staff-tag">Social policy</span>
             <span class="staff-tag">Research</span>
@@ -537,10 +537,10 @@ footer{
             <span class="staff-tag">UK</span>
           </div>
           <div class="staff-socials">
-            <a href="#" class="staff-social" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/bastaniszewski/" class="staff-social" aria-label="LinkedIn">
               <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
             </a>
-            <a href="#" class="staff-social" aria-label="X">
+            <a href="https://x.com/BGStaniszewski" class="staff-social" aria-label="X">
               <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
             </a>
             <a href="mailto:bartek@eubrightblue.org" class="staff-social" aria-label="Email">
@@ -577,34 +577,36 @@ footer{
 
       <div class="pub-card large" data-tag="politics">
         <div class="pub-cat cat-politics">Politics</div>
-        <div class="pub-title">The right road: The future of the European centre-right</div>
-        <p class="pub-excerpt">It is time to reboot and reunify the centre-right across Europe to defeat both the populist right and the statist centre-left.</p>
+        <div class="pub-title">The right road</div>
+        <p class="pub-excerpt">The future of the European centre-right</p>
         <div class="pub-meta"><span class="pub-date">June 2025</span><span class="pub-arrow">→</span></div>
       </div>
 
       <div class="pub-card" data-tag="economy">
         <div class="pub-cat cat-economy">Economy</div>
-        <div class="pub-title">Higher ground: A centre-right vision to raise living standards</div>
-        <p class="pub-excerpt">Fixing the cost of living in the UK</p>
+        <div class="pub-title">Higher ground</div>
+        <p class="pub-excerpt">A centre-right vision to raise living standards</p>
         <div class="pub-meta"><span class="pub-date">March 2026</span><span class="pub-arrow">→</span></div>
       </div>
 
       <div class="pub-card" data-tag="security">
         <div class="pub-cat cat-migration">Security</div>
-        <div class="pub-title">Properly protected: Reducing victims and abuses of modern slavery in the UK’s asylum system</div>
+        <div class="pub-title">Properly protected</div>
+                <p class="pub-excerpt">Reducing victims and abuses of modern slavery in the UK’s asylum system</p>
         <div class="pub-meta"><span class="pub-date">December 2025</span><span class="pub-arrow">→</span></div>
       </div>
 
             <div class="pub-card" data-tag="economy">
         <div class="pub-cat cat-economy">Economy</div>
         <div class="pub-title">Tax Reforms for Growth</div>
-        <p class="pub-excerpt">Consensus on fixing UK taxes</p>
+        <p class="pub-excerpt">7 packages of reform</p>
         <div class="pub-meta"><span class="pub-date">November 2025</span><span class="pub-arrow">→</span></div>
       </div>
 
       <div class="pub-card" data-tag="social">
         <div class="pub-cat cat-social">Social policy</div>
-        <div class="pub-title">Mending the net? A new centre-right approach to social security</div>
+        <div class="pub-title">Mending the net?</div>
+                <p class="pub-excerpt">A new centre-right approach to social security</p>
         <div class="pub-meta"><span class="pub-date">October 2025</span><span class="pub-arrow">→</span></div>
       </div>
 
