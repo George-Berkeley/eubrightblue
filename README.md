@@ -539,7 +539,7 @@ footer{
       <a class="pub-card" data-tag="economy" href="https://www.brightblue.org.uk/portfolio/tax-reform-growth/" target="_blank" rel="noopener">
         <div class="pub-cat cat-economy">Economy</div>
         <div class="pub-title">Tax Reforms for Growth</div>
-        <p class="pub-excerpt">7 packages of reform</p>
+        <p class="pub-excerpt">Seven packages of reform</p>
         <div class="pub-meta"><span class="pub-date">November 2025</span><span class="pub-arrow">→</span></div>
       </a>
  
