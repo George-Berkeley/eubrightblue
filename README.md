@@ -73,87 +73,34 @@ body{margin: 0 !important;
 #nav.light .nav-btn{background:var(--navy);border:1px solid var(--navy);color:#fff}
 #nav.light .nav-btn:hover{background:var(--blue)}
 
-/* HERO */
-#home {
-  position: relative;
-  width: 100vw !important;      /* Uses the full width of the browser window */
-  margin-left: 0;    /* Ensures no left offset */
-  margin-right: 0;
-  margin-top: -50px
-  height: 100vh;
-  height: 100dvh; 
-  min-height: 680px;
-  display: flex;
-  align-items: flex-end;
-  overflow: hidden;
-  left: 50%;         /* Centering hack to ensure it stays pinned if parented */
-  transform: translateX(-50%); 
-}
-.hero-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('https://images.unsplash.com/photo-1673295716958-b1dc96e5b24f?auto=format&fit=crop&w=960&q=80') center/cover no-repeat;
-  z-index: 0;
-}
-.hero-img.loaded{transform:scale(1)}
-.hero-overlay{
-  position:absolute;inset:0;
-  background:linear-gradient(to top,rgba(0,18,60,0.9) 0%,rgba(0,18,60,0.42) 52%,rgba(0,18,60,0.12) 100%);
-}
-.hero-content {
-  position: relative;
-  z-index: 2;
-  padding: 0 4rem 5.5rem;
-  max-width: 100%;    /* Allow content to use the full width of the hero */
-  width: 100%;
-}
-.hero-eyebrow{
-  font-family:var(--sans);font-size:11px;font-weight:400;letter-spacing:0.22em;text-transform:uppercase;
-  color:var(--gold);margin-bottom:1.5rem;display:flex;align-items:center;gap:12px;
-  opacity:0;transform:translateY(16px);animation:fadeUp 0.8s 0.2s forwards;
-}
+/* HERO SLIDESHOW */
+#home{position:relative;width:100vw!important;margin-left:0;margin-right:0;margin-top:-50px;height:100vh;height:100dvh;min-height:680px;display:flex;align-items:flex-end;overflow:hidden;left:50%;transform:translateX(-50%);}
+ 
+.hero-slide{position:absolute;top:0;left:0;width:100%;height:100%;background-size:cover;background-position:center;background-repeat:no-repeat;opacity:0;transition:opacity 1.4s ease-in-out;z-index:0;}
+.hero-slide.active{opacity:1;}
+ 
+/* Subtle bottom gradient only — enough to keep text legible, no colour cast */
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.72) 0%,rgba(0,0,0,0.18) 46%,rgba(0,0,0,0.04) 100%);z-index:1;}
+ 
+.hero-content{position:relative;z-index:2;padding:0 4rem 5.5rem;max-width:100%;width:100%;}
+.hero-eyebrow{font-family:var(--sans);font-size:11px;font-weight:400;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;display:flex;align-items:center;gap:12px;opacity:0;transform:translateY(16px);animation:fadeUp 0.8s 0.2s forwards;}
 .hero-eyebrow::before{content:'';display:block;width:32px;height:1px;background:var(--gold)}
-.hero-headline{
-  font-family:var(--serif);font-size:clamp(50px,6.5vw,90px);
-  font-weight:300;line-height:1.04;color:#fff;margin-bottom:2rem;
-  opacity:0;transform:translateY(20px);animation:fadeUp 0.9s 0.35s forwards;
-}
+.hero-headline{font-family:var(--serif);font-size:clamp(50px,6.5vw,90px);font-weight:300;line-height:1.04;color:#fff;margin-bottom:2rem;opacity:0;transform:translateY(20px);animation:fadeUp 0.9s 0.35s forwards;}
 .hero-headline em{font-style:italic;color:var(--gold)}
-.hero-sub{
-  font-size:18px;font-weight:300;color:rgba(255,255,255,0.68);
-  max-width:560px;line-height:1.78;margin-bottom:2.5rem;
-  opacity:0;transform:translateY(16px);animation:fadeUp 0.8s 0.5s forwards;
-}
-.hero-actions{
-  display:flex;gap:1rem;flex-wrap:wrap;
-  opacity:0;animation:fadeUp 0.8s 0.65s forwards;
-}
-.btn-gold{
-  font-family:var(--sans);font-size:12px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;
-  text-decoration:none;padding:15px 32px;background:var(--gold);color:var(--navy-dark);
-  border-radius:1px;transition:background 0.2s,transform 0.15s;
-}
+.hero-sub{font-size:18px;font-weight:300;color:rgba(255,255,255,0.78);max-width:560px;line-height:1.78;margin-bottom:2.5rem;opacity:0;transform:translateY(16px);animation:fadeUp 0.8s 0.5s forwards;}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap;opacity:0;animation:fadeUp 0.8s 0.65s forwards;}
+.btn-gold{font-family:var(--sans);font-size:12px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;padding:15px 32px;background:var(--gold);color:var(--navy-dark);border-radius:1px;transition:background 0.2s,transform 0.15s;}
 .btn-gold:hover{background:#d4b058;transform:translateY(-2px)}
-.btn-ghost{
-  font-family:var(--sans);font-size:12px;font-weight:400;letter-spacing:0.1em;text-transform:uppercase;
-  text-decoration:none;padding:15px 32px;border:1px solid rgba(255,255,255,0.3);
-  color:rgba(255,255,255,0.82);border-radius:1px;transition:border-color 0.2s,color 0.2s;
-}
+.btn-ghost{font-family:var(--sans);font-size:12px;font-weight:400;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;padding:15px 32px;border:1px solid rgba(255,255,255,0.3);color:rgba(255,255,255,0.82);border-radius:1px;transition:border-color 0.2s,color 0.2s;}
 .btn-ghost:hover{border-color:#fff;color:#fff}
-.hero-scroll-hint{
-  position:absolute;bottom:2.5rem;right:4rem;z-index:2;
-  display:flex;align-items:center;gap:10px;
-  font-size:10px;font-weight:300;letter-spacing:0.18em;text-transform:uppercase;
-  color:rgba(255,255,255,0.35);writing-mode:vertical-rl;
-}
-.hero-scroll-hint::after{
-  content:'';display:block;width:1px;height:48px;
-  background:linear-gradient(to bottom,rgba(255,255,255,0.3),transparent);
-  animation:scrollLine 2.2s ease-in-out infinite;
-}
+ 
+/* Slideshow dots */
+.hero-dots{position:absolute;bottom:2.5rem;left:4rem;z-index:2;display:flex;gap:8px;}
+.hero-dot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,0.3);border:none;cursor:pointer;transition:background 0.3s,transform 0.3s;padding:0;}
+.hero-dot.active{background:var(--gold);transform:scale(1.3);}
+ 
+.hero-scroll-hint{position:absolute;bottom:2.5rem;right:4rem;z-index:2;display:flex;align-items:center;gap:10px;font-size:10px;font-weight:300;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.35);writing-mode:vertical-rl;}
+.hero-scroll-hint::after{content:'';display:block;width:1px;height:48px;background:linear-gradient(to bottom,rgba(255,255,255,0.3),transparent);animation:scrollLine 2.2s ease-in-out infinite;}
 @keyframes scrollLine{0%,100%{opacity:0.35;transform:scaleY(1)}50%{opacity:0.85;transform:scaleY(0.65)}}
 
 /* ABOUT */
@@ -299,53 +246,26 @@ body{margin: 0 !important;
 .pub-title{font-family:var(--serif);font-weight:300;color:#fff;line-height:1.25;flex:1;margin-bottom:1.5rem}
 .pub-card.large .pub-title{font-size:28px;margin-bottom:2rem}
 .pub-card:not(.large) .pub-title{font-size:19px}
+/* Image inside the large pub card */
+.pub-card-img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;margin-bottom:1.25rem;opacity:0.85;transition:opacity 0.3s;}
+.pub-card:hover .pub-card-img{opacity:1;}
 .pub-excerpt{font-size:14px;font-weight:300;color:rgba(255,255,255,0.48);line-height:1.78;margin-bottom:1.5rem;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .pub-meta{display:flex;align-items:center;justify-content:space-between;margin-top:auto;border-top:1px solid rgba(255,255,255,0.07);padding-top:1.25rem}
 .pub-date{font-size:12px;font-weight:300;color:rgba(255,255,255,0.3);letter-spacing:0.04em}
 .pub-arrow{font-size:18px;color:rgba(255,255,255,0.22);transition:color 0.2s,transform 0.2s}
 .pub-card:hover .pub-arrow{color:var(--gold);transform:translateX(5px)}
 
-/* CONTACT */
+/* CONTACT — full width, no form */
 #contact{background:var(--cream)}
-.contact-split{display:grid;grid-template-columns:1fr 1fr;min-height:80vh}
-.contact-info{background:var(--cream-dark);padding:7rem 5rem;display:flex;flex-direction:column;justify-content:center}
-.contact-info .section-heading{color:var(--navy)}
-.contact-intro{
-  font-family:var(--serif);font-size:19px;font-weight:300;font-style:italic;
-  color:var(--muted);line-height:1.72;margin-bottom:3rem;
-}
-.contact-details{display:flex;flex-direction:column;gap:2rem}
+.contact-full{padding:7rem 4rem;display:flex;flex-direction:column;justify-content:center;max-width:900px;margin:0 auto;}
+.contact-full .section-heading{color:var(--navy)}
+.contact-intro{font-family:var(--serif);font-size:19px;font-weight:300;font-style:italic;color:var(--muted);line-height:1.72;margin-bottom:3rem;}
+.contact-details{display:grid;grid-template-columns:repeat(2,1fr);gap:2.5rem 4rem;}
 .contact-item{display:flex;flex-direction:column;gap:5px}
 .contact-item-label{font-size:10px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold)}
 .contact-item-val{font-size:16px;font-weight:300;color:var(--navy);line-height:1.5}
 .contact-item-val a{color:var(--navy);text-decoration:none}
 .contact-item-val a:hover{color:var(--blue)}
-.contact-form-side{background:var(--navy);padding:7rem 5rem;display:flex;flex-direction:column;justify-content:center}
-.contact-form-title{
-  font-family:var(--serif);font-size:22px;font-weight:300;color:rgba(255,255,255,0.6);
-  font-style:italic;margin-bottom:2.5rem;
-}
-.cform{display:flex;flex-direction:column;gap:2rem}
-.cform-row{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
-.cfield{display:flex;flex-direction:column;gap:8px}
-.clabel{font-size:10px;font-weight:400;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.38)}
-.cinput,.ctextarea,.cselect{
-  background:transparent;border:none;border-bottom:1px solid rgba(255,255,255,0.14);
-  padding:11px 0;color:#fff;font-family:var(--sans);font-size:16px;font-weight:300;
-  outline:none;width:100%;border-radius:0;transition:border-color 0.2s;
-}
-.cinput::placeholder,.ctextarea::placeholder{color:rgba(255,255,255,0.2)}
-.cinput:focus,.ctextarea:focus,.cselect:focus{border-color:var(--gold)}
-.ctextarea{resize:none;min-height:110px;line-height:1.65}
-.cselect{appearance:none;cursor:pointer}
-.cselect option{background:var(--navy-dark)}
-.csubmit{
-  font-family:var(--sans);font-size:12px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;
-  background:transparent;border:1px solid rgba(255,255,255,0.24);color:#fff;
-  padding:16px 36px;cursor:pointer;border-radius:1px;transition:all 0.22s;align-self:flex-start;
-}
-.csubmit:hover{background:var(--gold);border-color:var(--gold);color:var(--navy-dark)}
-.csuccess{display:none;padding:1.25rem;border:1px solid rgba(201,168,76,0.3);background:rgba(201,168,76,0.06);border-radius:1px;font-size:15px;font-weight:300;color:var(--gold);text-align:center}
 
 /* FOOTER */
 footer{
@@ -376,9 +296,10 @@ footer{
   #nav{padding:0 1.5rem}
   .nav-links{display:none}
   .hero-content{padding:0 1.5rem 4rem}
-  .about-split,.contact-split{grid-template-columns:1fr}
+  .hero-dots{left:1.5rem}
+  .about-split{grid-template-columns:1fr}
   .about-photo-side{min-height:320px}
-  .about-text-side,.contact-info,.contact-form-side{padding:4rem 2rem}
+  .about-text-side{padding:4rem 2rem}
   .pillars-band{padding:4rem 1.5rem}
   .pillars-grid{grid-template-columns:1fr 1fr}
   .pillar-item{border-bottom:1px solid var(--border);border-right:none!important}
@@ -388,8 +309,9 @@ footer{
   .staff-card{aspect-ratio:4/3}
   .pub-grid{grid-template-columns:1fr}
   .pub-header{flex-direction:column;align-items:flex-start}
+  .contact-full{padding:5rem 2rem}
+  .contact-details{grid-template-columns:1fr}
   footer{flex-direction:column;align-items:flex-start;padding:2rem 1.5rem}
-  .cform-row{grid-template-columns:1fr}
   .staff-header{flex-direction:column;align-items:flex-start}
 }
 </style>
@@ -415,7 +337,11 @@ footer{
 
 <!-- HERO -->
 <section id="home">
-  <div class="hero-img" id="heroImg"></div>
+  <!-- Slideshow slides — add/remove slides here as needed -->
+  <div class="hero-slide active" style="background-image:url('https://www.brightblue.org.uk/wp-content/uploads/2026/04/slideshow-1-scaled.jpg?auto=format&fit=crop&w=1600&q=80')"></div>
+  <div class="hero-slide" style="background-image:url('https://www.brightblue.org.uk/wp-content/uploads/2026/04/slideshow-2-scaled.jpg?auto=format&fit=crop&w=1600&q=80')"></div>
+  <div class="hero-slide" style="background-image:url('https://www.brightblue.org.uk/wp-content/uploads/2026/04/slideshow-3-scaled.jpg?auto=format&fit=crop&w=1600&q=80')"></div>
+  <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1541447271487-09612b3f49f7?auto=format&fit=crop&w=1600&q=80')"></div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="hero-eyebrow">Bright Blue Europe</div>
@@ -426,6 +352,10 @@ footer{
       <a href="#about" class="btn-ghost">Who we are</a>
     </div>
   </div>
+
+ <!-- Slideshow dots -->
+  <div class="hero-dots" id="heroDots"></div>
+    
   <div class="hero-scroll-hint"></div>
 </section>
 
@@ -464,7 +394,7 @@ footer{
         <div class="pillar-item reveal d3">
           <div class="pillar-num">03</div>
           <div class="pillar-name">Internationalism</div>
-          <p class="pillar-desc">Most policy issues require international cooperation to be succesfully addressed. Strong countries are only possible with strong allies.</p>
+          <p class="pillar-desc">Most policy issues require international cooperation to be successfully addressed. Strong countries are only possible with strong allies.</p>
         </div>
         <div class="pillar-item reveal d4">
           <div class="pillar-num">04</div>
@@ -574,112 +504,76 @@ footer{
     </div>
 
     <div class="pub-grid reveal" id="pubGrid">
-
-      <div class="pub-card large" data-tag="politics">
+ 
+      <!-- LARGE CARD — replace href with the real link -->
+      <a class="pub-card large" data-tag="politics" href="https://www.brightblue.org.uk/the-right-road/" target="_blank" rel="noopener">
         <div class="pub-cat cat-politics">Politics</div>
         <div class="pub-title">The right road</div>
+        <!-- Replace src with your own publication cover image if you have one -->
+        <img class="pub-card-img"
+          src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=900&q=80"
+          alt="The right road publication cover"
+          loading="lazy">
         <p class="pub-excerpt">The future of the European centre-right</p>
         <div class="pub-meta"><span class="pub-date">June 2025</span><span class="pub-arrow">→</span></div>
-      </div>
-
-      <div class="pub-card" data-tag="economy">
+      </a>
+ 
+      <!-- Replace each href with the real publication URL -->
+      <a class="pub-card" data-tag="economy" href="https://www.brightblue.org.uk/higher-ground/" target="_blank" rel="noopener">
         <div class="pub-cat cat-economy">Economy</div>
         <div class="pub-title">Higher ground</div>
         <p class="pub-excerpt">A centre-right vision to raise living standards</p>
         <div class="pub-meta"><span class="pub-date">March 2026</span><span class="pub-arrow">→</span></div>
-      </div>
-
-      <div class="pub-card" data-tag="security">
+      </a>
+ 
+      <a class="pub-card" data-tag="security" href="https://www.brightblue.org.uk/properly-protected/" target="_blank" rel="noopener">
         <div class="pub-cat cat-migration">Security</div>
         <div class="pub-title">Properly protected</div>
-                <p class="pub-excerpt">Reducing victims and abuses of modern slavery in the UK’s asylum system</p>
+        <p class="pub-excerpt">Reducing victims and abuses of modern slavery in the UK's asylum system</p>
         <div class="pub-meta"><span class="pub-date">December 2025</span><span class="pub-arrow">→</span></div>
-      </div>
-
-            <div class="pub-card" data-tag="economy">
+      </a>
+ 
+      <a class="pub-card" data-tag="economy" href="https://www.brightblue.org.uk/tax-reforms-for-growth/" target="_blank" rel="noopener">
         <div class="pub-cat cat-economy">Economy</div>
         <div class="pub-title">Tax Reforms for Growth</div>
         <p class="pub-excerpt">7 packages of reform</p>
         <div class="pub-meta"><span class="pub-date">November 2025</span><span class="pub-arrow">→</span></div>
-      </div>
-
-      <div class="pub-card" data-tag="social">
+      </a>
+ 
+      <a class="pub-card" data-tag="social" href="https://www.brightblue.org.uk/mending-the-net/" target="_blank" rel="noopener">
         <div class="pub-cat cat-social">Social policy</div>
         <div class="pub-title">Mending the net?</div>
-                <p class="pub-excerpt">A new centre-right approach to social security</p>
+        <p class="pub-excerpt">A new centre-right approach to social security</p>
         <div class="pub-meta"><span class="pub-date">October 2025</span><span class="pub-arrow">→</span></div>
-      </div>
-
+      </a>
+ 
     </div>
   </div>
 </section>
 
-<!-- CONTACT -->
+<!-- CONTACT — full width, no form -->
 <section id="contact">
-  <div class="contact-split">
-    <div class="contact-info">
-      <div class="section-label reveal">Contact us</div>
-      <h2 class="section-heading reveal d1">Work with <em>us</em></h2>
-      <p class="contact-intro reveal d2">We welcome enquiries from policymakers, journalists and partner organisations across Europe.</p>
-      <div class="contact-details">
-        <div class="contact-item reveal d2">
-          <span class="contact-item-label">Address</span>
-          <span class="contact-item-val">Sokratesa 6/20<br>01-909 Warsaw, Poland</span>
-        </div>
-        <div class="contact-item reveal d3">
-          <span class="contact-item-label">Email</span>
-          <span class="contact-item-val"><a href="mailto:bartek@eubrightblue.org">bartek@eubrightblue.org</a><br><a href="mailto:lukas@eubrightblue.org">lukas@eubrightblue.org</a></span>
-        </div>
-        <div class="contact-item reveal d3">
-          <span class="contact-item-label">Phone</span>
-          <span class="contact-item-val"><a href="tel:+48732434093">+48 732 434 093</a><br><a href="tel:+4915126961354">+49 151 26961354</a></span>
-        </div>
-        <div class="contact-item reveal d4">
-          <span class="contact-item-label">Parent organisation</span>
-          <span class="contact-item-val"><a href="https://www.brightblue.org.uk" target="_blank">Bright Blue UK ↗</a></span>
-        </div>
+  <div class="contact-full">
+    <div class="section-label reveal">Contact us</div>
+    <h2 class="section-heading reveal d1">Work with <em>us</em></h2>
+    <p class="contact-intro reveal d2">We welcome enquiries from policymakers, journalists and partner organisations across Europe.</p>
+    <div class="contact-details">
+      <div class="contact-item reveal d2">
+        <span class="contact-item-label">Address</span>
+        <span class="contact-item-val">Sokratesa 6/20<br>01-909 Warsaw, Poland</span>
       </div>
-    </div>
-
-    <div class="contact-form-side">
-      <div class="contact-form-title">Send us a message</div>
-      <form class="cform" onsubmit="sendForm(event)" novalidate>
-        <div class="cform-row">
-          <div class="cfield">
-            <label class="clabel">First name</label>
-            <input class="cinput" type="text" placeholder="Anna" required>
-          </div>
-          <div class="cfield">
-            <label class="clabel">Last name</label>
-            <input class="cinput" type="text" placeholder="Müller" required>
-          </div>
-        </div>
-        <div class="cfield">
-          <label class="clabel">Email address</label>
-          <input class="cinput" type="email" placeholder="anna@example.com" required>
-        </div>
-        <div class="cfield">
-          <label class="clabel">Organisation</label>
-          <input class="cinput" type="text" placeholder="Your institution or affiliation">
-        </div>
-        <div class="cfield">
-          <label class="clabel">Enquiry type</label>
-          <select class="cselect">
-            <option value="" disabled selected>Select a topic</option>
-            <option>Research collaboration</option>
-            <option>Media enquiry</option>
-            <option>Events &amp; speaking</option>
-            <option>Partnership</option>
-            <option>General enquiry</option>
-          </select>
-        </div>
-        <div class="cfield">
-          <label class="clabel">Message</label>
-          <textarea class="ctextarea" placeholder="Tell us about your enquiry…" required></textarea>
-        </div>
-        <button type="submit" class="csubmit">Send message</button>
-        <div class="csuccess" id="csuccess">Thank you — we'll be in touch shortly.</div>
-      </form>
+      <div class="contact-item reveal d3">
+        <span class="contact-item-label">Email</span>
+        <span class="contact-item-val"><a href="mailto:bartek@eubrightblue.org">bartek@eubrightblue.org</a><br><a href="mailto:lukas@eubrightblue.org">lukas@eubrightblue.org</a></span>
+      </div>
+      <div class="contact-item reveal d3">
+        <span class="contact-item-label">Phone</span>
+        <span class="contact-item-val"><a href="tel:+48732434093">+48 732 434 093</a><br><a href="tel:+4915126961354">+49 151 26961354</a></span>
+      </div>
+      <div class="contact-item reveal d4">
+        <span class="contact-item-label">Parent organisation</span>
+        <span class="contact-item-val"><a href="https://www.brightblue.org.uk" target="_blank">Bright Blue UK ↗</a></span>
+      </div>
     </div>
   </div>
 </section>
@@ -710,7 +604,6 @@ window.addEventListener('scroll', updateNav, {passive:true});
 updateNav();
 
 window.addEventListener('load', () => {
-  document.getElementById('heroImg').classList.add('loaded');
   setTimeout(() => document.getElementById('aboutPhoto').classList.add('revealed'), 300);
 });
 
@@ -718,6 +611,36 @@ const observer = new IntersectionObserver(entries => {
   entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); observer.unobserve(e.target); }});
 }, {threshold: 0.1});
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    /* ── HERO SLIDESHOW ── */
+(function(){
+  const slides = document.querySelectorAll('.hero-slide');
+  const dotsContainer = document.getElementById('heroDots');
+  let current = 0;
+  let timer;
+ 
+  // Build dots
+  slides.forEach((_, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'hero-dot' + (i === 0 ? ' active' : '');
+    btn.setAttribute('aria-label', 'Slide ' + (i + 1));
+    btn.addEventListener('click', () => goTo(i));
+    dotsContainer.appendChild(btn);
+  });
+ 
+  function goTo(index) {
+    slides[current].classList.remove('active');
+    dotsContainer.children[current].classList.remove('active');
+    current = (index + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    dotsContainer.children[current].classList.add('active');
+    clearInterval(timer);
+    timer = setInterval(advance, 5000);
+  }
+ 
+  function advance() { goTo(current + 1); }
+  timer = setInterval(advance, 5000);
+})();
 
 function filterPubs(tag, btn){
   document.querySelectorAll('.pub-filter-btn').forEach(b => b.classList.remove('active'));
@@ -727,16 +650,6 @@ function filterPubs(tag, btn){
   });
 }
 
-function sendForm(e){
-  e.preventDefault();
-  const btn = e.target.querySelector('.csubmit');
-  btn.textContent = 'Sending…'; btn.disabled = true;
-  setTimeout(() => {
-    e.target.reset();
-    btn.style.display = 'none';
-    document.getElementById('csuccess').style.display = 'block';
-  }, 900);
-}
 </script>
 </body>
 </html>
