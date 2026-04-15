@@ -48,8 +48,16 @@ body{margin: 0 !important;
 }
 #nav.solid{background:rgba(0,20,64,0.97);border-bottom:1px solid rgba(255,255,255,0.08)}
 #nav.light{background:rgba(250,248,242,0.96);border-bottom:1px solid var(--border)}
-
-.nav-brand{text-decoration:none;display:flex;flex-direction:column;line-height:1.15}
+    
+.nav-brand{text-decoration:none;display:flex;align-items:center;gap:12px;line-height:1}
+.nav-logo{
+  height:38px;width:auto;display:block;flex-shrink:0;
+  /* Invert logo on dark nav so it stays visible */
+  transition:filter 0.3s;
+}
+#nav.solid .nav-logo{filter:brightness(0) invert(1)}
+#nav.light .nav-logo{filter:none}
+.nav-brand-text{display:flex;flex-direction:column;line-height:1.15}
 .nav-brand-name{font-family:var(--serif);font-size:18px;font-weight:400;letter-spacing:0.01em;transition:color 0.3s}
 .nav-brand-sub{font-family:var(--sans);font-size:10px;font-weight:300;letter-spacing:0.22em;text-transform:uppercase;transition:color 0.3s}
 #nav.solid .nav-brand-name{color:#fff}
@@ -72,6 +80,42 @@ body{margin: 0 !important;
 #nav.solid .nav-btn:hover{background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.55)}
 #nav.light .nav-btn{background:var(--navy);border:1px solid var(--navy);color:#fff}
 #nav.light .nav-btn:hover{background:var(--blue)}
+
+/* HAMBURGER BUTTON */
+.nav-burger{
+  display:none;flex-direction:column;justify-content:center;align-items:center;
+  gap:5px;width:40px;height:40px;background:transparent;border:none;cursor:pointer;padding:4px;
+}
+.nav-burger span{
+  display:block;width:24px;height:2px;border-radius:2px;
+  transition:transform 0.3s,opacity 0.3s,background 0.3s;
+}
+#nav.solid .nav-burger span{background:#fff}
+#nav.light .nav-burger span{background:var(--navy)}
+.nav-burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-burger.open span:nth-child(2){opacity:0}
+.nav-burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* MOBILE FULL-SCREEN MENU */
+.nav-mobile{
+  display:none;position:fixed;top:72px;left:0;right:0;bottom:0;z-index:199;
+  background:rgba(0,20,64,0.98);flex-direction:column;
+  align-items:center;justify-content:center;gap:2.5rem;
+}
+.nav-mobile.open{display:flex}
+.nav-mobile a{
+  font-family:var(--sans);font-size:15px;font-weight:400;letter-spacing:0.12em;
+  text-transform:uppercase;text-decoration:none;color:rgba(255,255,255,0.65);
+  transition:color 0.2s;
+}
+.nav-mobile a:hover{color:#fff}
+.nav-mobile .nav-btn{
+  margin-top:1rem;background:transparent;
+  border:1px solid rgba(255,255,255,0.28);color:#fff;
+  padding:12px 32px;
+}
+
+
 
 /* HERO SLIDESHOW */
 #home{position:relative;width:100vw!important;margin-left:0;margin-right:0;margin-top:-50px;height:100vh;height:100dvh;min-height:680px;display:flex;align-items:flex-end;overflow:hidden;left:50%;transform:translateX(-50%);}
@@ -297,8 +341,15 @@ footer{
 @media(max-width:900px){
   #nav{padding:0 1.5rem}
   .nav-links{display:none}
+  .nav-btn{display:none}          /* moved into mobile menu */
+  .nav-burger{display:flex}
+  /* Shrink logo+brand text a touch */
+  .nav-logo{height:30px}
+  .nav-brand-name{font-size:15px}
+  .nav-brand-sub{font-size:9px;letter-spacing:0.14em}
   .hero-content{padding:0 1.5rem 4rem}
   .hero-dots{left:1.5rem}
+  .hero-scroll-hint{display:none}
   .about-split{grid-template-columns:1fr}
   .about-photo-side{min-height:320px}
   .about-text-side{padding:4rem 2rem}
@@ -309,13 +360,31 @@ footer{
   #staff,#publications{padding:5rem 1.5rem}
   .staff-grid{grid-template-columns:1fr}
   .staff-card{aspect-ratio:4/3}
-  .pub-grid{grid-template-columns:1fr}
+  /* On touch devices bio/tags/socials are always visible */
+  .staff-bio{max-height:none!important;opacity:1!important}
+  .staff-tags{max-height:none!important;opacity:1!important}
+  .staff-socials{max-height:none!important;opacity:1!important}
+  .staff-body{transform:none!important}
+.pub-grid{grid-template-columns:1fr}
   .pub-header{flex-direction:column;align-items:flex-start}
   .contact-full{padding:5rem 2rem}
   .contact-details{grid-template-columns:1fr}
-  footer{flex-direction:column;align-items:flex-start;padding:2rem 1.5rem}
+  footer{flex-direction:column;align-items:flex-start;padding:2rem 1.5rem;gap:1.5rem}
+  .footer-nav{flex-wrap:wrap;gap:1rem 1.5rem}
   .staff-header{flex-direction:column;align-items:flex-start}
 }
+@media(max-width:480px){
+  .nav-brand-sub{display:none} /* too long for very small phones */
+  .nav-logo{height:28px}
+  .hero-headline{font-size:clamp(36px,11vw,56px)!important}
+  .hero-sub{font-size:15px}
+  .pillars-grid{grid-template-columns:1fr}
+  .pillar-item{border-right:none!important}
+  .staff-card{aspect-ratio:3/4}
+  .contact-full{padding:4rem 1.25rem}
+  #staff,#publications{padding:4rem 1.25rem}
+}
+
 </style>
 </head>
 <body>
@@ -323,8 +392,10 @@ footer{
 <!-- NAV -->
 <nav id="nav" class="solid">
   <a class="nav-brand" href="#home">
+    <img src="favicon.ico" alt="BBE" class="nav-logo">
+          <div class="nav-brand-text">
     <span class="nav-brand-name">Bright Blue Europe</span>
-    <span class="nav-brand-sub">The home of the centre-right across Europe</span>
+    <span class="nav-brand-sub">The home of the centre-right across Europe</span> </div>
   </a>
   <ul class="nav-links">
     <li><a href="#"> </a></li>    
@@ -335,7 +406,20 @@ footer{
     <li><a href="#contact">Contact</a></li>
   </ul>
   <a class="nav-btn" href="https://www.brightblue.org.uk">Bright Blue UK</a>
+  <button class="nav-burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+
+<!-- MOBILE MENU OVERLAY -->
+<div class="nav-mobile" id="navMobile" aria-hidden="true">
+  <a href="#home"        onclick="closeMobileNav()">Home</a>
+  <a href="#about"       onclick="closeMobileNav()">About</a>
+  <a href="#staff"       onclick="closeMobileNav()">Our team</a>
+  <a href="#publications" onclick="closeMobileNav()">Publications</a>
+  <a href="#contact"     onclick="closeMobileNav()">Contact</a>
+  <a class="nav-btn" href="https://www.brightblue.org.uk">Bright Blue UK</a>
+</div>
 
 <!-- HERO -->
 <section id="home">
@@ -597,6 +681,35 @@ footer{
 </footer>
 
 <script>
+/* ── MOBILE NAV TOGGLE ── */
+const burger = document.getElementById('navBurger');
+const mobileNav = document.getElementById('navMobile');
+
+function closeMobileNav() {
+  burger.classList.remove('open');
+  burger.setAttribute('aria-expanded','false');
+  mobileNav.classList.remove('open');
+  mobileNav.setAttribute('aria-hidden','true');
+  document.body.style.overflow = '';
+}
+
+burger.addEventListener('click', () => {
+  const isOpen = mobileNav.classList.contains('open');
+  if(isOpen){ closeMobileNav(); }
+  else {
+    burger.classList.add('open');
+    burger.setAttribute('aria-expanded','true');
+    mobileNav.classList.add('open');
+    mobileNav.setAttribute('aria-hidden','false');
+    document.body.style.overflow = 'hidden';
+  }
+});
+
+// Close menu on any scroll
+window.addEventListener('scroll', () => {
+  if(mobileNav.classList.contains('open')) closeMobileNav();
+}, {passive:true});
+
 const nav = document.getElementById('nav');
 function updateNav(){
   const y = window.scrollY;
