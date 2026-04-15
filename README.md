@@ -392,7 +392,7 @@ footer{
 <!-- NAV -->
 <nav id="nav" class="solid">
   <a class="nav-brand" href="#home">
-    <img src="https://www.brightblue.org.uk/wp-content/uploads/2026/04/final-logo-small.png" alt="BBE" class="nav-logo">
+    <img src="final_logo_small.png" alt="BBE" class="nav-logo">
           <div class="nav-brand-text">
     <span class="nav-brand-name">Bright Blue Europe</span>
     <span class="nav-brand-sub">The home of the centre-right across Europe</span> </div>
