@@ -55,7 +55,7 @@ body{margin: 0 !important;
   /* Invert logo on dark nav so it stays visible */
   transition:filter 0.3s;
 }
-#nav.solid .nav-logo{filter:brightness(0) invert(1)}
+#nav.solid .nav-logo{filter:brightness(0.4) invert(1)}
 #nav.light .nav-logo{filter:none}
 .nav-brand-text{display:flex;flex-direction:column;line-height:1.15}
 .nav-brand-name{font-family:var(--serif);font-size:18px;font-weight:400;letter-spacing:0.01em;transition:color 0.3s}
@@ -392,7 +392,7 @@ footer{
 <!-- NAV -->
 <nav id="nav" class="solid">
   <a class="nav-brand" href="#home">
-    <img src="final_logo_small.png" alt="BBE" class="nav-logo">
+    <img src="https://www.brightblue.org.uk/wp-content/uploads/2026/04/final-logo-small.png" alt="BBE" class="nav-logo">
           <div class="nav-brand-text">
     <span class="nav-brand-name">Bright Blue Europe</span>
     <span class="nav-brand-sub">The home of the centre-right across Europe</span> </div>
