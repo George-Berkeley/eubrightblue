@@ -423,9 +423,9 @@ footer{
 <!-- HERO -->
 <section id="home">
   <!-- Slideshow slides — add/remove slides here as needed -->
+          <div class="hero-slide active" style="background-image:url('https://www.brightblue.org.uk/wp-content/uploads/2026/04/slideshow-2-1-scaled.jpg?auto=format&fit=crop&w=1600&q=80')"></div>
   <div class="hero-slide" style="background-image:url('https://www.brightblue.org.uk/wp-content/uploads/2026/04/slideshow-3-1-scaled.jpg?auto=format&fit=crop&w=1600&q=80')"></div>
-    <div class="hero-slide" style="background-image:url('https://www.brightblue.org.uk/wp-content/uploads/2026/04/slideshow-2-1-scaled.jpg?auto=format&fit=crop&w=1600&q=80')"></div>
-      <div class="hero-slide active" style="background-image:url('https://www.brightblue.org.uk/wp-content/uploads/2026/04/slideshow-1-1-scaled.jpg?auto=format&fit=crop&w=1600&q=80')"></div>
+    <div class="hero-slide" style="background-image:url('https://www.brightblue.org.uk/wp-content/uploads/2026/04/slideshow-1-1-scaled.jpg?auto=format&fit=crop&w=1600&q=80')"></div>
   <div class="hero-slide" style="background-image:url('https://www.brightblue.org.uk/wp-content/uploads/2026/04/slideshow-4-scaled.jpg?auto=format&fit=crop&w=1600&q=80')"></div>
       <div class="hero-slide" style="background-image:url('https://www.brightblue.org.uk/wp-content/uploads/2026/04/slideshow-5-scaled.jpg?auto=format&fit=crop&w=1600&q=80')"></div>
   <div class="hero-overlay"></div>
