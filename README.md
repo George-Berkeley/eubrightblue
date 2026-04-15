@@ -52,14 +52,10 @@ body{margin: 0 !important;
 .nav-brand{text-decoration:none;display:flex;align-items:center;gap:12px;line-height:1}
 .nav-logo{
   height:38px;width:auto;display:block;flex-shrink:0;
-  /* Invert logo on dark nav so it stays visible */
-  transition:filter 0.3s;
+  /* multiply blend makes white pixels take on the background colour,
+     effectively hiding any white box around the logo on both dark and light navs */
+  mix-blend-mode:multiply;
 }
-/* On dark nav: screen blend makes the white logo background invisible */
-#nav.solid .nav-logo { filter: none; mix-blend-mode: screen; }
-
-/* On light nav: multiply blend makes white background invisible */
-#nav.light .nav-logo { mix-blend-mode: multiply; }
 .nav-brand-text{display:flex;flex-direction:column;line-height:1.15}
 .nav-brand-name{font-family:var(--serif);font-size:18px;font-weight:400;letter-spacing:0.01em;transition:color 0.3s}
 .nav-brand-sub{font-family:var(--sans);font-size:10px;font-weight:300;letter-spacing:0.22em;text-transform:uppercase;transition:color 0.3s}
