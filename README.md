@@ -324,7 +324,7 @@ footer{
 <nav id="nav" class="solid">
   <a class="nav-brand" href="#home">
     <span class="nav-brand-name">Bright Blue Europe</span>
-    <span class="nav-brand-sub">The home of liberal conservatism across Europe</span>
+    <span class="nav-brand-sub">The home of the centre-right across Europe</span>
   </a>
   <ul class="nav-links">
     <li><a href="#"> </a></li>    
@@ -348,7 +348,7 @@ footer{
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="hero-eyebrow">Bright Blue Europe</div>
-    <h1 class="hero-headline">The home of<br><em>liberal conservatism</em><br>across Europe</h1>
+    <h1 class="hero-headline">The home of the<br><em>centre-right</em><br>across Europe</h1>
     <p class="hero-sub">An independent centre-right think tank solving public policy challenges across the European continent.</p>
     <div class="hero-actions">
       <a href="#publications" class="btn-gold">Read our research</a>
@@ -371,7 +371,7 @@ footer{
     <div class="about-text-side">
       <div class="section-label reveal">About us</div>
       <h2 class="section-heading reveal d1">We champion <em>liberal<br>conservative</em><br>ideas in Europe</h2>
-      <p class="about-body reveal d3">Bright Blue Europe was established in 2026 by Lukas Wick and Bartek Staniszewski as an affiliate of Bright Blue UK — Britain's leading centre-right think tank — bringing the same commitment to non-partisan, liberal conservative policy to the European stage.</p>
+      <p class="about-body reveal d3">Bright Blue Europe was established in 2026 by Lukas Wick and Bartek Staniszewski as an affiliate of Bright Blue UK — Britain's leading centre-right think tank — bringing the same commitment to non-partisan, centre-right policy to the European stage.</p>
       <p class="about-body reveal d3">We have affiliates in Germany, Poland, Belgium, the Netherlands, Spain and the UK working on challenges common to European governments across social, economic and security policy.</p>
       <a href="#staff" class="about-cta-link reveal d4">Meet our team</a>
     </div>
@@ -583,7 +583,7 @@ footer{
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-brand"><strong>Bright Blue Europe</strong> &nbsp;·&nbsp; The home of liberal conservatism across Europe</div>
+  <div class="footer-brand"><strong>Bright Blue Europe</strong> &nbsp;·&nbsp; The home of the centre-right across Europe</div>
   <ul class="footer-nav">
           <li><a href="#"> </a></li>
     <li><a href="#home">Home</a></li>
