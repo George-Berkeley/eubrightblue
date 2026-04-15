@@ -55,8 +55,11 @@ body{margin: 0 !important;
   /* Invert logo on dark nav so it stays visible */
   transition:filter 0.3s;
 }
-#nav.solid .nav-logo{filter:brightness(0.4) invert(1)}
-#nav.light .nav-logo{filter:none}
+/* On dark nav: screen blend makes the white logo background invisible */
+#nav.solid .nav-logo { filter: none; mix-blend-mode: screen; }
+
+/* On light nav: multiply blend makes white background invisible */
+#nav.light .nav-logo { mix-blend-mode: multiply; }
 .nav-brand-text{display:flex;flex-direction:column;line-height:1.15}
 .nav-brand-name{font-family:var(--serif);font-size:18px;font-weight:400;letter-spacing:0.01em;transition:color 0.3s}
 .nav-brand-sub{font-family:var(--sans);font-size:10px;font-weight:300;letter-spacing:0.22em;text-transform:uppercase;transition:color 0.3s}
