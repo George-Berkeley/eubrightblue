@@ -453,7 +453,7 @@ footer{
     </div>
     <div class="about-text-side">
       <div class="section-label reveal">About us</div>
-      <h2 class="section-heading reveal d1">We champion <em>liberal<br>conservative</em><br>ideas in Europe</h2>
+      <h2 class="section-heading reveal d1">We champion <br><em>centre-right</em><br>ideas in Europe</h2>
       <p class="about-body reveal d3">Bright Blue Europe was established in 2026 by Lukas Wick and Bartek Staniszewski as an affiliate of Bright Blue UK — Britain's leading centre-right think tank — bringing the same commitment to non-partisan, centre-right policy to the European stage.</p>
       <p class="about-body reveal d3">We have affiliates in Germany, Poland, Belgium, the Netherlands, Spain and the UK working on challenges common to European governments across social, economic and security policy.</p>
       <a href="#staff" class="about-cta-link reveal d4">Meet our team</a>
