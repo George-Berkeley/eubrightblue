@@ -391,7 +391,7 @@ footer{
 <!-- NAV -->
 <nav id="nav" class="solid">
   <a class="nav-brand" href="#home">
-    <img src="final_logo_small.png" alt="BBE" class="nav-logo">
+    <img src="bbe-logo-white-b.svg" alt="BBE" class="nav-logo">
           <div class="nav-brand-text">
     <span class="nav-brand-name">Bright Blue Europe</span>
     <span class="nav-brand-sub">The home of the centre-right across Europe</span> </div>
