@@ -52,9 +52,7 @@ body{margin: 0 !important;
 .nav-brand{text-decoration:none;display:flex;align-items:center;gap:12px;line-height:1}
 .nav-logo{
   height:38px;width:auto;display:block;flex-shrink:0;
-  /* multiply blend makes white pixels take on the background colour,
-     effectively hiding any white box around the logo on both dark and light navs */
-  mix-blend-mode:multiply;
+  background:transparent;
 }
 .nav-brand-text{display:flex;flex-direction:column;line-height:1.15}
 .nav-brand-name{font-family:var(--serif);font-size:18px;font-weight:400;letter-spacing:0.01em;transition:color 0.3s}
