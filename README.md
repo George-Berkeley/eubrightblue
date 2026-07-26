@@ -51,10 +51,12 @@ body{margin: 0 !important;
     
 .nav-brand{text-decoration:none;display:flex;align-items:center;gap:12px;line-height:1}
 .nav-logo{
-  height:38px;width:auto;display:block;flex-shrink:0;
-  background:transparent;
+  height:38px;
+  width:auto;
+  display:block;
+  flex-shrink:0;
+  background:transparent !important;
 }
-.nav-logo{ background:red !important; }
 .nav-brand-text{display:flex;flex-direction:column;line-height:1.15}
 .nav-brand-name{font-family:var(--serif);font-size:18px;font-weight:400;letter-spacing:0.01em;transition:color 0.3s}
 .nav-brand-sub{font-family:var(--sans);font-size:10px;font-weight:300;letter-spacing:0.22em;text-transform:uppercase;transition:color 0.3s}
