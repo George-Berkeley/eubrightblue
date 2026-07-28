@@ -288,7 +288,7 @@ body{margin: 0 !important;
 .pub-card:hover{background:rgba(255,255,255,0.04);border-color:var(--gold)}
 .pub-card.large{grid-row:span 2;padding:3rem}
 .pub-cat{font-size:10px;font-weight:400;letter-spacing:0.18em;text-transform:uppercase;margin-bottom:1rem}
-.cat-politics{color:#93b4f0}.cat-economy{color:#86d9b0}.cat-social{color:#7dd9c1}
+.cat-reports{color:#93b4f0}.cat-economy{color:#86d9b0}.cat-articles{color:#7dd9c1}
 .cat-migration{color:#c9a8f0}.cat-security{color:#f0b893}
 .pub-title{font-family:var(--serif);font-weight:300;color:#fff;line-height:1.25;flex:1;margin-bottom:1.5rem}
 .pub-card.large .pub-title{font-size:28px;margin-bottom:2rem}
@@ -488,7 +488,7 @@ footer{
         </div>
         <div class="pillar-item reveal d4">
           <div class="pillar-num">04</div>
-          <div class="pillar-name">Neutrality</div>
+          <div class="pillar-name">Independence</div>
           <p class="pillar-desc">The good of Europe, not party politics, guide our work. We retain full editorial control over all of our outputs.</p>
         </div>
       </div>
@@ -516,7 +516,7 @@ footer{
           loading="lazy">
         <div class="staff-overlay"></div>
         <div class="staff-body">
-          <div class="staff-role">Co-Founder / Head of Engagement</div>
+          <div class="staff-role">Co-Founder / Director / Head of Engagement</div>
           <div class="staff-name">Lukas Wick</div>
           <div class="staff-bio">Lukas is a frequent adviser on EU and NATO security and defence policy, having worked at the Konrad-Adenauer-Stiftung in London and in Brussels. Before that, he had  served as Head of Unit at the Representation of the State of Hesse to the EU.</div>
           <div class="staff-socials">
@@ -538,7 +538,7 @@ footer{
           loading="lazy">
         <div class="staff-overlay"></div>
         <div class="staff-body">
-          <div class="staff-role">Co-founder / Head of Policy</div>
+          <div class="staff-role">Co-founder / Director / Head of Policy</div>
           <div class="staff-name">Bartek Staniszewski</div>
           <div class="staff-bio">Bartek is the author of several think-tank reports and a frequent writer for the Spectator, Critic and Gazeta Prawna. He is also the Editor-in-Chief of Centre Write, an IPR Policy Fellow of the University of Bath and a Fellow of the Centre for Family and Education.</div>
           <div class="staff-socials">
@@ -563,7 +563,7 @@ footer{
           loading="lazy">
         <div class="staff-overlay"></div>
         <div class="staff-body">
-          <div class="staff-role">Co-founder / Director</div>
+          <div class="staff-role">Co-founder / Non-executive director</div>
           <div class="staff-name">Ryan Shorthouse</div>
           <div class="staff-bio">Ryan is the Founder and Executive Chair of Bright Blue in the UK, which he established in 2013. He is also the Deputy Chair of TASO, a Commissioner of the Commonwealth Scholarship Commission and a Director of the UK Office of the Small Business Commissioner.</div>
           <div class="staff-socials">
@@ -597,17 +597,15 @@ footer{
 
     <div class="pub-filters reveal">
       <button class="pub-filter-btn active" onclick="filterPubs('all',this)">All</button>
-      <button class="pub-filter-btn" onclick="filterPubs('politics',this)">Politics</button>
-      <button class="pub-filter-btn" onclick="filterPubs('social',this)">Social policy</button>
-      <button class="pub-filter-btn" onclick="filterPubs('economy',this)">Economy</button>
-      <button class="pub-filter-btn" onclick="filterPubs('security',this)">Security</button>
+      <button class="pub-filter-btn" onclick="filterPubs('reports',this)">Reports</button>
+      <button class="pub-filter-btn" onclick="filterPubs('articles',this)">Articles</button>
     </div>
 
     <div class="pub-grid reveal" id="pubGrid">
  
       <!-- LARGE CARD — replace href with the real link -->
-      <a class="pub-card large" data-tag="politics" href="https://www.brightblue.org.uk/portfolio/right-road/" target="_blank" rel="noopener">
-        <div class="pub-cat cat-politics">Politics</div>
+      <a class="pub-card large" data-tag="reports" href="https://www.brightblue.org.uk/portfolio/right-road/" target="_blank" rel="noopener">
+        <div class="pub-cat cat-reports">Reports</div>
         <div class="pub-title">The right road</div>
         <!-- Replace src with your own publication cover image if you have one -->
         <img class="pub-card-img"
@@ -619,32 +617,32 @@ footer{
       </a>
  
       <!-- Replace each href with the real publication URL -->
-      <a class="pub-card" data-tag="economy" href="https://www.brightblue.org.uk/portfolio/higher-ground-living-standards/" target="_blank" rel="noopener">
-        <div class="pub-cat cat-economy">Economy</div>
-        <div class="pub-title">Higher ground</div>
-        <p class="pub-excerpt">A centre-right vision to raise living standards</p>
-        <div class="pub-meta"><span class="pub-date">March 2026</span><span class="pub-arrow">→</span></div>
+      <a class="pub-card" data-tag="articles" href="https://spectator.com/article/how-poland-and-ukraine-can-repair-their-broken-relationship/" target="_blank" rel="noopener">
+        <div class="pub-cat cat-articles">Articles</div>
+        <div class="pub-title">How Poland and Ukraine can repair their broken relationship</div>
+        <p class="pub-excerpt">The Spectator</p>
+        <div class="pub-meta"><span class="pub-date">July 2026</span><span class="pub-arrow">→</span></div>
       </a>
  
-      <a class="pub-card" data-tag="security" href="https://www.brightblue.org.uk/portfolio/properly-protected/" target="_blank" rel="noopener">
-        <div class="pub-cat cat-migration">Security</div>
-        <div class="pub-title">Properly protected</div>
-        <p class="pub-excerpt">Reducing victims and abuses of modern slavery in the UK's asylum system</p>
-        <div class="pub-meta"><span class="pub-date">December 2025</span><span class="pub-arrow">→</span></div>
+      <a class="pub-card" data-tag="articles" href="https://edgp.gazetaprawna.pl/opinie/artykuly/11266193,dziesiec-lat-po-wyjsciu-z-ue-brytyjczycy-zaluja-brexitu.html" target="_blank" rel="noopener">
+        <div class="pub-cat cat-articles">Articles</div>
+        <div class="pub-title">Brexit. Are Brits happy to have left the EU?</div>
+        <p class="pub-excerpt">Dziennik Gazeta Prawna</p>
+        <div class="pub-meta"><span class="pub-date">June 2026</span><span class="pub-arrow">→</span></div>
       </a>
  
-      <a class="pub-card" data-tag="economy" href="https://www.brightblue.org.uk/portfolio/tax-reform-growth/" target="_blank" rel="noopener">
-        <div class="pub-cat cat-economy">Economy</div>
-        <div class="pub-title">Tax Reforms for Growth</div>
-        <p class="pub-excerpt">Seven packages of reform</p>
-        <div class="pub-meta"><span class="pub-date">November 2025</span><span class="pub-arrow">→</span></div>
+      <a class="pub-card" data-tag="articles" href="https://liberte.pl/nowy-stary-liberalizm/" target="_blank" rel="noopener">
+        <div class="pub-cat cat-articles">Articles</div>
+        <div class="pub-title">New-old liberalism</div>
+        <p class="pub-excerpt">Liberté!</p>
+        <div class="pub-meta"><span class="pub-date">June 2026</span><span class="pub-arrow">→</span></div>
       </a>
  
-      <a class="pub-card" data-tag="social" href="https://www.brightblue.org.uk/portfolio/mending-the-net/" target="_blank" rel="noopener">
-        <div class="pub-cat cat-social">Social policy</div>
-        <div class="pub-title">Mending the net?</div>
-        <p class="pub-excerpt">A new centre-right approach to social security</p>
-        <div class="pub-meta"><span class="pub-date">October 2025</span><span class="pub-arrow">→</span></div>
+      <a class="pub-card" data-tag="articles" href="https://edgp.gazetaprawna.pl/opinie/artykuly/11250328,dlaczego-mlodym-trudno-o-prace-trzy-zjawiska-ktore-uderzyly-w-20lat.html" target="_blank" rel="noopener">
+        <div class="pub-cat cat-articles">Articles</div>
+        <div class="pub-title">Why do the young struggle to find work? Three phenomena which affected 20-year-olds</div>
+        <p class="pub-excerpt">Dziennik Gazeta Prawna</p>
+        <div class="pub-meta"><span class="pub-date">May 2026</span><span class="pub-arrow">→</span></div>
       </a>
  
     </div>
