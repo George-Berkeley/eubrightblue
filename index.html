@@ -338,6 +338,8 @@ footer{
 @media(max-width:1024px){
   .pub-grid{grid-template-columns:1fr 1fr}
   .pub-card.large{grid-row:span 1}
+.pub-card:not([data-featured]){display:none}
+.pub-grid.even{grid-template-columns:repeat(3,1fr)}
 }
 @media(max-width:1100px){
   .staff-grid{grid-template-columns:repeat(2,1fr)}
@@ -604,7 +606,7 @@ footer{
     <div class="pub-grid reveal" id="pubGrid">
  
       <!-- LARGE CARD — replace href with the real link -->
-      <a class="pub-card large" data-tag="reports" href="https://www.brightblue.org.uk/portfolio/right-road/" target="_blank" rel="noopener">
+      <a class="pub-card large" data-tag="reports" data-featured href="https://www.brightblue.org.uk/portfolio/right-road/" target="_blank" rel="noopener">
         <div class="pub-cat cat-reports">Reports</div>
         <div class="pub-title">The right road</div>
         <!-- Replace src with your own publication cover image if you have one -->
@@ -617,32 +619,46 @@ footer{
       </a>
  
       <!-- Replace each href with the real publication URL -->
-      <a class="pub-card" data-tag="articles" href="https://spectator.com/article/how-poland-and-ukraine-can-repair-their-broken-relationship/" target="_blank" rel="noopener">
+      <a class="pub-card" data-tag="articles" data-featured href="https://spectator.com/article/how-poland-and-ukraine-can-repair-their-broken-relationship/" target="_blank" rel="noopener">
         <div class="pub-cat cat-articles">Articles</div>
         <div class="pub-title">How Poland and Ukraine can repair their broken relationship</div>
         <p class="pub-excerpt">The Spectator</p>
         <div class="pub-meta"><span class="pub-date">July 2026</span><span class="pub-arrow">→</span></div>
       </a>
  
-      <a class="pub-card" data-tag="articles" href="https://edgp.gazetaprawna.pl/opinie/artykuly/11266193,dziesiec-lat-po-wyjsciu-z-ue-brytyjczycy-zaluja-brexitu.html" target="_blank" rel="noopener">
+      <a class="pub-card" data-tag="articles" data-featured href="https://edgp.gazetaprawna.pl/opinie/artykuly/11266193,dziesiec-lat-po-wyjsciu-z-ue-brytyjczycy-zaluja-brexitu.html" target="_blank" rel="noopener">
         <div class="pub-cat cat-articles">Articles</div>
         <div class="pub-title">Brexit. Are Brits happy to have left the EU?</div>
         <p class="pub-excerpt">Dziennik Gazeta Prawna</p>
         <div class="pub-meta"><span class="pub-date">June 2026</span><span class="pub-arrow">→</span></div>
       </a>
  
-      <a class="pub-card" data-tag="articles" href="https://liberte.pl/nowy-stary-liberalizm/" target="_blank" rel="noopener">
+      <a class="pub-card" data-tag="articles" data-featured href="https://liberte.pl/nowy-stary-liberalizm/" target="_blank" rel="noopener">
         <div class="pub-cat cat-articles">Articles</div>
         <div class="pub-title">New-old liberalism</div>
         <p class="pub-excerpt">Liberté!</p>
         <div class="pub-meta"><span class="pub-date">June 2026</span><span class="pub-arrow">→</span></div>
       </a>
  
-      <a class="pub-card" data-tag="articles" href="https://edgp.gazetaprawna.pl/opinie/artykuly/11250328,dlaczego-mlodym-trudno-o-prace-trzy-zjawiska-ktore-uderzyly-w-20lat.html" target="_blank" rel="noopener">
+      <a class="pub-card" data-tag="articles" data-featured href="https://edgp.gazetaprawna.pl/opinie/artykuly/11250328,dlaczego-mlodym-trudno-o-prace-trzy-zjawiska-ktore-uderzyly-w-20lat.html" target="_blank" rel="noopener">
         <div class="pub-cat cat-articles">Articles</div>
         <div class="pub-title">Why do the young struggle to find work? Three phenomena which affected 20-year-olds</div>
         <p class="pub-excerpt">Dziennik Gazeta Prawna</p>
         <div class="pub-meta"><span class="pub-date">May 2026</span><span class="pub-arrow">→</span></div>
+      </a>
+
+    <a class="pub-card" data-tag="articles" href="https://www.cityam.com/lets-create-new-hereditary-peers-and-put-them-to-work-just-not-in-the-lords/" target="_blank" rel="noopener">
+        <div class="pub-cat cat-articles">Articles</div>
+        <div class="pub-title">Let’s create new hereditary peers and put them to work – just not in the Lords</div>
+        <p class="pub-excerpt">City AM</p>
+        <div class="pub-meta"><span class="pub-date">May 2026</span><span class="pub-arrow">→</span></div>
+      </a>
+        
+    <a class="pub-card" data-tag="articles" href="https://www.gazetaprawna.pl/wiadomosci/opinie/artykuly/11238454,prawica-bije-na-alarm-demograficzny-czy-ma-pomysly-na-wzrost-dzietnos.html" target="_blank" rel="noopener">
+        <div class="pub-cat cat-articles">Articles</div>
+        <div class="pub-title">The right is ringing the demographic alarm. Does it have ideas for improving fertility?</div>
+        <p class="pub-excerpt">Gazeta Prawna</p>
+        <div class="pub-meta"><span class="pub-date">April 2026</span><span class="pub-arrow">→</span></div>
       </a>
  
     </div>
