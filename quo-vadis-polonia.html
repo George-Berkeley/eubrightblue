@@ -14,7 +14,7 @@ html{scroll-behavior:smooth;overflow-x:hidden}
 
 :root{
   --navy:#455763;
-  --navy-deep:#34434d;
+  --navy-deep:#324049;
   --blue:#d3dadc;
   --cream:#f5fdff;
   --cream-dark:#e8e2da;
@@ -81,38 +81,39 @@ body{
 .hero{
   background:linear-gradient(155deg, var(--navy) 0%, var(--navy-deep) 100%);
   color:#fff;
-  padding:clamp(3.25rem, 6vw, 5.25rem) clamp(1.25rem, 4vw, 4rem);
+  padding:clamp(3rem, 5.5vw, 4.75rem) clamp(1.25rem, 4vw, 4rem) clamp(2.5rem, 4vw, 3.5rem);
   border-bottom:4px solid var(--gold);
 }
 .hero-inner{max-width:1280px;margin:0 auto}
 .breadcrumb{
   display:flex;flex-wrap:wrap;gap:0.5rem;align-items:center;
   font-size:11.5px;letter-spacing:0.08em;text-transform:uppercase;
-  color:rgba(255,255,255,0.65);margin-bottom:1.5rem;
+  color:rgba(255,255,255,0.65);margin-bottom:1.25rem;
 }
-.breadcrumb a{color:rgba(255,255,255,0.85);text-decoration:none}
+.breadcrumb a{color:rgba(255,255,255,0.88);text-decoration:none}
 .breadcrumb a:hover{color:var(--gold)}
 
-.hero-grid{
-  display:grid;grid-template-columns:minmax(0, 1.5fr) minmax(260px, 0.9fr);
-  gap:clamp(2rem, 4vw, 3.5rem);align-items:end;
-}
 .kicker{
   font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);
-  margin-bottom:0.9rem;display:flex;align-items:center;gap:10px;
+  margin-bottom:0.8rem;display:flex;align-items:center;gap:10px;
 }
 .kicker::before{content:'';width:22px;height:1px;background:var(--gold)}
 
 h1{
-  font-family:var(--serif);font-size:clamp(38px, 5.4vw, 68px);font-weight:300;
-  line-height:1.06;margin-bottom:0.9rem;
+  font-family:var(--serif);font-size:clamp(38px, 5.2vw, 66px);font-weight:300;
+  line-height:1.06;margin-bottom:0.85rem;
 }
 h1 em{font-style:italic;color:var(--gold)}
 
 .subtitle{
   font-family:var(--serif);font-style:italic;font-weight:300;
-  font-size:clamp(19px, 1.8vw, 25px);color:rgba(255,255,255,0.86);
-  max-width:44ch;margin-bottom:1.75rem;
+  font-size:clamp(18px, 1.7vw, 24px);color:rgba(255,255,255,0.88);
+  max-width:48ch;margin-bottom:1.5rem;
+}
+
+.hero-meta-line{
+  display:flex;flex-wrap:wrap;gap:0.75rem 1.75rem;
+  font-size:13.5px;color:rgba(255,255,255,0.78);margin-bottom:1.75rem;
 }
 
 .hero-actions{display:flex;flex-wrap:wrap;gap:0.85rem}
@@ -129,145 +130,144 @@ h1 em{font-style:italic;color:var(--gold)}
 }
 .btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,0.08)}
 
-.meta-card{
-  background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.14);
-  border-radius:3px;padding:1.35rem 1.5rem;
+/* OSW-STYLE KEY FINDINGS / STAT STRIP */
+.key-strip{
+  max-width:1280px;margin:0 auto;
+  display:grid;grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+  gap:1px;background:var(--border);border:1px solid var(--border);
+  margin-top:-1.5rem;position:relative;z-index:10;
 }
-.meta-row{padding:0.65rem 0;border-bottom:1px solid rgba(255,255,255,0.1);font-size:13.5px}
-.meta-row:first-child{padding-top:0}
-.meta-row:last-child{border-bottom:none;padding-bottom:0}
-.meta-label{display:block;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:2px}
+.key-cell{background:var(--card);padding:1.25rem 1.35rem}
+.key-metric{font-family:var(--serif);font-size:22px;font-weight:400;color:var(--navy);line-height:1.2;margin-bottom:0.35rem}
+.key-desc{font-size:13.5px;color:var(--muted);line-height:1.5}
 
-/* OSW-STYLE SECTION SWITCHER BAR */
-.switcher-bar{
+/* STICKY SECTION & DENSITY BAR */
+.subnav-bar{
   position:sticky;top:72px;z-index:150;
   background:var(--cream-dark);border-bottom:1px solid var(--border);
-  padding:0.75rem clamp(1.25rem, 4vw, 4rem);
+  padding:0.65rem clamp(1.25rem, 4vw, 4rem);
 }
-.switcher-inner{
+.subnav-inner{
   max-width:1280px;margin:0 auto;
   display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;
 }
-.chapter-tabs{
-  display:flex;gap:0.45rem;overflow-x:auto;scrollbar-width:none;padding-bottom:2px;
+.jump-links{display:flex;gap:0.35rem;overflow-x:auto;scrollbar-width:none}
+.jump-links::-webkit-scrollbar{display:none}
+.jump-link{
+  font-size:12px;color:var(--muted);text-decoration:none;
+  padding:6px 12px;border-radius:999px;white-space:nowrap;transition:all 0.18s;
 }
-.chapter-tabs::-webkit-scrollbar{display:none}
-.tab-btn{
-  font-family:var(--sans);font-size:12px;font-weight:400;
-  padding:7px 14px;border-radius:999px;border:1px solid transparent;
-  background:transparent;color:var(--muted);cursor:pointer;white-space:nowrap;transition:all 0.18s;
-}
-.tab-btn:hover{color:var(--navy);background:rgba(255,255,255,0.6)}
-.tab-btn.active{background:var(--navy);color:#fff;font-weight:500}
+.jump-link:hover,.jump-link.active{background:var(--navy);color:#fff}
 
-.mode-controls{display:flex;align-items:center;gap:0.5rem}
-.mode-toggle{
+.density-switch{display:flex;gap:0.4rem}
+.density-btn{
   font-family:var(--sans);font-size:11px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;
-  padding:7px 12px;border-radius:2px;border:1px solid var(--navy);
+  padding:6px 12px;border-radius:2px;border:1px solid var(--navy);
   background:#fff;color:var(--navy);cursor:pointer;transition:all 0.18s;
 }
-.mode-toggle.active,.mode-toggle:hover{background:var(--navy);color:#fff}
+.density-btn.active,.density-btn:hover{background:var(--navy);color:#fff}
 
-/* MAIN CONTAINER */
-.container{max-width:1280px;margin:0 auto;padding:clamp(2.25rem, 4vw, 3.5rem) clamp(1.25rem, 4vw, 4rem)}
+/* CONTENT CONTAINER */
+.main{max-width:1280px;margin:0 auto;padding:clamp(2.5rem, 4.5vw, 4rem) clamp(1.25rem, 4vw, 4rem)}
 
-/* AT-A-GLANCE STRIP */
-.highlights-grid{
-  display:grid;grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
-  gap:1.15rem;margin-bottom:2.5rem;
+.report-section{
+  padding:2.5rem 0;border-bottom:1px solid var(--border);scroll-margin-top:128px;
 }
-.highlight-card{
-  background:var(--card);border:1px solid var(--border);border-top:3px solid var(--navy);
-  border-radius:3px;padding:1.25rem 1.35rem;
+.report-section:last-of-type{border-bottom:none}
+
+.sec-top{
+  display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:0.75rem;
+  margin-bottom:1.25rem;
 }
-.highlight-card:nth-child(2){border-top-color:var(--gold)}
-.highlight-card:nth-child(3){border-top-color:var(--navy)}
-.highlight-card:nth-child(4){border-top-color:var(--gold)}
-.highlight-num{font-family:var(--serif);font-size:28px;font-weight:400;color:var(--navy);line-height:1.1;margin-bottom:0.35rem}
-.highlight-title{font-size:13px;font-weight:500;text-transform:uppercase;letter-spacing:0.06em;color:var(--muted);margin-bottom:0.45rem}
-.highlight-copy{font-size:14px;color:var(--ink);line-height:1.55}
-
-/* SECTION PANELS */
-.section-panel{display:none;animation:fadeIn 0.22s ease}
-.section-panel.active{display:block}
-body.full-mode .section-panel{display:block;margin-bottom:4rem;padding-bottom:3.5rem;border-bottom:1px solid var(--border)}
-body.full-mode .section-panel:last-child{border-bottom:none;margin-bottom:0}
-
-@keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
-
-.section-header{
-  display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:1rem;
-  margin-bottom:1.5rem;padding-bottom:0.85rem;border-bottom:1px solid var(--border);
+.sec-num{
+  font-size:11px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--navy);
 }
-.section-header h2{font-family:var(--serif);font-size:clamp(28px, 3.2vw, 42px);font-weight:300;color:var(--navy)}
-.section-badge{
-  font-size:11px;letter-spacing:0.12em;text-transform:uppercase;
-  background:var(--cream-dark);color:var(--navy);padding:5px 10px;border-radius:2px;
+.sec-title{
+  font-family:var(--serif);font-size:clamp(26px, 3vw, 40px);font-weight:300;color:var(--navy);line-height:1.15;
 }
 
-.section-grid{
-  display:grid;grid-template-columns:minmax(0, 1.55fr) minmax(280px, 0.9fr);
-  gap:clamp(1.75rem, 3.5vw, 3rem);align-items:start;
+.sec-lead{
+  font-family:var(--serif);font-size:clamp(17px, 1.35vw, 20px);font-weight:300;
+  color:var(--ink);max-width:68ch;margin-bottom:1.5rem;line-height:1.55;
 }
 
-.prose-block{background:var(--card);border:1px solid var(--border);border-radius:3px;padding:clamp(1.5rem, 3vw, 2.25rem)}
-.prose-block h3{
-  font-family:var(--serif);font-size:clamp(20px, 1.7vw, 24px);font-weight:400;
-  color:var(--navy);margin:1.85rem 0 0.65rem;
+.sec-grid{
+  display:grid;grid-template-columns:minmax(0, 1.5fr) minmax(270px, 0.9fr);
+  gap:clamp(1.5rem, 3vw, 2.75rem);align-items:start;
 }
-.prose-block h3:first-child{margin-top:0}
-.prose-block p{margin-bottom:1.05rem}
-.prose-block p:last-child{margin-bottom:0}
 
-.bullet-list{margin:0.5rem 0 1.25rem 1.25rem;display:flex;flex-direction:column;gap:0.5rem}
-.bullet-list li{line-height:1.6}
+/* BRIEF (SCANNABLE) VS FULL PROSE */
+.brief-box{
+  background:var(--card);border:1px solid var(--border);border-radius:3px;padding:1.5rem 1.75rem;
+}
+.brief-box h3{
+  font-family:var(--serif);font-size:19px;font-weight:400;color:var(--navy);margin-bottom:0.75rem;
+}
+.brief-list{margin-left:1.15rem;display:flex;flex-direction:column;gap:0.6rem}
+.brief-list li{font-size:15px;line-height:1.6}
 
-/* SIDEBAR MODULES (BOXES, CHARTS, QUICK NAV) */
-.aside-stack{display:flex;flex-direction:column;gap:1.25rem}
+.full-prose{
+  display:none;margin-top:1.25rem;padding-top:1.25rem;border-top:1px dashed var(--border);
+}
+body.show-full .full-prose{display:block}
+.full-prose h4{
+  font-family:var(--serif);font-size:18px;font-weight:400;color:var(--navy);margin:1.25rem 0 0.45rem;
+}
+.full-prose h4:first-child{margin-top:0}
+.full-prose p{margin-bottom:0.95rem;font-size:15px}
 
-.box-card{
+.expand-btn{
+  margin-top:1.1rem;font-family:var(--sans);font-size:11.5px;font-weight:500;
+  letter-spacing:0.08em;text-transform:uppercase;background:transparent;
+  border:none;color:var(--navy);cursor:pointer;display:inline-flex;align-items:center;gap:6px;
+  padding:4px 0;border-bottom:1px solid var(--gold);
+}
+.expand-btn:hover{color:var(--ink)}
+
+/* ASIDE CARDS (BOXES, CHARTS, RECOMMENDATIONS) */
+.aside-col{display:flex;flex-direction:column;gap:1.15rem}
+
+.callout-box{
   background:var(--cream-dark);border:1px solid var(--border);border-left:4px solid var(--navy);
   border-radius:3px;padding:1.25rem 1.35rem;
 }
-.box-kicker{font-size:10px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--navy);margin-bottom:0.25rem}
-.box-title{font-family:var(--serif);font-size:18px;font-weight:400;color:var(--ink);margin-bottom:0.65rem;line-height:1.3}
-.box-card p,.box-card li{font-size:14px;line-height:1.58}
-.box-card ul{margin-left:1.1rem;display:flex;flex-direction:column;gap:0.4rem}
+.callout-tag{font-size:10px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:var(--navy);margin-bottom:0.25rem}
+.callout-title{font-family:var(--serif);font-size:17px;font-weight:400;margin-bottom:0.55rem;line-height:1.3}
+.callout-box p,.callout-box li{font-size:13.5px;line-height:1.55;color:var(--ink)}
+.callout-box ul{margin-left:1.05rem;display:flex;flex-direction:column;gap:0.35rem}
 
-.chart-card{
+.visual-card{
   background:var(--card);border:1px solid var(--border);border-radius:3px;padding:1.25rem 1.35rem;
 }
-.chart-tag{
+.visual-pill{
   display:inline-block;font-size:10px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;
-  color:var(--navy);background:var(--blue);padding:3px 8px;border-radius:2px;margin-bottom:0.55rem;
+  background:var(--blue);color:var(--navy);padding:3px 8px;border-radius:2px;margin-bottom:0.5rem;
 }
-.chart-title{font-family:var(--serif);font-size:17px;font-weight:400;color:var(--navy);margin-bottom:0.5rem;line-height:1.35}
-.chart-note{font-size:13.5px;color:var(--muted);line-height:1.55}
-.chart-placeholder{
-  margin-top:0.85rem;padding:0.9rem;background:var(--cream);border:1px dashed var(--navy);
-  border-radius:2px;font-size:12.5px;color:var(--navy);
+.visual-title{font-family:var(--serif);font-size:16.5px;font-weight:400;color:var(--navy);margin-bottom:0.45rem}
+.visual-note{font-size:13px;color:var(--muted);line-height:1.5}
+.visual-slot{
+  margin-top:0.75rem;padding:0.85rem;background:var(--cream);border:1px dashed var(--navy);
+  font-size:12px;color:var(--navy);border-radius:2px;
 }
 
-/* STEPPER FOOTER INSIDE EACH TAB */
-.panel-nav{
-  margin-top:2rem;padding-top:1.25rem;border-top:1px solid var(--border);
-  display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;
+/* RECOMMENDATIONS GRID (OSW-STYLE MODULAR CARDS) */
+.rec-grid{
+  display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+  gap:1rem;margin-top:0.5rem;
 }
-body.full-mode .panel-nav{display:none}
-.step-btn{
-  font-family:var(--sans);font-size:12px;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;
-  padding:10px 18px;border-radius:2px;border:1px solid var(--navy);
-  background:var(--card);color:var(--navy);cursor:pointer;transition:all 0.2s;
+.rec-card{
+  background:var(--card);border:1px solid var(--border);border-top:3px solid var(--gold);
+  border-radius:3px;padding:1.15rem 1.25rem;
 }
-.step-btn:hover:not(:disabled){background:var(--navy);color:#fff}
-.step-btn:disabled{opacity:0.35;cursor:not-allowed}
+.rec-num{font-size:10.5px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:var(--muted);margin-bottom:0.3rem}
+.rec-heading{font-family:var(--serif);font-size:17px;font-weight:400;color:var(--navy);margin-bottom:0.4rem}
+.rec-copy{font-size:13.5px;color:var(--ink);line-height:1.55}
 
 /* FOOTER */
 footer{
   background:var(--navy);color:#fff;
   padding:2.5rem clamp(1.25rem, 4vw, 4rem);
   display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;
-  margin-top:3rem;
 }
 .footer-brand{font-family:var(--serif);font-size:15px;font-weight:300;color:rgba(255,255,255,0.75)}
 .footer-brand strong{color:#fff;font-weight:400}
@@ -277,7 +277,7 @@ footer{
 .footer-copy{font-size:12px;color:rgba(255,255,255,0.5)}
 
 @media(max-width:960px){
-  .hero-grid,.section-grid{grid-template-columns:1fr}
+  .sec-grid{grid-template-columns:1fr}
 }
 @media(max-width:900px){
   .nav-links,.nav-btn{display:none}
@@ -291,7 +291,7 @@ footer{
 <body>
 
 <nav id="nav">
-  <a class="nav-brand" href="more code.txt#home">
+  <a class="nav-brand" href="index.html#home">
     <img src="bbe-logo-white-b.svg" alt="BBE" class="nav-logo">
     <div class="nav-brand-text">
       <span class="nav-brand-name">Bright Blue Europe</span>
@@ -299,11 +299,11 @@ footer{
     </div>
   </a>
   <ul class="nav-links">
-    <li><a href="more code.txt#home">Home</a></li>
-    <li><a href="more code.txt#about">About</a></li>
-    <li><a href="more code.txt#staff">Our team</a></li>
-    <li><a href="more code.txt#publications" class="active">Our thinking</a></li>
-    <li><a href="more code.txt#contact">Contact</a></li>
+    <li><a href="index.html#home">Home</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#staff">Our team</a></li>
+    <li><a href="index.html#publications" class="active">Our thinking</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
   </ul>
   <a class="nav-btn" href="https://www.brightblue.org.uk" target="_blank" rel="noopener">Bright Blue UK</a>
   <button class="nav-burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
@@ -312,321 +312,343 @@ footer{
 </nav>
 
 <div class="nav-mobile" id="navMobile" aria-hidden="true">
-  <a href="more code.txt#home" onclick="closeMobileNav()">Home</a>
-  <a href="more code.txt#about" onclick="closeMobileNav()">About</a>
-  <a href="more code.txt#staff" onclick="closeMobileNav()">Our team</a>
-  <a href="more code.txt#publications" onclick="closeMobileNav()">Our thinking</a>
-  <a href="more code.txt#contact" onclick="closeMobileNav()">Contact</a>
+  <a href="index.html#home" onclick="closeMobileNav()">Home</a>
+  <a href="index.html#about" onclick="closeMobileNav()">About</a>
+  <a href="index.html#staff" onclick="closeMobileNav()">Our team</a>
+  <a href="index.html#publications" onclick="closeMobileNav()">Our thinking</a>
+  <a href="index.html#contact" onclick="closeMobileNav()">Contact</a>
   <a href="https://www.brightblue.org.uk" target="_blank" rel="noopener">Bright Blue UK</a>
 </div>
 
 <header class="hero">
   <div class="hero-inner">
     <div class="breadcrumb">
-      <a href="more code.txt#publications">Publications</a>
+      <a href="index.html#publications">Publications</a>
       <span>/</span>
       <span>Reports</span>
       <span>/</span>
       <span>Quo vadis, Polonia?</span>
     </div>
 
-    <div class="hero-grid">
-      <div>
-        <div class="kicker">Bright Blue Europe &middot; Interactive Web Edition</div>
-        <h1>Quo vadis, <em>Polonia?</em></h1>
-        <p class="subtitle">Lessons from Brexit for a stronger Poland in Europe</p>
-        <div class="hero-actions">
-          <a href="Quo vadis, Polonia.pdf" class="btn-gold" download>Download full PDF report</a>
-          <button class="btn-ghost" type="button" id="heroToggleMode">Switch to full scroll view</button>
-        </div>
-      </div>
+    <div class="kicker">Bright Blue Europe &middot; Web Report Edition</div>
+    <h1>Quo vadis, <em>Polonia?</em></h1>
+    <p class="subtitle">Lessons from Brexit for a stronger Poland in Europe</p>
 
-      <aside class="meta-card" aria-label="Publication details">
-        <div class="meta-row">
-          <span class="meta-label">Authors</span>
-          Bartłomiej Staniszewski and William Prescott
-        </div>
-        <div class="meta-row">
-          <span class="meta-label">In partnership with</span>
-          Konrad Adenauer Foundation
-        </div>
-        <div class="meta-row">
-          <span class="meta-label">Format</span>
-          Modular chapter view &amp; full PDF edition
-        </div>
-      </aside>
+    <div class="hero-meta-line">
+      <span><strong>Authors:</strong> Bartłomiej Staniszewski and William Prescott</span>
+      <span><strong>Partner:</strong> Konrad Adenauer Foundation</span>
+    </div>
+
+    <div class="hero-actions">
+      <a href="#executive-summary" class="btn-gold">Explore report &darr;</a>
+      <a href="Quo vadis, Polonia.pdf" class="btn-ghost" download>Download full PDF</a>
     </div>
   </div>
 </header>
 
-<div class="switcher-bar" role="navigation" aria-label="Report sections">
-  <div class="switcher-inner">
-    <div class="chapter-tabs" id="chapterTabs">
-      <button class="tab-btn active" data-target="sec-summary">Executive summary</button>
-      <button class="tab-btn" data-target="sec-intro">Introduction &amp; focus</button>
-      <button class="tab-btn" data-target="sec-ch1">Ch. 1: Methodology</button>
-      <button class="tab-btn" data-target="sec-ch2">Ch. 2: Brexit &amp; UK</button>
-      <button class="tab-btn" data-target="sec-ch3">Ch. 3: Poland in Europe</button>
-      <button class="tab-btn" data-target="sec-ch4">Ch. 4: Recommendations</button>
-      <button class="tab-btn" data-target="sec-conclusion">Conclusion &amp; index</button>
+<section class="key-strip" aria-label="Key report takeaways">
+  <div class="key-cell">
+    <div class="key-metric">Brexit Lessons</div>
+    <p class="key-desc">What Britain’s exit from the EU reveals about trade friction, sovereignty trade-offs, and diplomatic leverage.</p>
+  </div>
+  <div class="key-cell">
+    <div class="key-metric">Poland’s Position</div>
+    <p class="key-desc">How Poland can strengthen its security, economic weight, and voice at the heart of Europe.</p>
+  </div>
+  <div class="key-cell">
+    <div class="key-metric">11 Recommendations</div>
+    <p class="key-desc">Actionable policy steps organised into clear cards rather than buried in dense prose.</p>
+  </div>
+  <div class="key-cell">
+    <div class="key-metric">Charts &amp; Boxes</div>
+    <p class="key-desc">Includes Boxes 2.1–3.3, Charts 2.1–4.1, and Table 3.1 alongside the full text.</p>
+  </div>
+</section>
+
+<div class="subnav-bar" role="navigation" aria-label="Report sections">
+  <div class="subnav-inner">
+    <div class="jump-links" id="jumpLinks">
+      <a class="jump-link active" href="#executive-summary">Executive summary</a>
+      <a class="jump-link" href="#introduction">Introduction &amp; focus</a>
+      <a class="jump-link" href="#chapter-one">Ch. 1: Methodology</a>
+      <a class="jump-link" href="#chapter-two">Ch. 2</a>
+      <a class="jump-link" href="#chapter-three">Ch. 3</a>
+      <a class="jump-link" href="#chapter-four">Ch. 4: Recommendations</a>
+      <a class="jump-link" href="#conclusion">Conclusion &amp; index</a>
     </div>
 
-    <div class="mode-controls">
-      <button class="mode-toggle active" id="btnTabMode" type="button">Tabbed view</button>
-      <button class="mode-toggle" id="btnFullMode" type="button">Full view</button>
+    <div class="density-switch">
+      <button class="density-btn active" id="btnBrief" type="button">Scannable view</button>
+      <button class="density-btn" id="btnExpandAll" type="button">Expand full prose</button>
     </div>
   </div>
 </div>
 
-<main class="container">
+<main class="main">
 
-  <!-- SCANNABLE OVERVIEW CARDS -->
-  <section class="highlights-grid" aria-label="At a glance">
-    <div class="highlight-card">
-      <div class="highlight-title">Core Premise</div>
-      <div class="highlight-num">Brexit as Mirror</div>
-      <p class="highlight-copy">Examines how Britain’s departure from the EU reshaped sovereignty, trade, security, and influence—and what that means for Poland.</p>
+  <!-- EXECUTIVE SUMMARY -->
+  <section class="report-section" id="executive-summary">
+    <div class="sec-top">
+      <span class="sec-num">Overview</span>
+      <h2 class="sec-title">Executive summary</h2>
     </div>
-    <div class="highlight-card">
-      <div class="highlight-title">Methodological Approach</div>
-      <div class="highlight-num">Comparative Lens</div>
-      <p class="highlight-copy">Pairs structured comparison and empirical data with stakeholder and expert perspectives across Poland and the UK.</p>
-    </div>
-    <div class="highlight-card">
-      <div class="highlight-title">Strategic Question</div>
-      <div class="highlight-num">Influence Inside</div>
-      <p class="highlight-copy">Evaluates how Poland can strengthen its position, security, and economic standing within the European Union rather than drift outward.</p>
-    </div>
-    <div class="highlight-card">
-      <div class="highlight-title">Policy Output</div>
-      <div class="highlight-num">Actionable Agenda</div>
-      <p class="highlight-copy">Translates lessons from the post-Brexit years into concrete recommendations for Warsaw and European partners.</p>
-    </div>
-  </section>
-
-  <!-- 1. EXECUTIVE SUMMARY -->
-  <section class="section-panel active" id="sec-summary">
-    <div class="section-header">
-      <h2>Executive summary</h2>
-      <span class="section-badge">Section 1 of 7</span>
-    </div>
-    <div class="section-grid">
-      <article class="prose-block">
-        <h3>Key Takeaways at a Glance</h3>
-        <p><strong>Quo vadis, Polonia?</strong> asks how lessons from Brexit can help build a stronger, more secure, and more influential Poland within Europe.</p>
-        <p>Rather than treating Brexit as a purely British story, the report analyses the practical consequences of leaving the EU single market, customs union, and political decision-making structures—and contrasts them with the strategic opportunities and pressures facing Poland.</p>
-        <p>Replace this starter summary paragraph with the exact text from the <em>Executive summary</em> section of <code>Quo vadis Polonia raw.docx</code> so every detail matches your final draft.</p>
-      </article>
-      <aside class="aside-stack">
-        <div class="box-card">
-          <div class="box-kicker">How to read this web version</div>
-          <div class="box-title">Built for scanning &amp; deep dives</div>
-          <ul>
-            <li>Use the top bar to jump between chapters or switch to <strong>Full view</strong>.</li>
-            <li>Side cards highlight callout boxes, charts, and tables alongside the main text.</li>
-            <li>Download the designed PDF anytime for print layout and full footnotes.</li>
-          </ul>
-        </div>
-      </aside>
-    </div>
-    <div class="panel-nav">
-      <button class="step-btn" type="button" disabled>&larr; Previous section</button>
-      <button class="step-btn" type="button" data-next="sec-intro">Next: Introduction &amp; focus &rarr;</button>
-    </div>
-  </section>
-
-  <!-- 2. INTRODUCTION & FOCUS -->
-  <section class="section-panel" id="sec-intro">
-    <div class="section-header">
-      <h2>Introduction &amp; The focus of this research</h2>
-      <span class="section-badge">Section 2 of 7</span>
-    </div>
-    <div class="section-grid">
-      <article class="prose-block">
-        <h3>Introduction</h3>
-        <p>Sets the political and geopolitical context linking British Euroscepticism and Brexit with Poland’s contemporary role in European integration, security, and economic development.</p>
-        <h3>The focus of this research</h3>
-        <p>Defines the central research questions, scope, and analytical boundaries comparing UK and Polish trajectories.</p>
-      </article>
-      <aside class="aside-stack">
-        <div class="chart-card">
-          <span class="chart-tag">Research Scope</span>
-          <div class="chart-title">Why compare the UK and Poland?</div>
-          <p class="chart-note">Large European economies with distinct histories, strategic priorities, and debates over national sovereignty and EU rules.</p>
-        </div>
-      </aside>
-    </div>
-    <div class="panel-nav">
-      <button class="step-btn" type="button" data-prev="sec-summary">&larr; Previous: Executive summary</button>
-      <button class="step-btn" type="button" data-next="sec-ch1">Next: Chapter one &rarr;</button>
-    </div>
-  </section>
-
-  <!-- 3. CHAPTER ONE: METHODOLOGY -->
-  <section class="section-panel" id="sec-ch1">
-    <div class="section-header">
-      <h2>Chapter one: Methodology</h2>
-      <span class="section-badge">Section 3 of 7</span>
-    </div>
-    <div class="section-grid">
-      <article class="prose-block">
-        <h3>1.1 Methods</h3>
-        <p>Explains how the research was designed, structured, and executed across comparative political analysis, data review, and interviews/consultations.</p>
-        <h3>1.2 Limitations</h3>
-        <p>Outlines methodological caveats, data constraints, and differences between the UK and Polish political and institutional contexts.</p>
-      </article>
-      <aside class="aside-stack">
-        <div class="box-card">
-          <div class="box-kicker">Methodological Note</div>
-          <div class="box-title">Transparent boundaries</div>
-          <p>Highlighting limitations early helps readers separate structural lessons from context-specific political events.</p>
-        </div>
-      </aside>
-    </div>
-    <div class="panel-nav">
-      <button class="step-btn" type="button" data-prev="sec-intro">&larr; Previous: Introduction &amp; focus</button>
-      <button class="step-btn" type="button" data-next="sec-ch2">Next: Chapter two &rarr;</button>
-    </div>
-  </section>
-
-  <!-- 4. CHAPTER TWO -->
-  <section class="section-panel" id="sec-ch2">
-    <div class="section-header">
-      <h2>Chapter two</h2>
-      <span class="section-badge">Section 4 of 7</span>
-    </div>
-    <div class="section-grid">
-      <article class="prose-block">
-        <h3>2.1 [Subsection title from DOCX]</h3>
-        <p>Insert the body paragraphs from Chapter two of <code>Quo vadis Polonia raw.docx</code> here, keeping paragraphs concise and scannable with subheadings.</p>
-        <h3>2.2 [Subsection title from DOCX]</h3>
-        <p>Summarise key empirical findings and link directly to the visual charts and callout boxes on the right.</p>
-      </article>
-      <aside class="aside-stack">
-        <div class="box-card">
-          <div class="box-kicker">Box 2.1</div>
-          <div class="box-title">Callout Box 2.1</div>
-          <p>Insert Box 2.1 content from the report.</p>
-        </div>
-        <div class="box-card">
-          <div class="box-kicker">Box 2.2</div>
-          <div class="box-title">Callout Box 2.2</div>
-          <p>Insert Box 2.2 content from the report.</p>
-        </div>
-        <div class="chart-card">
-          <span class="chart-tag">Charts 2.1 – 2.4</span>
-          <div class="chart-title">Chapter Two Visuals</div>
-          <p class="chart-note">Includes Chart 2.1, Chart 2.2, Chart 2.3, and Chart 2.4 from the PDF edition.</p>
-          <div class="chart-placeholder">Export Charts 2.1–2.4 from <code>Quo vadis, Polonia.pdf</code> and embed here.</div>
-        </div>
-      </aside>
-    </div>
-    <div class="panel-nav">
-      <button class="step-btn" type="button" data-prev="sec-ch1">&larr; Previous: Chapter one</button>
-      <button class="step-btn" type="button" data-next="sec-ch3">Next: Chapter three &rarr;</button>
-    </div>
-  </section>
-
-  <!-- 5. CHAPTER THREE -->
-  <section class="section-panel" id="sec-ch3">
-    <div class="section-header">
-      <h2>Chapter three</h2>
-      <span class="section-badge">Section 5 of 7</span>
-    </div>
-    <div class="section-grid">
-      <article class="prose-block">
-        <h3>3.1 [Subsection title from DOCX]</h3>
-        <p>Insert Chapter three analysis focusing on Poland’s position, trade, security, and strategic choices in Europe.</p>
-        <h3>3.2 [Subsection title from DOCX]</h3>
-        <p>Insert remaining Chapter three subsections and findings.</p>
-      </article>
-      <aside class="aside-stack">
-        <div class="box-card">
-          <div class="box-kicker">Box 3.1 – 3.3</div>
-          <div class="box-title">Chapter Three Callout Boxes</div>
-          <ul>
-            <li><strong>Box 3.1:</strong> Add Box 3.1 summary/text.</li>
-            <li><strong>Box 3.2:</strong> Add Box 3.2 summary/text.</li>
-            <li><strong>Box 3.3:</strong> Add Box 3.3 summary/text.</li>
-          </ul>
-        </div>
-        <div class="chart-card">
-          <span class="chart-tag">Charts 3.1 – 3.6 &amp; Table 3.1</span>
-          <div class="chart-title">Data &amp; Comparative Table</div>
-          <p class="chart-note">Includes Charts 3.1–3.6 and Table 3.1 from the report.</p>
-          <div class="chart-placeholder">Embed Charts 3.1–3.6 and Table 3.1 exported from <code>Quo vadis, Polonia.pdf</code>.</div>
-        </div>
-      </aside>
-    </div>
-    <div class="panel-nav">
-      <button class="step-btn" type="button" data-prev="sec-ch2">&larr; Previous: Chapter two</button>
-      <button class="step-btn" type="button" data-next="sec-ch4">Next: Chapter four &rarr;</button>
-    </div>
-  </section>
-
-  <!-- 6. CHAPTER FOUR: RECOMMENDATIONS -->
-  <section class="section-panel" id="sec-ch4">
-    <div class="section-header">
-      <h2>Chapter four: Recommendations</h2>
-      <span class="section-badge">Section 6 of 7</span>
-    </div>
-    <div class="section-grid">
-      <article class="prose-block">
-        <h3>Policy Recommendations</h3>
-        <p>Presents the report’s core policy recommendations—designed to be read as clear, actionable proposals rather than dense prose walls.</p>
-        <ul class="bullet-list">
-          <li><strong>Recommendation one:</strong> Insert text from the DOCX.</li>
-          <li><strong>Recommendation two:</strong> Insert text from the DOCX.</li>
-          <li><strong>Recommendation three:</strong> Insert text from the DOCX.</li>
-          <li><strong>Recommendation four:</strong> Insert text from the DOCX.</li>
-          <li><strong>Recommendation five:</strong> Insert text from the DOCX.</li>
-          <li><strong>Recommendation six:</strong> Insert text from the DOCX.</li>
-          <li><strong>Recommendation seven:</strong> Insert text from the DOCX.</li>
-          <li><strong>Recommendation eight:</strong> Insert text from the DOCX.</li>
-          <li><strong>Recommendation nine:</strong> Insert text from the DOCX.</li>
-          <li><strong>Recommendation ten:</strong> Insert text from the DOCX.</li>
-          <li><strong>Recommendation eleven:</strong> Insert text from the DOCX.</li>
+    <p class="sec-lead">
+      A concise overview of why Brexit matters for Poland’s strategic choices and how Warsaw can build greater influence and resilience inside Europe.
+    </p>
+    <div class="sec-grid">
+      <div class="brief-box">
+        <h3>Core Takeaways</h3>
+        <ul class="brief-list">
+          <li><strong>Sovereignty vs. influence:</strong> Leaving EU decision-making structures carries practical costs for shaping rules that still affect a country’s economy and security.</li>
+          <li><strong>Economic &amp; strategic stakes:</strong> Deep European integration underpins trade, investment, and regional security in ways difficult to replicate outside.</li>
+          <li><strong>A constructive path forward:</strong> Focuses on practical reforms and stronger European partnerships to keep Poland secure and influential.</li>
         </ul>
-      </article>
-      <aside class="aside-stack">
-        <div class="chart-card">
-          <span class="chart-tag">Chart 4.1</span>
-          <div class="chart-title">Chapter Four Chart</div>
-          <p class="chart-note">Accompanies the policy recommendations in the PDF edition.</p>
-          <div class="chart-placeholder">Embed Chart 4.1 from <code>Quo vadis, Polonia.pdf</code>.</div>
+        <div class="full-prose" data-prose>
+          <h4>Full Executive Summary Text</h4>
+          <p>Paste the exact paragraphs from <em>Executive summary</em> in <code>Quo vadis Polonia raw.docx</code> here so readers who expand the full prose see the complete wording.</p>
+        </div>
+        <button class="expand-btn" type="button" data-toggle-prose>Read full section prose &darr;</button>
+      </div>
+
+      <aside class="aside-col">
+        <div class="callout-box">
+          <div class="callout-tag">Reading mode</div>
+          <div class="callout-title">Built to stay scannable</div>
+          <p>Start with the bulleted takeaways and side boxes, then click <strong>Read full section prose</strong> on any section—or <strong>Expand full prose</strong> in the top bar—for the complete text.</p>
         </div>
       </aside>
-    </div>
-    <div class="panel-nav">
-      <button class="step-btn" type="button" data-prev="sec-ch3">&larr; Previous: Chapter three</button>
-      <button class="step-btn" type="button" data-next="sec-conclusion">Next: Conclusion &amp; index &rarr;</button>
     </div>
   </section>
 
-  <!-- 7. CONCLUSION & INDEX -->
-  <section class="section-panel" id="sec-conclusion">
-    <div class="section-header">
-      <h2>Conclusion &amp; Index</h2>
-      <span class="section-badge">Section 7 of 7</span>
+  <!-- INTRODUCTION & FOCUS -->
+  <section class="report-section" id="introduction">
+    <div class="sec-top">
+      <span class="sec-num">Framing</span>
+      <h2 class="sec-title">Introduction &amp; The focus of this research</h2>
     </div>
-    <div class="section-grid">
-      <article class="prose-block">
-        <h3>Conclusion</h3>
-        <p>Brings together the overarching conclusions on Britain’s post-Brexit experience and Poland’s strategic path in Europe.</p>
-        <h3>Index</h3>
-        <p>Reference index / key terms from the report.</p>
-      </article>
-      <aside class="aside-stack">
-        <div class="box-card">
-          <div class="box-kicker">Full Citation &amp; PDF</div>
-          <div class="box-title">Cite or download the report</div>
-          <p>Bartłomiej Staniszewski and William Prescott, <em>Quo vadis, Polonia? Lessons from Brexit for a stronger Poland in Europe</em>, Bright Blue Europe &amp; Konrad Adenauer Foundation.</p>
+    <p class="sec-lead">
+      Sets up the comparative question at the heart of the report: what lessons does the UK’s post-Brexit experience offer for a stronger Poland in Europe?
+    </p>
+    <div class="sec-grid">
+      <div class="brief-box">
+        <h3>What This Section Covers</h3>
+        <ul class="brief-list">
+          <li><strong>Introduction:</strong> Connects the political arc of Brexit with Poland’s position in European politics, trade, and security.</li>
+          <li><strong>The focus of this research:</strong> Clarifies the core questions, analytical lens, and policy purpose of the study.</li>
+        </ul>
+        <div class="full-prose" data-prose>
+          <h4>Introduction</h4>
+          <p>Insert the <em>Introduction</em> paragraphs from <code>Quo vadis Polonia raw.docx</code>.</p>
+          <h4>The focus of this research</h4>
+          <p>Insert the <em>The focus of this research</em> paragraphs from <code>Quo vadis Polonia raw.docx</code>.</p>
+        </div>
+        <button class="expand-btn" type="button" data-toggle-prose>Read full section prose &darr;</button>
+      </div>
+
+      <aside class="aside-col">
+        <div class="callout-box">
+          <div class="callout-tag">Central Question</div>
+          <div class="callout-title">Quo vadis, Polonia?</div>
+          <p>How can Poland safeguard its national interests, sovereignty, and security while maximising its weight within Europe?</p>
         </div>
       </aside>
     </div>
-    <div class="panel-nav">
-      <button class="step-btn" type="button" data-prev="sec-ch4">&larr; Previous: Chapter four</button>
-      <button class="step-btn" type="button" disabled>End of report</button>
+  </section>
+
+  <!-- CHAPTER ONE -->
+  <section class="report-section" id="chapter-one">
+    <div class="sec-top">
+      <span class="sec-num">Chapter one</span>
+      <h2 class="sec-title">Methodology</h2>
+    </div>
+    <p class="sec-lead">
+      Outlines the research methods used to compare Britain and Poland and notes the methodological limits of the analysis.
+    </p>
+    <div class="sec-grid">
+      <div class="brief-box">
+        <h3>Methods &amp; Limitations</h3>
+        <ul class="brief-list">
+          <li><strong>1.1 Methods:</strong> Explains how sources, evidence, and comparative analysis were brought together.</li>
+          <li><strong>1.2 Limitations:</strong> Identifies structural differences and scope boundaries between the two countries.</li>
+        </ul>
+        <div class="full-prose" data-prose>
+          <h4>1.1 Methods</h4>
+          <p>Insert <em>1.1 Methods</em> from <code>Quo vadis Polonia raw.docx</code>.</p>
+          <h4>1.2 Limitations</h4>
+          <p>Insert <em>1.2 Limitations</em> from <code>Quo vadis Polonia raw.docx</code>.</p>
+        </div>
+        <button class="expand-btn" type="button" data-toggle-prose>Read full section prose &darr;</button>
+      </div>
+
+      <aside class="aside-col">
+        <div class="visual-card">
+          <span class="visual-pill">Approach</span>
+          <div class="visual-title">Comparative &amp; Policy-Led</div>
+          <p class="visual-note">Designed to connect empirical evidence from the UK’s post-Brexit experience to practical choices in Poland.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- CHAPTER TWO -->
+  <section class="report-section" id="chapter-two">
+    <div class="sec-top">
+      <span class="sec-num">Chapter two</span>
+      <h2 class="sec-title">Chapter two</h2>
+    </div>
+    <p class="sec-lead">
+      Examines the drivers, mechanics, and aftermath of Brexit—supported by callout boxes and visual charts.
+    </p>
+    <div class="sec-grid">
+      <div class="brief-box">
+        <h3>Key Points in Chapter Two</h3>
+        <ul class="brief-list">
+          <li><strong>Subsection summary 2.1:</strong> Add concise summary bullet from your Chapter two subsections.</li>
+          <li><strong>Subsection summary 2.2:</strong> Add concise summary bullet highlighting key findings on trade, governance, or politics.</li>
+        </ul>
+        <div class="full-prose" data-prose>
+          <h4>Chapter Two Full Text</h4>
+          <p>Insert the numbered subsections and body paragraphs from Chapter two of <code>Quo vadis Polonia raw.docx</code> here.</p>
+        </div>
+        <button class="expand-btn" type="button" data-toggle-prose>Read full section prose &darr;</button>
+      </div>
+
+      <aside class="aside-col">
+        <div class="callout-box">
+          <div class="callout-tag">Box 2.1 &amp; Box 2.2</div>
+          <div class="callout-title">Chapter Two Callouts</div>
+          <ul>
+            <li><strong>Box 2.1:</strong> Insert Box 2.1 title and takeaway.</li>
+            <li><strong>Box 2.2:</strong> Insert Box 2.2 title and takeaway.</li>
+          </ul>
+        </div>
+        <div class="visual-card">
+          <span class="visual-pill">Charts 2.1 – 2.4</span>
+          <div class="visual-title">Chapter Two Charts</div>
+          <p class="visual-note">Charts 2.1, 2.2, 2.3, and 2.4 from <code>Quo vadis, Polonia.pdf</code>.</p>
+          <div class="visual-slot">Add exported chart images here (e.g. <code>assets/chart-2-1.png</code>).</div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- CHAPTER THREE -->
+  <section class="report-section" id="chapter-three">
+    <div class="sec-top">
+      <span class="sec-num">Chapter three</span>
+      <h2 class="sec-title">Chapter three</h2>
+    </div>
+    <p class="sec-lead">
+      Applies lessons from the UK experience to Poland’s strategic, economic, and European trajectory.
+    </p>
+    <div class="sec-grid">
+      <div class="brief-box">
+        <h3>Key Points in Chapter Three</h3>
+        <ul class="brief-list">
+          <li><strong>Strategic takeaways:</strong> Add concise summary bullets from Chapter three’s numbered subsections.</li>
+          <li><strong>Risks &amp; opportunities:</strong> Highlight the main trade-offs and advantages facing Poland in Europe.</li>
+        </ul>
+        <div class="full-prose" data-prose>
+          <h4>Chapter Three Full Text</h4>
+          <p>Insert the numbered subsections and body paragraphs from Chapter three of <code>Quo vadis Polonia raw.docx</code> here.</p>
+        </div>
+        <button class="expand-btn" type="button" data-toggle-prose>Read full section prose &darr;</button>
+      </div>
+
+      <aside class="aside-col">
+        <div class="callout-box">
+          <div class="callout-tag">Boxes 3.1 – 3.3</div>
+          <div class="callout-title">Chapter Three Callouts</div>
+          <ul>
+            <li><strong>Box 3.1:</strong> Insert Box 3.1 summary.</li>
+            <li><strong>Box 3.2:</strong> Insert Box 3.2 summary.</li>
+            <li><strong>Box 3.3:</strong> Insert Box 3.3 summary.</li>
+          </ul>
+        </div>
+        <div class="visual-card">
+          <span class="visual-pill">Charts 3.1 – 3.6 &amp; Table 3.1</span>
+          <div class="visual-title">Data &amp; Table 3.1</div>
+          <p class="visual-note">Charts 3.1–3.6 and Table 3.1 from <code>Quo vadis, Polonia.pdf</code>.</p>
+          <div class="visual-slot">Add exported charts and Table 3.1 images/tables here.</div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- CHAPTER FOUR: RECOMMENDATIONS -->
+  <section class="report-section" id="chapter-four">
+    <div class="sec-top">
+      <span class="sec-num">Chapter four</span>
+      <h2 class="sec-title">Recommendations</h2>
+    </div>
+    <p class="sec-lead">
+      Eleven policy recommendations broken into scannable cards so decision-makers can browse proposals quickly.
+    </p>
+
+    <div class="rec-grid">
+      <div class="rec-card"><div class="rec-num">Recommendation 01</div><div class="rec-heading">Recommendation one</div><p class="rec-copy">Add concise summary from DOCX.</p></div>
+      <div class="rec-card"><div class="rec-num">Recommendation 02</div><div class="rec-heading">Recommendation two</div><p class="rec-copy">Add concise summary from DOCX.</p></div>
+      <div class="rec-card"><div class="rec-num">Recommendation 03</div><div class="rec-heading">Recommendation three</div><p class="rec-copy">Add concise summary from DOCX.</p></div>
+      <div class="rec-card"><div class="rec-num">Recommendation 04</div><div class="rec-heading">Recommendation four</div><p class="rec-copy">Add concise summary from DOCX.</p></div>
+      <div class="rec-card"><div class="rec-num">Recommendation 05</div><div class="rec-heading">Recommendation five</div><p class="rec-copy">Add concise summary from DOCX.</p></div>
+      <div class="rec-card"><div class="rec-num">Recommendation 06</div><div class="rec-heading">Recommendation six</div><p class="rec-copy">Add concise summary from DOCX.</p></div>
+      <div class="rec-card"><div class="rec-num">Recommendation 07</div><div class="rec-heading">Recommendation seven</div><p class="rec-copy">Add concise summary from DOCX.</p></div>
+      <div class="rec-card"><div class="rec-num">Recommendation 08</div><div class="rec-heading">Recommendation eight</div><p class="rec-copy">Add concise summary from DOCX.</p></div>
+      <div class="rec-card"><div class="rec-num">Recommendation 09</div><div class="rec-heading">Recommendation nine</div><p class="rec-copy">Add concise summary from DOCX.</p></div>
+      <div class="rec-card"><div class="rec-num">Recommendation 10</div><div class="rec-heading">Recommendation ten</div><p class="rec-copy">Add concise summary from DOCX.</p></div>
+      <div class="rec-card"><div class="rec-num">Recommendation 11</div><div class="rec-heading">Recommendation eleven</div><p class="rec-copy">Add concise summary from DOCX.</p></div>
+    </div>
+
+    <div class="sec-grid" style="margin-top:1.5rem">
+      <div class="brief-box">
+        <div class="full-prose" data-prose style="display:block;border-top:none;margin-top:0;padding-top:0">
+          <h4>Full Recommendations Text</h4>
+          <p>Insert the full text of Recommendations one through eleven from <code>Quo vadis Polonia raw.docx</code> here.</p>
+        </div>
+      </div>
+      <aside class="aside-col">
+        <div class="visual-card">
+          <span class="visual-pill">Chart 4.1</span>
+          <div class="visual-title">Chapter Four Chart</div>
+          <p class="visual-note">Chart 4.1 from <code>Quo vadis, Polonia.pdf</code>.</p>
+          <div class="visual-slot">Add Chart 4.1 image here.</div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- CONCLUSION & INDEX -->
+  <section class="report-section" id="conclusion">
+    <div class="sec-top">
+      <span class="sec-num">Closing</span>
+      <h2 class="sec-title">Conclusion &amp; Index</h2>
+    </div>
+    <p class="sec-lead">
+      Final reflections on building a stronger Poland in Europe, paired with reference access to the full PDF and index.
+    </p>
+    <div class="sec-grid">
+      <div class="brief-box">
+        <h3>Conclusion &amp; Index</h3>
+        <ul class="brief-list">
+          <li><strong>Conclusion:</strong> Summarises the report’s overarching message for policymakers and European partners.</li>
+          <li><strong>Index:</strong> Key terms, institutions, and topics referenced across the study.</li>
+        </ul>
+        <div class="full-prose" data-prose>
+          <h4>Conclusion</h4>
+          <p>Insert the <em>Conclusion</em> text from <code>Quo vadis Polonia raw.docx</code>.</p>
+          <h4>Index</h4>
+          <p>Insert or link the <em>Index</em> from <code>Quo vadis Polonia raw.docx</code>.</p>
+        </div>
+        <button class="expand-btn" type="button" data-toggle-prose>Read full section prose &darr;</button>
+      </div>
+
+      <aside class="aside-col">
+        <div class="callout-box">
+          <div class="callout-tag">PDF Edition</div>
+          <div class="callout-title">Read the designed layout</div>
+          <p>For full formatting, page numbers, and footnotes, download <a href="Quo vadis, Polonia.pdf" download style="color:var(--navy);font-weight:500">Quo vadis, Polonia.pdf</a>.</p>
+        </div>
+      </aside>
     </div>
   </section>
 
@@ -635,11 +657,11 @@ footer{
 <footer>
   <div class="footer-brand"><strong>Bright Blue Europe</strong> &nbsp;&middot;&nbsp; The future of the centre-right across Europe</div>
   <ul class="footer-nav">
-    <li><a href="more code.txt#home">Home</a></li>
-    <li><a href="more code.txt#about">About</a></li>
-    <li><a href="more code.txt#staff">Team</a></li>
-    <li><a href="more code.txt#publications">Publications</a></li>
-    <li><a href="more code.txt#contact">Contact</a></li>
+    <li><a href="index.html#home">Home</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#staff">Team</a></li>
+    <li><a href="index.html#publications">Publications</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
     <li><a href="https://www.brightblue.org.uk" target="_blank" rel="noopener">Bright Blue UK</a></li>
   </ul>
   <div class="footer-copy">&copy; 2026 Bright Blue Europe. All rights reserved.</div>
@@ -667,52 +689,44 @@ burger.addEventListener('click', () => {
   }
 });
 
-const tabs = Array.from(document.querySelectorAll('.tab-btn'));
-const panels = Array.from(document.querySelectorAll('.section-panel'));
-const btnTabMode = document.getElementById('btnTabMode');
-const btnFullMode = document.getElementById('btnFullMode');
-const heroToggleMode = document.getElementById('heroToggleMode');
+const btnBrief = document.getElementById('btnBrief');
+const btnExpandAll = document.getElementById('btnExpandAll');
 
-function activateSection(targetId, shouldScroll = true) {
-  if (document.body.classList.contains('full-mode')) {
-    const el = document.getElementById(targetId);
-    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  } else {
-    panels.forEach(p => p.classList.toggle('active', p.id === targetId));
-    if (shouldScroll) {
-      document.querySelector('.switcher-bar').scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  }
-  tabs.forEach(t => t.classList.toggle('active', t.dataset.target === targetId));
+function setAllProse(expand) {
+  document.querySelectorAll('[data-prose]').forEach(el => {
+    el.style.display = expand ? 'block' : 'none';
+  });
+  document.querySelectorAll('[data-toggle-prose]').forEach(btn => {
+    btn.textContent = expand ? 'Hide full section prose ↑' : 'Read full section prose ↓';
+  });
+  btnExpandAll.classList.toggle('active', expand);
+  btnBrief.classList.toggle('active', !expand);
 }
 
-function setFullMode(isFull) {
-  document.body.classList.toggle('full-mode', isFull);
-  btnFullMode.classList.toggle('active', isFull);
-  btnTabMode.classList.toggle('active', !isFull);
-  heroToggleMode.textContent = isFull ? 'Switch to tabbed view' : 'Switch to full scroll view';
-  if (!isFull) {
-    const activeTab = tabs.find(t => t.classList.contains('active')) || tabs[0];
-    panels.forEach(p => p.classList.toggle('active', p.id === activeTab.dataset.target));
-  }
-}
+setAllProse(false);
 
-tabs.forEach(tab => {
-  tab.addEventListener('click', () => activateSection(tab.dataset.target, true));
-});
+btnBrief.addEventListener('click', () => setAllProse(false));
+btnExpandAll.addEventListener('click', () => setAllProse(true));
 
-btnTabMode.addEventListener('click', () => setFullMode(false));
-btnFullMode.addEventListener('click', () => setFullMode(true));
-heroToggleMode.addEventListener('click', () => {
-  setFullMode(!document.body.classList.contains('full-mode'));
-});
-
-document.querySelectorAll('[data-next], [data-prev]').forEach(btn => {
+document.querySelectorAll('[data-toggle-prose]').forEach(btn => {
   btn.addEventListener('click', () => {
-    const dest = btn.dataset.next || btn.dataset.prev;
-    if (dest) activateSection(dest, true);
+    const prose = btn.previousElementSibling;
+    if (!prose) return;
+    const isVisible = prose.style.display === 'block';
+    prose.style.display = isVisible ? 'none' : 'block';
+    btn.textContent = isVisible ? 'Read full section prose ↓' : 'Hide full section prose ↑';
   });
 });
+
+const jumpLinks = Array.from(document.querySelectorAll('.jump-link'));
+const sections = jumpLinks.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+window.addEventListener('scroll', () => {
+  let current = sections[0]?.id;
+  for (const sec of sections) {
+    if (sec.getBoundingClientRect().top <= 165) current = sec.id;
+  }
+  jumpLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + current));
+}, { passive: true });
 </script>
 </body>
 </html>
