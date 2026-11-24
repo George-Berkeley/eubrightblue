@@ -303,6 +303,7 @@ body{
 .pub-cat{font-size:10px;font-weight:400;letter-spacing:0.18em;text-transform:uppercase;margin-bottom:1rem}
 .cat-reports{color:#93b4f0}.cat-economy{color:#86d9b0}.cat-articles{color:#7dd9c1}
 .cat-migration{color:#c9a8f0}.cat-security{color:#f0b893}
+.cat-media{color:#f5c879}.cat-appearances{color:#e89fc4}
 .pub-title{font-family:var(--serif);font-weight:300;color:#fff;line-height:1.25;flex:1;margin-bottom:1.5rem}
 .pub-card.large .pub-title{font-size:clamp(24px, 2.2vw, 30px);margin-bottom:1.75rem}
 .pub-card:not(.large) .pub-title{font-size:clamp(18px, 1.4vw, 20px)}
@@ -639,6 +640,8 @@ footer{
       <button class="pub-filter-btn active" onclick="filterPubs('all',this)">All</button>
       <button class="pub-filter-btn" onclick="filterPubs('reports',this)">Reports</button>
       <button class="pub-filter-btn" onclick="filterPubs('articles',this)">Articles</button>
+      <button class="pub-filter-btn" onclick="filterPubs('media',this)">Media mentions</button>
+      <button class="pub-filter-btn" onclick="filterPubs('appearances',this)">Live appearances</button>
     </div>
 
     <div class="pub-grid reveal" id="pubGrid">
@@ -693,18 +696,41 @@ footer{
         <div class="pub-meta"><span class="pub-date">May 2026</span><span class="pub-arrow">→</span></div>
       </a>
 
-    <a class="pub-card" data-tag="articles" href="https://www.cityam.com/lets-create-new-hereditary-peers-and-put-them-to-work-just-not-in-the-lords/" target="_blank" rel="noopener">
+      <a class="pub-card" data-tag="articles" href="https://www.cityam.com/lets-create-new-hereditary-peers-and-put-them-to-work-just-not-in-the-lords/" target="_blank" rel="noopener">
         <div class="pub-cat cat-articles">Articles</div>
         <div class="pub-title">Let’s create new hereditary peers and put them to work – just not in the Lords</div>
         <p class="pub-excerpt">City AM</p>
         <div class="pub-meta"><span class="pub-date">May 2026</span><span class="pub-arrow">→</span></div>
       </a>
         
-    <a class="pub-card" data-tag="articles" href="https://www.gazetaprawna.pl/wiadomosci/opinie/artykuly/11238454,prawica-bije-na-alarm-demograficzny-czy-ma-pomysly-na-wzrost-dzietnos.html" target="_blank" rel="noopener">
+      <a class="pub-card" data-tag="articles" href="https://www.gazetaprawna.pl/wiadomosci/opinie/artykuly/11238454,prawica-bije-na-alarm-demograficzny-czy-ma-pomysly-na-wzrost-dzietnos.html" target="_blank" rel="noopener">
         <div class="pub-cat cat-articles">Articles</div>
         <div class="pub-title">The right is ringing the demographic alarm. Does it have ideas for improving fertility?</div>
         <p class="pub-excerpt">Gazeta Prawna</p>
         <div class="pub-meta"><span class="pub-date">April 2026</span><span class="pub-arrow">→</span></div>
+      </a>
+
+      <!-- MEDIA MENTIONS -->
+      <a class="pub-card" data-tag="media" data-featured href="https://www.theguardian.com/commentisfree/2026/oct/15/andy-burnham-kemi-badenoch-labour-tories-populist-challengers" target="_blank" rel="noopener">
+        <div class="pub-cat cat-media">Media mentions</div>
+        <div class="pub-title">It’s not the old two-party politics</div>
+        <p class="pub-excerpt">The Guardian</p>
+        <div class="pub-meta"><span class="pub-date">October 2026</span><span class="pub-arrow">→</span></div>
+      </a>
+
+      <!-- LIVE APPEARANCES -->
+      <a class="pub-card" data-tag="appearances" data-featured href="https://www.brightblue.org.uk/populist-pushback-2/" target="_blank" rel="noopener">
+        <div class="pub-cat cat-appearances">Live appearances</div>
+        <div class="pub-title">‘Populist pushback’ launch</div>
+        <p class="pub-excerpt">Bright Blue event</p>
+        <div class="pub-meta"><span class="pub-date">October 2026</span><span class="pub-arrow">→</span></div>
+      </a>
+
+      <a class="pub-card" data-tag="appearances" data-featured href="https://igrzyskawolnosci.pl/event/igrzyska-wolnosci-2026/page/prelegenci" target="_blank" rel="noopener">
+        <div class="pub-cat cat-appearances">Live appearances</div>
+        <div class="pub-title">Freedom of Speech in the Digital Age. Where Do We Draw the Line?</div>
+        <p class="pub-excerpt">Igrzyska Wolności</p>
+        <div class="pub-meta"><span class="pub-date">October 2026</span><span class="pub-arrow">→</span></div>
       </a>
  
     </div>
