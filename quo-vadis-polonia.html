@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quo vadis, Polonia? Lessons from Brexit for a stronger Poland in Europe | Bright Blue Europe</title>
+<meta name="description" content="Bright Blue Europe’s report on anti-European narratives in Poland, seven lessons from Brexit and eleven recommendations for a stronger Poland in Europe.">
+<meta property="og:title" content="Quo vadis, Polonia? Lessons from Brexit for a stronger Poland in Europe">
+<meta property="og:description" content="Seven lessons from Brexit and eleven recommendations for a stronger Poland in Europe. By Bartłomiej Staniszewski and William Prescott.">
+<meta property="og:image" content="qvp-cover.jpg">
+<meta property="og:type" content="article">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400;1,9..144,500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;overflow-x:hidden}
+.anchorjs-link{display:none !important}
+h1:has(a[href*="eubrightblue"]){display:none !important}
+
+:root{
+  --navy:#455763;
+  --navy-dark:#455763;
+  --navy-deep:#34434d;
+  --blue:#d3dadc;
+  --cream:#f5fdff;
+  --cream-dark:#e8e2da;
+  --paper:#efebe5;
+  --gold:#eab51f;
+  --gold-ink:#946c00;
+  --ink:#111217;
+  --text:#262b31;
+  --muted:#5f6873;
+  --border:#e2ddd4;
+  --rule:#cfd6d9;
+  --pl:#b8293d;
+  --uk:#2d5b86;
+  --serif:'Fraunces',Georgia,serif;
+  --sans:'Outfit',system-ui,sans-serif;
+  --nav-h:72px;
+  --bar-h:52px;
+}
+
+body{
+  margin:0 !important;padding:0 !important;width:100%;max-width:100%;overflow-x:clip;
+  background:var(--cream);font-family:var(--sans);color:var(--ink);
+  font-size:clamp(15.5px, 0.35vw + 14.5px, 17.5px);line-height:1.7;
+}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+/* ───────── SITE NAV (same as the home page) ───────── */
+#nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;padding:0 clamp(1.25rem, 4vw, 4rem);height:var(--nav-h);transition:background 0.4s,border-color 0.4s}
+#nav.solid{background:rgba(0,20,64,0.97);border-bottom:1px solid rgba(255,255,255,0.08)}
+#nav.light{background:rgba(250,248,242,0.96);border-bottom:1px solid var(--border)}
+.nav-brand{text-decoration:none;display:flex;align-items:center;gap:12px;line-height:1;min-width:0}
+.nav-logo{height:38px;width:auto;display:block;flex-shrink:0;background:transparent !important}
+.nav-brand-text{display:flex;flex-direction:column;line-height:1.15;min-width:0}
+.nav-brand-name{font-family:var(--serif);font-size:clamp(15px, 1.3vw, 18px);font-weight:400;letter-spacing:0.01em;transition:color 0.3s;white-space:nowrap}
+.nav-brand-sub{font-family:var(--sans);font-size:10px;font-weight:300;letter-spacing:0.22em;text-transform:uppercase;transition:color 0.3s;white-space:nowrap}
+#nav.solid .nav-brand-name{color:#fff}
+#nav.solid .nav-brand-sub{color:rgba(255,255,255,0.4)}
+#nav.light .nav-brand-name{color:var(--navy)}
+#nav.light .nav-brand-sub{color:var(--gold)}
+.nav-links{display:flex;gap:clamp(1.1rem, 2vw, 2.5rem);list-style:none}
+.nav-links a{font-size:12px;font-weight:400;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;transition:color 0.2s;white-space:nowrap}
+#nav.solid .nav-links a{color:rgba(255,255,255,0.55)}
+#nav.solid .nav-links a:hover{color:#fff}
+#nav.light .nav-links a{color:var(--muted)}
+#nav.light .nav-links a:hover{color:var(--navy)}
+.nav-btn{font-family:var(--sans);font-size:11px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;padding:10px 22px;border-radius:1px;transition:all 0.2s;white-space:nowrap;flex-shrink:0}
+#nav.solid .nav-btn{background:transparent;border:1px solid rgba(255,255,255,0.28);color:#fff}
+#nav.solid .nav-btn:hover{background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.55)}
+#nav.light .nav-btn{background:var(--navy);border:1px solid var(--navy);color:#fff}
+#nav.light .nav-btn:hover{background:var(--blue)}
+.nav-burger{display:none;flex-direction:column;justify-content:center;align-items:center;gap:5px;width:40px;height:40px;background:transparent;border:none;cursor:pointer;padding:4px;flex-shrink:0}
+.nav-burger span{display:block;width:24px;height:2px;border-radius:2px;transition:transform 0.3s,opacity 0.3s,background 0.3s}
+#nav.solid .nav-burger span{background:#fff}
+#nav.light .nav-burger span{background:var(--navy)}
+.nav-burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-burger.open span:nth-child(2){opacity:0}
+.nav-burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.nav-mobile{display:none;position:fixed;top:var(--nav-h);left:0;right:0;bottom:0;z-index:199;background:rgba(0,20,64,0.98);flex-direction:column;align-items:center;justify-content:center;gap:2.5rem}
+.nav-mobile.open{display:flex}
+.nav-mobile a{font-family:var(--sans);font-size:15px;font-weight:400;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;color:rgba(255,255,255,0.65);transition:color 0.2s}
+.nav-mobile a:hover{color:#fff}
+.nav-mobile .nav-btn{margin-top:1rem;background:transparent;border:1px solid rgba(255,255,255,0.28);color:#fff;padding:12px 32px}
+
+/* Buttons (same as the home page) */
+.btn-gold{display:inline-block;font-family:var(--sans);font-size:12px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;padding:15px 32px;background:var(--gold);color:var(--navy-deep);border-radius:1px;transition:background 0.2s,transform 0.15s}
+.btn-gold:hover{background:#d4b058;transform:translateY(-2px)}
+.btn-ghost{display:inline-block;font-family:var(--sans);font-size:12px;font-weight:400;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;padding:15px 32px;border:1px solid rgba(255,255,255,0.3);color:rgba(255,255,255,0.86);border-radius:1px;transition:border-color 0.2s,color 0.2s}
+.btn-ghost:hover{border-color:#fff;color:#fff}
+
+/* ───────── HERO ───────── */
+.qv-hero{position:relative;display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,0.88fr);min-height:min(900px,100dvh);background:var(--navy);color:#fff;overflow:hidden}
+.qv-hero-text{position:relative;z-index:2;display:flex;flex-direction:column;justify-content:flex-end;padding:calc(var(--nav-h) + 3rem) clamp(1.5rem,5vw,5rem) clamp(3rem,8vh,5.5rem)}
+.qv-title{font-family:var(--serif);font-weight:300;font-size:clamp(56px,8.4vw,136px);line-height:0.92;letter-spacing:-0.025em;margin-bottom:1.75rem;opacity:0;transform:translateY(18px);animation:fadeUp 1s .25s forwards}
+.qv-title .pl{display:block;color:var(--gold)}
+.qv-bar{width:64px;height:3px;background:var(--gold);margin-bottom:1.75rem}
+.qv-sub{font-family:var(--serif);font-weight:300;font-size:clamp(21px,2.1vw,30px);line-height:1.25;max-width:22ch;color:rgba(255,255,255,0.92);margin-bottom:1.5rem;opacity:0;animation:fadeUp .9s .45s forwards}
+.qv-authors{font-size:15px;font-weight:300;color:rgba(255,255,255,0.72);margin-bottom:2.25rem}
+.qv-authors strong{font-weight:400;color:#fff}
+.qv-hero-actions{display:flex;gap:1rem;flex-wrap:wrap;opacity:0;animation:fadeUp .9s .6s forwards}
+.qv-hero-art{position:relative;min-height:320px}
+.qv-hero-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:45% 18%}
+.qv-hero-art::before{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(to right,var(--navy) 0%,rgba(69,87,99,0.55) 14%,rgba(69,87,99,0) 38%)}
+@keyframes fadeUp{to{opacity:1;transform:none}}
+
+/* ───────── CHAPTER BAR ───────── */
+.qv-chapters{position:sticky;top:var(--nav-h);z-index:150;height:var(--bar-h);background:rgba(245,253,255,0.97);border-bottom:1px solid var(--rule);backdrop-filter:saturate(1.2) blur(6px)}
+.qv-chapters-inner{height:100%;max-width:1400px;margin:0 auto;padding:0 clamp(1.25rem,4vw,4rem);display:flex;align-items:center;gap:2rem}
+.qv-chapters ol{list-style:none;display:flex;gap:clamp(1rem,2.2vw,2.25rem);overflow-x:auto;scrollbar-width:none;height:100%;align-items:stretch}
+.qv-chapters ol::-webkit-scrollbar{display:none}
+.qv-chapters li{display:flex}
+.qv-chapters a.ch{display:flex;align-items:center;font-size:14px;font-weight:400;color:var(--muted);text-decoration:none;white-space:nowrap;border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
+.qv-chapters a.ch:hover{color:var(--navy)}
+.qv-chapters a.ch.active{color:var(--navy);border-bottom-color:var(--gold)}
+.qv-chapters .pdf{margin-left:auto;font-size:14px;color:var(--navy);text-decoration:none;white-space:nowrap;border:1px solid var(--rule);padding:6px 14px;border-radius:1px;transition:border-color .2s,background .2s}
+.qv-chapters .pdf:hover{border-color:var(--navy);background:#fff}
+
+/* ───────── LAYOUT ───────── */
+section[id]{scroll-margin-top:calc(var(--nav-h) + var(--bar-h))}
+.qv-wrap{max-width:1180px;margin:0 auto;padding:0 clamp(1.25rem,4vw,3rem)}
+.qv-block{padding:clamp(3.5rem,7vw,6.5rem) 0}
+a.qv-link{color:var(--navy);text-decoration:underline;text-decoration-color:var(--gold);text-decoration-thickness:2px;text-underline-offset:3px}
+a.qv-link:hover{text-decoration-color:var(--navy)}
+
+/* ───────── IN BRIEF ───────── */
+
+/* ───────── CHAPTER OPENERS ───────── */
+.qv-opener{position:relative;min-height:clamp(340px,56vh,600px);display:flex;align-items:flex-end;overflow:hidden;background:var(--navy)}
+.qv-opener img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.qv-opener::before{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(100deg,rgba(52,67,77,0.94) 0%,rgba(52,67,77,0.78) 34%,rgba(52,67,77,0.08) 72%)}
+.qv-opener-text{position:relative;z-index:2;width:100%;max-width:1180px;margin:0 auto;padding:0 clamp(1.25rem,4vw,3rem) clamp(2.5rem,6vh,4rem);color:#fff}
+.qv-opener.plain{background:var(--navy-deep)}
+.qv-opener.plain::before{display:none}
+
+/* ───────── FIGURES ───────── */
+.qv-fig{margin:clamp(2.5rem,5vw,4rem) 0;border-top:2px solid var(--navy);padding-top:1.1rem}
+.qv-legend{display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;font-size:14px;color:var(--text);margin-bottom:.6rem}
+.qv-legend span{display:inline-flex;align-items:center;gap:.5rem}
+.qv-legend svg{flex-shrink:0}
+.qv-chart{position:relative;width:100%;touch-action:pan-y}
+.qv-chart svg{display:block;overflow:visible;font-family:var(--sans)}
+.qv-chart .tick{font-size:12px;fill:#6f7880}
+.qv-chart .anno{font-size:12px;fill:#6f7880;font-style:italic}
+.qv-chart .lab{font-size:12.5px;fill:var(--text)}
+.qv-chart .lab-b{font-size:13px;fill:var(--ink);font-weight:500}
+.qv-chart .endlab{font-size:13px;font-weight:500}
+.qv-src{font-size:13px;line-height:1.5;color:var(--muted);margin-top:.9rem;max-width:64em}
+.qv-src em{font-style:italic}
+.qv-tip{position:absolute;z-index:5;pointer-events:none;background:#fff;border:1px solid var(--rule);border-left:3px solid var(--navy);padding:.55rem .75rem;font-size:13px;line-height:1.45;color:var(--text);min-width:150px;max-width:260px;opacity:0;transition:opacity .12s}
+.qv-tip.on{opacity:1}
+.qv-tip b{display:block;font-weight:500;color:var(--ink);margin-bottom:.2rem}
+.qv-tip .r{display:flex;align-items:center;gap:.45rem;white-space:nowrap}
+.qv-tip .r i{display:inline-block;width:10px;height:3px;flex-shrink:0}
+.qv-tip .r em{font-style:normal;margin-left:auto;padding-left:.75rem;font-weight:500;color:var(--ink)}
+
+/* ───────── BOXES ───────── */
+
+/* ───────── TWO TYPES ───────── */
+
+/* ───────── SIX SOURCES ───────── */
+
+/* ───────── PULL QUOTE ───────── */
+
+/* ───────── UK NARRATIVES TABLE ───────── */
+
+/* ───────── LESSONS ───────── */
+
+/* ───────── RECOMMENDATIONS ───────── */
+.qv-recs{list-style:none;border-top:2px solid var(--navy)}
+.qv-rec{border-bottom:1px solid var(--rule)}
+
+/* ───────── CONCLUSION ───────── */
+
+/* ───────── FULL REPORT ───────── */
+
+/* ───────── FOOTER (same as the home page) ───────── */
+footer{background:var(--navy-dark);padding:2.75rem clamp(1.25rem, 4vw, 4rem);display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,0.05)}
+.footer-brand{font-family:var(--serif);font-size:15px;font-weight:300;color:rgba(255,255,255,0.45)}
+.footer-brand strong{color:rgba(255,255,255,0.72);font-weight:400}
+.footer-nav{display:flex;gap:1.5rem 2rem;list-style:none;flex-wrap:wrap}
+.footer-nav a{font-size:11px;letter-spacing:0.07em;text-transform:uppercase;color:rgba(255,255,255,0.42);text-decoration:none;transition:color 0.2s}
+.footer-nav a:hover{color:rgba(255,255,255,0.8)}
+.footer-copy{font-size:12px;font-weight:300;color:rgba(255,255,255,0.35)}
+
+/* ───────── RESPONSIVE ───────── */
+@media(max-width:1100px){
+  .nav-links{gap:1.25rem}
+  .nav-links a{font-size:11px;letter-spacing:0.06em}
+}
+@media(max-width:900px){
+  :root{--nav-h:72px;--bar-h:48px}
+  #nav{padding:0 1.25rem}
+  #nav.solid{background:var(--cream-dark);border-bottom:1px solid var(--border)}
+  #nav.solid .nav-brand-name{color:var(--navy)}
+  #nav.solid .nav-brand-sub{color:var(--muted)}
+  #nav.solid .nav-burger span{background:var(--navy)}
+  .nav-links,.nav-btn{display:none}
+  .nav-burger{display:flex}
+  .nav-logo{height:30px}
+  .nav-brand-name{font-size:15px}
+  .nav-brand-sub{font-size:9px;letter-spacing:0.14em}
+  .qv-hero{grid-template-columns:1fr;min-height:auto;padding-top:var(--nav-h)}
+  .qv-hero-art{order:-1;min-height:clamp(260px,52vw,420px)}
+  .qv-hero-art::before{background:linear-gradient(to top,var(--navy) 0%,rgba(69,87,99,0) 45%)}
+  .qv-hero-text{padding:1.5rem 1.25rem 3rem}
+  .qv-chapters .pdf{display:none}
+  .qv-chapters a.ch{font-size:13.5px}
+  footer{flex-direction:column;align-items:flex-start;padding:2.25rem 1.25rem;gap:1.5rem}
+  .footer-nav{flex-wrap:wrap;gap:1rem 1.5rem}
+}
+@media(max-width:600px){
+}
+@media(max-width:480px){
+  .nav-brand-sub{display:none}
+  .nav-logo{height:28px}
+  .qv-title{font-size:clamp(50px,15vw,64px)}
+  .qv-hero-actions a{flex:1 1 auto;text-align:center}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .qv-title,.qv-sub,.qv-hero-actions{animation:none;opacity:1;transform:none}
+  *{transition:none !important}
+}
+
+/* ───────── REPORT TEXT ───────── */
+.qv-sec{background:var(--cream)}
+.qv-alt{background:#fff}
+.qv-prose{max-width:690px}
+.qv-sec h2{font-family:var(--serif);font-weight:300;font-size:clamp(36px,4.4vw,58px);line-height:1.06;letter-spacing:-0.015em;color:var(--navy);margin-bottom:2rem}
+.qv-prose h3{font-family:var(--serif);font-weight:400;font-size:clamp(26px,2.4vw,34px);line-height:1.18;color:var(--navy);margin:3.5rem 0 1.1rem}
+.qv-prose h4{font-family:var(--serif);font-weight:500;font-size:clamp(20px,1.6vw,22px);line-height:1.3;color:var(--navy);margin:2.4rem 0 .7rem}
+.qv-prose > :first-child,.qv-prose > h2 + h3{margin-top:0}
+.qv-prose p,.qv-box > p,.qv-rec-body > p,.qv-ol li,.qv-ul li{font-family:var(--serif);font-weight:400;font-size:clamp(17.5px,0.35vw + 16.2px,19px);line-height:1.7;color:var(--text);font-variation-settings:'opsz' 16}
+.qv-prose p,.qv-box > p,.qv-rec-body > p{margin-bottom:1.1em}
+.qv-prose strong,.qv-box strong{font-weight:500;color:var(--ink)}
+.qv-ol,.qv-ul{margin:0 0 1.5em;padding-left:0;list-style:none}
+.qv-ol{counter-reset:item}
+.qv-ol[start="4"]{counter-reset:item 3}
+.qv-ol li,.qv-ul li{position:relative;padding-left:2.4rem;margin-bottom:.9em}
+.qv-ol li::before{counter-increment:item;content:counter(item) ".";position:absolute;left:0;top:0;font-family:var(--serif);font-weight:500;color:var(--gold-ink)}
+.qv-ul li::before{content:'';position:absolute;left:.55rem;top:.75em;width:7px;height:7px;background:var(--gold)}
+.qv-rec-group-h{margin-top:1.5em}
+.qv-defs p{padding-left:1.25rem;border-left:2px solid var(--rule)}
+
+/* Boxes */
+.qv-box{background:var(--paper);padding:clamp(1.75rem,3.5vw,3rem);margin:clamp(2.5rem,5vw,4rem) 0;border-top:3px solid var(--gold)}
+.qv-box-h{font-family:var(--serif);font-weight:400;font-size:clamp(23px,2vw,28px);line-height:1.25;color:var(--navy);margin-bottom:1.25rem;max-width:30em}
+.qv-box > p{max-width:690px}
+.qv-box .qv-fig{margin:2.5rem 0}
+.qv-box .qv-fig:last-child{margin-bottom:0}
+
+/* Figures */
+.qv-cap{font-family:var(--serif);font-weight:400;font-size:clamp(18px,1.5vw,21px);line-height:1.35;color:var(--navy);margin-bottom:1rem;max-width:44em}
+.qv-t31{width:100%;max-width:820px;border-collapse:collapse;font-size:16px}
+.qv-t31 th,.qv-t31 td{padding:.9rem 1rem .9rem 0;border-bottom:1px solid var(--rule);text-align:right;font-weight:400;color:var(--text)}
+.qv-t31 th[scope="row"],.qv-t31 thead th:first-child{text-align:left}
+.qv-t31 thead th{font-size:14px;color:var(--muted);border-bottom:2px solid var(--navy)}
+.qv-t31 td{font-family:var(--serif);font-size:19px}
+.qv-t31 tfoot th,.qv-t31 tfoot td{font-weight:500;color:var(--ink);background:var(--paper);border-bottom:2px solid var(--navy)}
+.qv-t31 tfoot th{padding-left:.75rem}
+.qv-table-scroll{overflow-x:auto}
+.qv-small-only{display:none}
+.qv-seg{display:inline-flex;border:1px solid var(--rule);border-radius:2px;overflow:hidden;background:#fff;margin:0 0 1rem}
+.qv-seg button{font-family:var(--sans);font-size:13.5px;padding:.45rem .9rem;border:none;background:transparent;color:var(--muted);cursor:pointer;border-right:1px solid var(--rule)}
+.qv-seg button:last-child{border-right:none}
+.qv-seg button:hover{color:var(--navy)}
+.qv-seg button[aria-pressed="true"]{background:var(--navy);color:#fff}
+
+
+/* Chapter openers */
+.qv-opener h2{font-family:var(--serif);font-weight:300;font-size:clamp(38px,5.2vw,72px);line-height:1.04;letter-spacing:-0.015em;color:#fff;max-width:14em;margin:0}
+
+/* Recommendations */
+.qv-recs{list-style:none;border-top:2px solid var(--navy);margin:0 0 1rem;max-width:960px}
+.qv-rec{border-bottom:1px solid var(--rule)}
+.qv-rec summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:minmax(0,1fr) 2rem;gap:1rem;align-items:center;padding:1.3rem 0}
+.qv-rec summary::-webkit-details-marker{display:none}
+.qv-rec .t{font-family:var(--serif);font-size:clamp(19px,1.6vw,22px);line-height:1.35;color:var(--navy)}
+.qv-rec .t strong{font-weight:500}
+.qv-rec summary:hover .t{text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:4px}
+.qv-rec .pm{width:20px;height:20px;position:relative;justify-self:end}
+.qv-rec .pm::before,.qv-rec .pm::after{content:'';position:absolute;left:3px;right:3px;top:9px;height:2px;background:var(--navy);transition:transform .25s}
+.qv-rec .pm::after{transform:rotate(90deg)}
+.qv-rec details[open] .pm::after{transform:rotate(0)}
+.qv-rec-body{padding:0 0 2rem;max-width:690px}
+.qv-rec-body .qv-fig{max-width:820px}
+
+/* Conclusion */
+.qv-close{background:var(--navy)}
+.qv-close h2{color:#fff}
+.qv-close .qv-prose p{color:rgba(255,255,255,0.88)}
+
+/* Report download, authors */
+.qv-report{display:grid;grid-template-columns:minmax(0,280px) minmax(0,1fr);gap:clamp(2rem,6vw,5rem);align-items:start}
+.qv-report > img{width:100%;height:auto;display:block;border:1px solid var(--rule)}
+.qv-report-title{font-family:var(--serif);font-weight:300;font-size:clamp(34px,3.6vw,48px);line-height:1.05;color:var(--navy)}
+.qv-report-sub{font-family:var(--serif);font-weight:300;font-size:clamp(19px,1.6vw,23px);color:var(--text);margin-top:.4rem}
+.qv-report-actions{margin:1.75rem 0 2.75rem}
+.qv-meta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2rem 3.5rem;border-top:1px solid var(--rule);padding-top:2rem}
+.qv-meta h3{font-family:var(--serif);font-weight:400;font-size:24px;color:var(--navy);margin-bottom:1rem}
+.qv-meta h4{font-family:var(--sans);font-size:15px;font-weight:500;color:var(--ink);margin:1rem 0 .3rem}
+.qv-meta p{font-size:15px;line-height:1.65;color:var(--muted);margin-bottom:.8rem}
+
+@media(max-width:900px){
+  .qv-report{grid-template-columns:1fr}
+  .qv-report > img{max-width:220px}
+  .qv-meta{grid-template-columns:1fr}
+  .qv-ol li,.qv-ul li{padding-left:2rem}
+}
+@media(max-width:559px){.qv-small-only{display:block}}
+
+</style>
+</head>
+<body>
+
+<!-- NAV (same as the home page; section links point back to it) -->
+<nav id="nav" class="solid">
+  <a class="nav-brand" href="index.html">
+    <img src="bbe-logo-white-b.svg" alt="BBE" class="nav-logo">
+    <div class="nav-brand-text">
+      <span class="nav-brand-name">Bright Blue Europe</span>
+      <span class="nav-brand-sub">The future of the centre-right across Europe</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html#home">Home</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#staff">Our team</a></li>
+    <li><a href="index.html#publications">Our thinking</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+  <a class="nav-btn" href="https://www.brightblue.org.uk">Bright Blue UK</a>
+  <button class="nav-burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="nav-mobile" id="navMobile" aria-hidden="true">
+  <a href="index.html#home">Home</a>
+  <a href="index.html#about">About</a>
+  <a href="index.html#staff">Our team</a>
+  <a href="index.html#publications">Our thinking</a>
+  <a href="index.html#contact">Contact</a>
+  <a class="nav-btn" href="https://www.brightblue.org.uk">Bright Blue UK</a>
+</div>
+
+<!-- HERO -->
+<header class="qv-hero" id="top">
+  <div class="qv-hero-text">
+    <h1 class="qv-title">Quo vadis, <span class="pl">Polonia?</span></h1>
+    <div class="qv-bar" aria-hidden="true"></div>
+    <p class="qv-sub">Lessons from Brexit for a stronger Poland in Europe</p>
+    <p class="qv-authors"><strong>Bartłomiej Staniszewski</strong> and <strong>William Prescott</strong></p>
+    <div class="qv-hero-actions">
+      <a href="#introduction" class="btn-gold">Read the report</a>
+      <a href="quo-vadis-polonia.pdf" class="btn-ghost" download>Download the report (PDF)</a>
+    </div>
+  </div>
+  <div class="qv-hero-art">
+    <img src="qvp-hero.jpg" alt="Guido Reni’s painting of Europa riding the bull, as on the report’s cover">
+  </div>
+</header>
+
+<!-- CHAPTER BAR -->
+<nav class="qv-chapters" aria-label="Report chapters">
+  <div class="qv-chapters-inner">
+    <ol>
+      <li><a class="ch" href="#introduction">Introduction</a></li>
+      <li><a class="ch" href="#chapter-one">Chapter one</a></li>
+      <li><a class="ch" href="#chapter-two">Chapter two</a></li>
+      <li><a class="ch" href="#chapter-three">Chapter three</a></li>
+      <li><a class="ch" href="#chapter-four">Chapter four</a></li>
+      <li><a class="ch" href="#conclusion">Conclusion</a></li>
+    </ol>
+    <a class="pdf" href="quo-vadis-polonia.pdf" download>PDF</a>
+  </div>
+  <div class="qv-progress" id="qvProgress"></div>
+</nav>
+
+<main>
+<section id="introduction" class="qv-sec qv-alt"><div class="qv-wrap qv-block"><div class="qv-prose">
+<h2>Introduction</h2>
+<p>Euroscepticism has been a feature of Polish politics for years, but anti-EU sentiments in Poland have recently grown. In one poll from May 2026, 58% of Poles expressed support for Poland remaining in the European Union (EU). This would be a significant decrease from only two years ago: a poll from May 2024 found that 72% of Poles supported continued EU membership. What is more, at least in some polls, support for Poland leaving the EU had doubled in the same time span, from 12% to 24%.</p>
+<p>This has been accompanied by growing support for fervently anti-European political forces in Polish politics. Most notably, after overperforming in the 2025 presidential election — in April 2025, he was polling at 1% yet won over 6% of the vote come May — Grzegorz Braun’s radically anti-European, politically extreme Confederation of the Polish Crown (KKP) was recently polling at over 13% in some polls. Even Jarosław Kaczyński, since 2003 the leader of Law and Justice (PiS), Poland’s largest opposition party, has recently begun talking about the conditions upon which Poland could leave the European Union — a possibility which until recently had only been considered on the political fringes.</p>
+<p>Indeed, thus far, failures to engage constructively with the rest of Europe have only weakened Poland’s position in the world. This has happened even despite Poland having a nominally pro-European Government at the time of writing. For example, despite being the sixth largest economy and the fifth most populous country in the EU, in a recent reshuffle of the EU’s diplomatic corps, of 33 newly appointed ambassadors, not a single one of them is Polish; indeed, two Polish ambassadors lost their posts. The result is that Poland’s diplomatic standing and prestige were significantly weakened, harming Poland’s ability to influence its own fate on the international stage.</p>
+<p>The failure extends even to Polish control over its own policy environment. As of 2023, only about 5% of the EU’s civil service was Polish, despite Poland constituting 8.3% of the EU’s total population: a 66% mismatch. For the European Commission specifically, only 4.9% of those it employed were Polish. For comparison, Romania, which joined the EU three years later than Poland and has a population half the size of Poland’s, provides 4.8% of the European Commission’s employees — almost exactly the same number. Consequently, when EU policy is designed and executed, Polish interests are under-represented and under-considered.</p>
+<p>It is clear that a new, more compelling vision of Poland in Europe is needed before the narrative of Poland in Europe is lost to the anti-Europeans: a vision of a Poland which is richer, safer and more sovereign; a Poland with powerful allies and prosperous partners; a Poland with a real power to represent and further its interests abroad; a vision of a Poland stronger together in Europe.</p>
+<h3>The focus of this research</h3>
+<p>This report examines the sources of anti-Europeanism in Poland before comparing the situation Poland finds itself in regarding a potential Polexit to the situation that the United Kingdom faced in the run-up to and since Brexit. Drawing seven lessons from Brexit, the report finally provides 11 tactical and policy recommendations for promoting a positive vision of Poland in Europe, countering anti-European narratives in Poland and enabling deeper Polish integration with the rest of Europe without fuelling further anti-European sentiment.</p>
+<p>The research questions we explore are:</p>
+<ol class="qv-ol"><li>Learning from Brexit, what are the potential consequences of Poland further distancing itself from the rest of Europe?</li><li>What should a positive vision of closer Polish co-operation with Europe look like?</li><li>How can the lessons of Brexit be used to successfully counter anti-European narratives in Poland?</li><li>What practical steps would enable Poland to engage more closely with Europe?</li></ol>
+</div></div></section>
+<section id="chapter-one" class="qv-sec"><div class="qv-wrap qv-block"><div class="qv-prose">
+<h2>Chapter one: Methodology</h2>
+<p>As stated in the introduction, the aim of this report is to provide a suite of tactical and policy recommendations for promoting a positive vision of Poland in Europe and countering anti-European narratives in Poland. This chapter explains in detail the methods used to achieve this and the key definitions employed throughout the report.</p>
+<h3>1.1 Methods</h3>
+<p>We employed three research methods in this project:</p>
+<ul class="qv-ul"><li><strong>Literature review.</strong> This included a range of academic articles and books, government and other think-tank reports and news articles from across Poland, the United Kingdom and the rest of Europe.</li><li><strong>Data analysis.</strong> This included analysis of several academic and polling datasets, most notably those produced by the Public Opinion Research Centre (CBOS), Eurobarometer and the Chapel Hill Expert Survey (CHES). Where data analysis is presented, the sources of the data are described in the text. Various methods of data analysis are used, including polynomial regression and lead–lag correlation analysis. Again, where data analysis is presented, the exact method is described in the text.</li><li><strong>Informal interviews.</strong> We informally consulted with a range of Polish, British and European think-tank, academic and political experts through the course of the project. Their ideas have shaped or influenced some of the arguments in this report.</li></ul>
+<h3>1.2 Definitions</h3>
+<p>We now describe the key definitions relevant to the report.</p>
+<div class="qv-defs">
+<p><strong>Eurosceptic.</strong> ‘Euroscepticism’ here refers to opposition to the EU, in whatever form. The term is inevitably slightly ambiguous in some cases — for example, it can be ambiguous whether it is Eurosceptic to want to reduce the powers of the EU, but with the explicit intention to preserve the EU in the long term. Where the use of the term in this report is ambiguous, this is flagged in the text.</p>
+<p><strong>Anti-European.</strong> ‘Anti-European’ and ‘anti-Europeanism’ in this report refer to opposition to Europe, in whatever form. This can include European culture, institutions, values or individual European countries or peoples. It is therefore deliberately a very broad term.</p>
+<p>Worth noting is that, as per this report’s definitions, Euroscepticism is a form of anti-Europeanism, as it is a form of opposition to a European institution, but anti-Europeanism is much broader than just Euroscepticism. This means that any Eurosceptic is also an anti-European, the way we use the term in this report, but not every anti-European is a Eurosceptic. Conversely, being pro-European does not have to involve support for the EU or for further integration with the EU, but can merely refer to support for European culture, values, individual European countries or peoples or institutions other than the EU.</p>
+<p><strong>Brexit</strong>. This refers to the United Kingdom’s formal exit from the EU, which was voted through in a referendum on the 23<sup>rd</sup> of June 2016 and came to fruition on the 31<sup>st</sup> of January 2020.</p>
+<p><strong>Polexit.</strong> This refers in this report to a potential formal exit of Poland from the EU, analogous to how the United Kingdom left the EU through Brexit. In that, it does not correspond with some other, less strict uses of the term, such as “legal,” “financial,” “climate” or “identity” Polexit, all of which imply some level of separation from the EU without a formal separation analogous to Brexit — effectively, without activating Article 50 of the Treaty on European Union, to which all EU member states are signatories. Where a level of separation from the EU other than Polexit is discussed, it is simply referred to as such.</p>
+</div></div></div></section>
+<section id="chapter-two" class="qv-sec">
+<div class="qv-opener"><img src="qvp-bull.jpg" alt="" loading="lazy" style="object-position:50% 30%"><div class="qv-opener-text"><h2>Chapter two: Anti-European narratives in Poland</h2></div></div>
+<div class="qv-wrap qv-block"><div class="qv-prose">
+<p>Having discussed our methodology and defined the key terms used throughout the report, this chapter now explains the motivations for anti-Europeanism generally before distinguishing between moderate and radical Polish anti-Europeans and providing an overview of the leading sources of anti-Europeanism in Poland: concerns surrounding democracy, migration, environmental policy, cronyism and left-wing social policy, as well as the threat of Russia.</p>
+<h3>2.1 Why be anti-European?</h3>
+<p>The overarching argument for all kinds of opposition to international frameworks, such as ‘Europe’ or ‘the EU,’ is the argument for the benefits of diversity: pigeonholing fails to appreciate and take advantage of the real differences which exist between countries. Different countries have different needs and circumstances which demand different approaches. International frameworks, in turn, bind countries to a common, pre-agreed and uniform approach, or at least treat them as such.</p>
+<h4>Why be pro-European?</h4>
+<p>Conversely, the overarching argument for any kind of international framework is that there is often more to gain from international consensus than there is from maintaining the flexibility to adapt to individual needs and circumstances; particularly if said needs and circumstances are similar between the members of the international framework anyway.</p>
+<h3>2.2 Types of anti-European narrative in Poland</h3>
+<p>Anti-European narratives in Poland and their proponents can be divided, broadly, into two categories: moderate — sometimes also referred to as “Eurorealist,” especially when in connection to Euroscepticism, though in this report used to refer to moderate anti-Europeanism in general — and radical.</p>
+<h4>Moderate anti-Europeans</h4>
+<p>At least since the downfall of the League of Polish Families (LPR) in 2007 and until recent years, the Eurorealist position was the only significant type of anti-European narrative in Poland. Moderate anti-Europeans believe in a reversal of inter-European integration involving Poland yet want Poland to remain in the EU.</p>
+<h4>Radical anti-Europeans</h4>
+<p>Since 2025, their most unambiguous political vehicle has been the Confederation of the Polish Crown (KKP), led by Grzegorz Braun since the organisation was founded in 2019. Braun achieved a surprisingly strong result in the first round of the 2025 presidential election: in April 2025, Braun was polling at only 1%, yet won over 6% of the vote come the election in May. This was only possible because he split from the right-wing Confederation party to run in the presidential election against the Confederation’s candidate, the right-wing libertarian Sławomir Mentzen.</p>
+<p>Indeed, radical anti-Europeanism’s goal is not merely a re-affirmation of Polish sovereignty within the EU, but Poland leaving the EU altogether, as well as a radical reappraisal of Poland’s relationship with Europe.</p>
+</div>
+<aside class="qv-box"><h4 class="qv-box-h">Box 2.1. Euroscepticism in Polish popular opinion</h4><p>While Eurosceptic politicians have clearly risen in prominence in Poland in recent years, as explained above in the context of the rise of support for KKP and Confederation, the picture is more muddled when it comes to popular opinion.</p><p>Many pollsters would suggest that support for the EU among Poles has fallen markedly in the last few years. A poll was conducted in November 2025 by the French polling company Cluster17 under the “Eurobazooka” brand, which suggested that only 69% of Poles support EU membership and 25% oppose it. Two months later, in January 2026, the Polish pollster OGB conducted a poll which likewise suggested that 25% of Poles support Polexit, and 67% are in favour of Poland remaining in the EU. And, later that same year, in May, another Polish pollster, United Surveys–IBRiS, suggested that 24% of Poles are supportive of and 58% are against Polexit.</p><p>All of the above would compare unfavourably with polls from years prior. For example, in 2024, yet another Polish pollster, Opinia24, found that 72% of Poles supported Poland remaining in the EU and 12% were opposed to it. Of the above, however, OGB has been the only one to hold a comparable study in two separate years — in 2019, they found that 87% of Poles were opposed to and 7% would support Polexit. All in all, this would suggest that support for the EU in Poland has steadily declined over the last seven years.</p><p>On the other hand, the Polish state-sponsored pollster, CBOS, found in February 2026 that 82% of the Polish public supports Poland remaining in the EU and only 14% are in support of Polexit. This would in fact represent a two-year high, with support for the EU in Poland being at its strongest since April 2023, when CBOS found 85% of Poles opposed to Polexit and 10% in favour of it; though still someway off the peak of June 2022, when 92% of Poles were in favour of Poland remaining in the EU and only 5% opposed.</p><p>A yet different result can be found in Eurobarometer, the European Commission’s public opinion study, which claims that Polish support for Polish membership of the EU has been very slowly declining in the last two years, with 57% of Poles considering it a good thing in 2025; only a three-percentage-point decrease on 2024 and a six-percentage-point decrease on 2023, with 2022 likewise representing a peak of support for the EU in Poland. Then, 72% of Poles thought of Polish EU membership as a good thing and 8% as a bad thing, a net result 18 percentage points better than in 2025.</p><p>The results of the different CBOS and Eurobarometer surveys are shown in Chart 2.1 below.</p><figure class="qv-fig" id="fig-c21"><figcaption class="qv-cap">Chart 2.1. Support for and opposition to EU membership in Poland in the years 2007 to 2026 according to CBOS and Eurobarometer data.</figcaption><div class="qv-seg" role="group" aria-label="Measure shown"><button type="button" data-m="support" aria-pressed="true">Support</button><button type="button" data-m="oppose" aria-pressed="false">Opposition</button><button type="button" data-m="net" aria-pressed="false">Net support</button></div><div class="qv-legend" data-legend></div><div class="qv-chart" data-chart="c21"></div><p class="qv-src">Source: Eurobarometer and CBOS surveys between 2007 and 2026.</p></figure><p>As can be seen in Chart 2.1 above, if we were to trust either CBOS or Eurobarometer data, support for the EU in Poland still remains broadly at the same level it has been since at least 2007.</p><p>All this would suggest that polling data on Polish popular opinion about the EU is somewhat inconsistent and should be treated with caution.</p><p>We can determine how Eurosceptic the Polish party-political mood is by using CHES data on Polish political parties. In 2002, 2006, 2010, 2014, 2019 and 2024, CHES surveyed experts on the position of all Polish political parties on the question of the “overall orientation of the party leadership towards European integration” in the given year, on a scale of one to seven, with one meaning strong opposition to EU integration and seven meaning strong support. By multiplying the result for each party by that party’s popular support in the most recent election, then adding together every party’s result in any given year, we can estimate how Eurosceptic or pro-EU the entire Polish party-political scene is in said year.</p><p>The result can be seen below in Chart 2.2, with a higher number for ‘Politicians’ views’ (the blue line) indicating a more pro-European position.</p><figure class="qv-fig" id="fig-c22"><figcaption class="qv-cap">Chart 2.2. Support for the EU among the Polish public and party-political establishment in the years 2002 to 2026.</figcaption><div class="qv-seg" role="group" aria-label="Politicians’ views shown"><button type="button" data-v="same" aria-pressed="false">Same wave</button><button type="button" data-v="lag" aria-pressed="true">One wave earlier</button></div><div class="qv-legend" data-legend></div><div class="qv-chart" data-chart="c22"></div><p class="qv-src">Source: CBOS and CHES surveys between 2002 and 2026.</p></figure><p>The y-axis in Chart 2.2 shows how far the result in any given year is from the 2002 to 2024 average, expressed in standard deviations. The public view is represented by net support for Polish membership of the EU in CBOS data (red line).</p><p>As we can see, the Polish party-political establishment became more Eurosceptic between 2014 and 2019, then less Eurosceptic between 2019 and 2024. This is likely the result of PiS achieving a strong result in the 2015 and 2019 parliamentary elections, winning 37.6% and 43.6% of the vote respectively, and simultaneously getting into a conflict with the EU which lasted until PiS left the government in 2023 — a conflict which is explained in more detail later in this chapter. PiS’s vote share declined in the 2023 parliamentary election, and Poland has had an overtly pro-EU government since. And although the most recent CHES data is two years old, and is therefore unable to account for the recent rise in support for KKP and Confederation, if our analysis is correct, we would expect the blue line in Chart 2.2 above to go down significantly after 2024.</p><p>We can also see, however, that while Polish public opinion on the EU is moderately negatively correlated (-0.57) with Polish politicians’ views on the EU in any given year, it is strongly positively correlated (+0.74) with Polish politicians’ views on the EU in the preceding wave of the CHES study. This would suggest that Polish public opinion lags behind the views of the Polish party-political scene — though this is not to suggest that one causes the other. If we are correct that the Polish party-political scene has become significantly more Eurosceptic in the last two years due to the rise in support for KKP and Confederation, we would expect that Polish popular opinion likewise becomes significantly more Eurosceptic in the years to follow, even if it does not reflect the Euroscepticism of the Polish political scene just yet.</p><p>A January 2026 OGB study, some of the results of which are illustrated in Chart 2.3 below, found that 46% of Law and Justice voters are opposed to Polexit, with PiS voters being three percentage points net in opposition to Polexit. This would represent a significant anti-EU shift among Law and Justice voters since 2019. Then, 87% of them were opposed to Polexit (net 77 percentage point opposition to Polexit).</p><figure class="qv-fig" id="fig-c23"><figcaption class="qv-cap">Chart 2.3. Net support and change in support for Polexit among the supporters of different Polish political parties using data from 2019 and 2026.</figcaption><div class="qv-legend" data-legend></div><div class="qv-chart" data-chart="c23"></div><p class="qv-src">Source: Violetta Baran, ‘Polexit? Sondaż: PiS ma problem. Elektorat się podzielił’, Wirtualna Polska, 4 February 2026 &lt;<a class=”qv-link” href=”https://wiadomosci.wp.pl/polexit-sondaz-pis-ma-problem-elektorat-sie-podzielil-7250749584771392a” rel=”noopener”>https://wiadomosci.wp.pl/polexit-sondaz-pis-ma-problem-elektorat-sie-podzielil-7250749584771392a</a>&gt; [accessed 21 November 2026].</p></figure><p>In that same data, 43% of Confederation (net five percentage point support for Polexit) and 72% of KKP voters are in support of Polexit (net 67 percentage point support for Polexit). By comparison, net opposition to Polexit among the voters of the governing Civic Coalition (KO) party is a staggering 97 percentage points.</p></aside>
+<div class="qv-prose">
+<h3>2.3 Sources of anti-European sentiment in Poland</h3>
+<h4>Democratic concerns</h4>
+<p>Both moderate and radical anti-Europeans in Poland contend that the EU is an anti-democratic institution, or at least that it harms democracy in Poland.</p>
+<p>In sum, one can see, using the example of the Polish judicial controversy, how a particular interpretation of democracy can allow one to conclude that the EU is anti-democratic.</p>
+<h4>Migration</h4>
+<p>Both moderate and radical anti-Europeans in Poland contend that the EU promotes and forces Poland to adopt a harmful migration policy.</p>
+<p>Specifically, the EU Common European Asylum System (CEAS) became a source of anti-European sentiment in Poland in 2015, and memory of the EU’s past handling of migration policy remains a source of said sentiment today.</p>
+<p>On the other hand, under the 2015-23 PiS Government, the number of non-European foreign residents in Poland also increased: from around 18,000 to over 86,000, an over fourfold increase. This raises the question of how real the purported issues created by an extra 7,000 arrivals would have been.</p>
+<h4>Environmental policy</h4>
+<p>Both moderate and radical anti-Europeans in Poland contend that the EU promotes and forces Poland to adopt a harmful environmental policy.</p>
+<p>Specifically, the EU’s European Green Deal, approved in 2020, became a major source of Eurosceptic feelings in Poland. The Deal, aiming chiefly to achieve climate neutrality by 2050 among EU member states, has been intensely criticised for its alleged effects on EU — and so, by extension, Polish — competitiveness and the cost of living. Polish Eurosceptics’ disdain for the EU’s environmental policy was most famously encapsulated by Czarnek in a 2026 speech in which he asserted that Poland “has no Green Deal, no shitty renewables [<em>OZE-sroze</em>] financed through subsidies. We have our coal supply, our natural riches, and let us stay away from them!”</p>
+<p>Today, even pro-Europeans in Poland have somewhat conceded to Eurosceptics on the environmental argument. Morawiecki, who secured the original Polish opt-out from the Green Deal, is himself fairly pro-European. Most importantly, in 2024, Tusk declared that he will seek further changes in the Green Deal and that Poland will go its own way on environmental policy “without European coercion.” The ruling Tusk-led Government has also, in 2026, celebrated further concessions in the Green Deal, effectively making the green transformation more drawn out and the EU’s measures less demanding, while the KO Economy Minister (2023-ongoing) Andrzej Domański has led a 15-country-wide intra-EU coalition to, among other things, review the EU’s carbon taxes. Again, some ways to navigate the EU’s approach to environmental policy as a source of Euroscepticism in Poland are suggested in chapter four of this report.</p>
+<h4>Cronyism</h4>
+<p>Both moderate and radical anti-Europeans in Poland contend that the EU facilitates and is rife with cronyism, in particular as pertaining to those part of a pro-European, liberal, Western establishment who discriminate against the Poles who are not part of said establishment.</p>
+</div>
+<aside class="qv-box"><h4 class="qv-box-h">Box 2.2. Poles’ perceptions of Germany</h4><p>The centre of anti-European Poles’ attention is most often Germany. It provides the focal point around which criticisms of the EU and Europe more broadly converge.</p><p>The reason for this is not just that Germany is Poland’s largest, most important European neighbour, and that the current President of the European Commission, von der Leyen, is German, but also that the Polish public bears a unique dislike towards Germans, as can be seen in Chart 2.4 below.</p><figure class="qv-fig" id="fig-c24"><figcaption class="qv-cap">Chart 2.4. Poles’ attitude towards different nations in 2026.</figcaption><div class="qv-legend" data-legend></div><div class="qv-chart" data-chart="c24"></div><p class="qv-src">Source: Jan Kujawski, Stosunek Polaków do innych narodów, Komunikat z badań, 16/2026 (Warsaw: Centrum Badania Opinii Społecznej, 2026) &lt;<a class=”qv-link” href=”https://www.cbos.pl/SPISKOM.POL/2026/K_016_26.PDF” rel=”noopener”>https://www.cbos.pl/SPISKOM.POL/2026/K_016_26.PDF</a>&gt; [accessed 21 November 2026].</p></figure><p>Of the 21 nations or ethnicities tested by CBOS in 2026, a majority of Poles only expressed sympathy towards Italians, Czechs and Slovaks from among Europeans. Notably, net sympathy towards Germans (positive three percentage points) is the same as towards the Chinese, despite Germany being an ally of Poland and China being a serious geopolitical threat.</p><p>Even so, most Poles think that Polish-German relations are good. In the aforementioned Polish-German barometer study, 57% of Poles expressed that opinion; only 19% thought Polish-German relations are bad.</p></aside>
+<div class="qv-prose">
+<p>In sum, the cronyism argument is difficult to defeat entirely due to there being no clear distinction between crony behaviour and successful, relationship-based diplomacy. The argument that the EU systematically discriminates against Poland and in favour of the EU’s great powers, and especially Germany, is likely to remain popular regardless thanks to its rhetorical advantages: the strength of anti-German sentiment among the Polish public, discussed in Box 2.2 earlier, and Poland’s historic negative or mixed relations with Europe’s great powers. The best way to address it would be to demonstrate the extent to which Poland benefits from the EU’s arrangements and reform Polish diplomacy within the EU; some ways of doing so are suggested in chapter four of this report.</p>
+<h4>Left-wing social policy outlook</h4>
+<p>Both moderate and radical anti-Europeans in Poland contend that the EU, and Europe — and especially Western Europe — generally favour an excessively left-wing social policy outlook which is causing a value shift which ultimately threatens to undermine Polish values, identity and civilisation unless Poland separates from and reasserts itself against Europe and the EU.</p>
+<p>In sum, then, the social outlook argument has some force, but strong counter-arguments against it can be made. Alas, examples of said counter-arguments being prominently used are scarce. Again, suggestions on how to re-emphasise the EU’s right-leaning conservative credentials are made in chapter four of this report.</p>
+<h4>Failures to confront Russia</h4>
+<p>Failures to confront Russia affect anti-European sentiment in Poland in two ways. First, the critique that Europe has failed to confront Russia is a source of anti-European sentiment among moderate anti-Europeans. Second, Russia is itself a source of radical anti-European sentiment in Poland and elsewhere. The two will be discussed separately here.</p>
+<p>In sum, then, while it is true that Europe has, on some occasions, failed to confront Russia, it is also true that Poland had not taken all the steps it could to alleviate the Russian threat, and so one can hardly blame Europeans for not having done the same. On the other hand, Russian support of radical anti-Europeanism in Poland is actively pushing Poland away from Europe — as it is also in other European countries — though it is not so far-reaching as to be able to succeed without tapping into already existing sources of anti-Europeanism, listed earlier in this chapter. Again, some ways to address this are provided in chapter four of this report.</p>
+<h3>2.4 Conclusion</h3>
+<p>There is not one single source of anti-European sentiment in Poland, but underlying almost all of it is an argument about sovereignty: barring the threat of Russia, the sources discussed earlier in this chapter serve effectively as individual examples to prove the broader point that Polish sovereignty is under threat from the EU and Europe.</p>
+<p>For every policy area where the EU makes decisions, whether that be migration, the environment, or social policy, they are taken out of Poland’s hands, the argument goes; and the very actions of European countries are a threat to Polish national identity. Besides, the argument continues, it is Europe which has been the main threat to Polish sovereignty over the years: it either failed to object to or even actively participated in the loss of Polish independence in the eighteenth and twentieth centuries, and Poles still have not fully recovered.</p>
+</div></div></section>
+<section id="chapter-three" class="qv-sec">
+<div class="qv-opener"><img src="qvp-europa-face.jpg" alt="" loading="lazy" style="object-position:50% 32%"><div class="qv-opener-text"><h2>Chapter three: Learning lessons from Brexit</h2></div></div>
+<div class="qv-wrap qv-block"><div class="qv-prose">
+<p>Having provided an overview of anti-European narratives in Poland, this report now examines the development of anti-European, and specifically Eurosceptic, narratives in the UK from the time it joined the EU in January 1973 until its departure in 2020, a period during which two referenda were held on the subject (see Box 3.1, below), and four Prime Ministers were brought down by it: Margaret Thatcher (1979-90), John Major (1990-97), David Cameron (2010-16) and Theresa May (2016-19). It will then consider seven lessons from the UK’s experience with the EU and Brexit for Poland and the spectre of Polexit.</p>
+</div>
+<aside class="qv-box"><h4 class="qv-box-h">Box 3.1. The UK’s two EU membership referenda</h4><p>The UK has had two referenda on EU membership: one in 1975, when the EU was known as the European Economic Community (EEC), and the other in 2016. Despite having joined the EEC in 1973 under Conservative Prime Minister Edward Heath (1970-74), the country’s membership remained contentious, especially on the left and among its key party representative, the Labour Party.</p><p>Ultimately, ‘Yes’ triumphed, securing 67% of votes cast. While all four UK nations voted ‘Yes’, there were smaller majorities in Northern Ireland (52%) and Scotland (58%) than in England (69%) or Wales (65%).</p><p>Unlike Wilson, however, Cameron lost the June 2016 referendum by 51.9% to 48.1%. In a reversal of 1975, England and Wales recorded the strongest ‘Leave’ votes, at 53.4% and 52.5% respectively, whereas the strongest ‘Remain’ votes were in Scotland and Northern Ireland, at 62% and 55.8% respectively. Just over four decades after voting to stay, the UK was out.</p></aside>
+<div class="qv-prose">
+<h3>3.1 Main Eurosceptic narratives in British politics, 1973 to 2020</h3>
+<p>Much as Polish anti-Europeans are divided earlier in this report into moderate and radical categories, British Eurosceptics have traditionally been divided between so-called “hard” and “soft,” with the former advocating either withdrawal or radical renegotiation of the UK’s terms of membership, and the latter limiting their criticisms to certain parts of EU architecture. Indeed, Euroscepticism has been the only notable form of anti-Europeanism in the UK in the run-up to Brexit, with some caveats explored in Box 3.2 below, and therefore Euroscepticism, rather than anti-Europeanism more broadly, is the sole focus of this chapter.</p>
+</div>
+<aside class="qv-box"><h4 class="qv-box-h">Box 3.2. Britain, the Commonwealth and the USA</h4><p>The only significant form of anti-Europeanism in the UK, besides Euroscepticism, has been the willingness to look beyond Europe, towards the UK’s former colonies, with the two foci often seen as mutually exclusive, or at least competing.</p><p>Worth highlighting here is that, even despite the ‘special relationship’ between the UK and the USA according to which the UK is uniquely close to the USA from among European countries, at the moment of writing, 45% of polled Brits would prefer closer relations with Europe than with the US, and only 12% would prefer the opposite.</p></aside>
+<div class="qv-prose">
+<p>Three of the main Eurosceptic narratives to have played out during the lifetime of the UK’s membership were concerns about a loss of sovereignty, the perceived negative effects of EU membership on the British economy and the effects of the EU on immigration.</p>
+<h4>Sovereignty</h4>
+<p>As is also the major theme in Eurosceptic discourse in Poland, the first criticism of the EU in the UK concerned the impact of EU membership on British sovereignty.</p>
+<p>Rightly or wrongly, Conservatives increasingly felt that the Europe to which they had signed up — a common market — had evolved to the point where it became a threat to national sovereignty and democracy itself, strongly echoing Eurosceptic Polish concerns discussed in the previous chapter. As May’s former co-Chief of Staff (2016-17) and current Conservative MP (2024-ongoing) Nick Timothy remarked in 2020, thanks to successive ECJ rulings, the EU’s legal remit expanded to “everything from taxation to immigration control,” severely limiting the capacity of national governments to respond to popular demands and act with sovereignty.</p>
+<h4>Economy</h4>
+<p>The perceived negative economic impacts of EU membership have been a consistent critique of the EU in the UK since at least 1973, although they evolved over time.</p>
+<p>Several critiques of the economic impact of the EU also existed on the right. Initially, much of the Conservative Party supported Britain’s membership of the EU for the very reasons much of the left opposed it, namely that the so-called “four freedoms” — of goods, capital, people and services — would force British industries to become more competitive. However, as the British economy was in a much stronger position as relative to the rest of the EU in 2016 than in 1975, opponents of membership increasingly portrayed Brussels as holding back UK economic growth through excessive regulation and fiscal contributions. The most extreme version of this, the so-called “Singapore-on-Thames” envisaged a post-Brexit UK whose light-touch regulatory environment would be a natural source of growth.</p>
+<h4>Migration</h4>
+<p>A key anti-EU narrative experienced in the UK in the lead-up to Brexit concerned immigration.</p>
+<p>Consequently, only the ‘Leave’ side was perceived by the public to address the immigration issue. According to a YouGov poll taken just before the 2016 referendum, some 84% of prospective ‘Leave’ voters thought that Brexit would reduce immigration. Indeed, polling evidence suggests that concerns about immigration were, together with the related issue of sovereignty, the largest factor behind the UK’s 2016 ‘Leave’ vote. As academic Roger Eatwell and then-academic Matthew Goodwin point out, “support for Brexit was stronger in areas that during the preceding decade had experienced rapid inward migration.” For example, between 2001 and 2011, the town of Boston saw the percentage of foreign-born residents quintuple, reaching 15% of the total: 75% of its voters backed Brexit at the 2016 referendum.</p>
+<h3>3.2 Consequences of Brexit</h3>
+<p>This chapter will now focus on three main consequences of the Brexit vote: the impact of Brexit on British sovereignty, economy and migration. It will then apply the historical lessons of Brexit to the case of Poland.</p>
+<h4>Impact of Brexit on UK sovereignty</h4>
+<p>Since Brexit was hugely disruptive to British domestic politics and made it more difficult for Britain to represent its interests in Europe, it seriously and negatively affected practical British sovereignty, at least in the short term. Unable to determine what form of Brexit to take and politically bound to implement a result that most of the Members of Parliament opposed, Brexit disrupted the British state’s practical capacity to deliver almost any national objective other than Brexit itself for three-and-a-half years.</p>
+<p>At the core of the problem lay the nature of the 2016 referendum. Because the British Parliament is sovereign and the primary source of political legitimacy under the uncodified British constitution, referendum results are not constitutionally binding. At the same time, by agreeing to hold the referendum, Parliament effectively delegated the decision to voters directly and bound its MPs to follow suit. When the result went against the wishes of most MPs — 479 MPs were opposed to Brexit, while 158 of them supported it, at the time of the referendum, as shown in Chart 3.1 below — the two came into opposition in a way the British constitution had hitherto not accounted for.</p>
+</div>
+<figure class="qv-fig" id="fig-c31"><figcaption class="qv-cap">Chart 3.1. Views of British MPs on Brexit at the time of the 2016 Brexit referendum.</figcaption><div class="qv-legend" data-legend></div><div class="qv-chart" data-chart="c31"></div><p class="qv-src">Source: ‘EU Vote: Where the Cabinet and Other MPs Stand’, BBC News, 22 June 2016 &lt;<a class=”qv-link” href=”https://www.bbc.com/news/uk-politics-eu-referendum-35616946” rel=”noopener”>https://www.bbc.com/news/uk-politics-eu-referendum-35616946</a>&gt; [accessed 21 November 2026].</p></figure>
+<div class="qv-prose">
+<p>Second, on the effect of Brexit on Britain’s ability to represent its interests in Europe. Britain is still enormously affected by EU law, in particular by EU regulation, tariffs and certification rules, but is now unable to debate or vote on said law in either the European Parliament or any other of the major EU bodies listed in section 1.2 of this report.</p>
+<h4>Impact of Brexit on the UK economy</h4>
+<p>While the economic impact of Brexit remains heavily debated, it likely has negatively affected economic growth.</p>
+<p>With that said, the most prominent study of the impact of Brexit on the UK’s GDP was produced for the National Bureau of Economic Research (NBER) in 2026. It found that, by the end of 2025, the UK’s GDP per capita was 6 to 8% lower than it would have been had Brexit not happened; “investment was reduced by 12% to 13%, employment by 3% to 4% and productivity by 3% to 4%.” The spread was based on the use of two methods: synthetic control, described earlier, and “a micro-level analysis that uses firm-level data from the Decision Maker Panel (DMP), a monthly survey of over 11,000 UK firms, with responses each month from 2,000–2,500 firms,” covering about a tenth of the UK’s private-sector employment. Where synthetic control produced the more damning 8% figure, microanalysis produced the slightly more charitable 6% figure.</p>
+</div>
+<aside class="qv-box"><h4 class="qv-box-h">Box 3.3. The limits of synthetic control analysis</h4><p>The chief objection to the argument that Brexit has hurt the UK economy is that the method used to demonstrate it is inherently flawed.</p><p>On the most optimistic scenario, UK GDP per capita fell by 4% against a counterfactual scenario where Brexit has not happened. On the most pessimistic, it fell by 11%. Likewise, no matter what choice of countries was made to compare the UK against, the economic impact of Brexit still came out negative. In the words of the study, the estimate “is robust to dropping each country individually except for the US, which if dropped roughly halves the predicted [negative] impact.”</p></aside>
+<div class="qv-prose">
+<p>In sum, analyses vary. A report by the EU Brexit Task Force summarised 17 different economic analyses of the potential impact of a no-deal Brexit — and therefore the most radical departure from the EU of all the potential forms of the UK’s post-Brexit relations with the EU — on the UK economy: their estimates for the impact of a no-deal Brexit on the UK’s GDP ranged from negative 1.7% to negative 9.9%. Since that study came out, the UK think tank Resolution Foundation has produced similarly wide-ranging estimates, with the GDP per capita cost of Brexit estimated by them to lie between 4.3 and 10.4%.</p>
+</div>
+<figure class="qv-fig" id="fig-t31"><figcaption class="qv-cap">Table 3.1. Summary of different estimates of the medium-to-long-term economic impact of Brexit on the UK’s GDP / GDP per capita / welfare</figcaption><div class="qv-table-scroll"><table class="qv-t31"><thead><tr><th scope="col">Source</th><th scope="col">Lower bound</th><th scope="col">Upper bound</th></tr></thead><tbody><tr><th scope="row">NBER</th><td>−4%</td><td>−11%</td></tr><tr><th scope="row">EU Brexit Task Force</th><td>−1.7%</td><td>−9.9%</td></tr><tr><th scope="row">Resolution Foundation</th><td>−4.3%</td><td>−10.4%</td></tr></tbody><tfoot><tr><th scope="row">Total</th><td>−1.7%</td><td>−11%</td></tr></tfoot></table></div><p class="qv-src">Source: Bloom and others, The Economic Impact of Brexit; Brexit Task Force, A Review of Economic Analyses on the Potential Impact of Brexit; Christensen and others, Mountain Climbing.</p></figure>
+<div class="qv-prose">
+<p>Overall, while Brexit has created some economic opportunities for the UK, these have not to date outweighed the economic costs, and show few signs of doing so in the near future. Even the proponents of Brexit do not attempt to claim that Brexit has been of net economic benefit to the UK, but limit themselves to denying that it has economically hurt the UK. With that said, the economic impact of Brexit has been unclear enough that it is difficult to use the supposed effects of Brexit on the UK economy as a pro-EU trump card.</p>
+<h4>Impact of Brexit on immigration into the UK</h4>
+<p>Arguably one of the greatest broken promises of Brexit concerns immigration. While, as promised by the pro-Brexit side during the 2016 referendum campaign, free movement with the EU ended following the conclusion of the post-Brexit transition period on 31 December 2020, the post-Brexit migration system comprehensively failed to deliver the lower levels of net immigration which the pro-’Leave’ campaign had promised in 2016.</p>
+<p>Unfortunately, three main design flaws meant the system failed to work as intended. First, the relaxation of post-study visa rules encouraged a growing number of international students to bring family members with them — the number of such dependants increased more than eightfold between 2019 and 2022, hitting 136,000. Second, the lowering of the salary threshold for non-EU skilled workers similarly led to more Skilled Worker visas being issued to them — from 108,000 in 2019 to 204,100 in 2022. Third, and most consequentially, a poorly designed Care Worker visa was introduced which effectively allowed the care sector to import any worker from abroad, so long as they had a rudimentary understanding of English. As well as problems relating to the exploitation of low-paid care workers, the number of workers imported was huge, with some 350,000 visas issued to care workers and their dependants in 2023 alone.</p>
+<p>The UK’s departure from the EU has also complicated the UK’s ability to control boat crossings of irregular migrants across the English Channel. As an EU member state, the UK was a signatory to the Dublin regulation, according to which any EU member state was entitled to send back any asylum seekers to the first EU member state they entered, as discussed earlier in section 2.3 of this report. While not the only factor — the arrivals of irregular migrants predated the UK’s formal departure, with almost 2,000 such migrants arriving in 2019, and the UK’s reputation as an English-speaking nation makes it attractive to some irregular migrants regardless — it has made the problem worse.</p>
+<p>As shown in Chart 3.2 below, in 2021, 28,500 irregular migrants arrived in the UK, and in 2022 the number peaked at 45,800 such migrants a year. Prior to 2018, in no single year were there more than 100 such crossings recorded.</p>
+</div>
+<figure class="qv-fig" id="fig-c32"><figcaption class="qv-cap">Chart 3.2. Number of irregular migrants entering the UK each year, 2018 to 2026.</figcaption><div class="qv-legend" data-legend></div><div class="qv-chart" data-chart="c32"></div><p class="qv-src">Source: ‘Channel Crossing Tracker’, Migration Watch UK &lt;<a class=”qv-link” href=”https://www.migrationwatchuk.org/channel-crossings-tracker/“ rel=”noopener”>https://www.migrationwatchuk.org/channel-crossings-tracker/</a>&gt; [accessed 21 November 2026].</p></figure>
+<div class="qv-prose">
+<p>The number has since slightly declined, to around 33,000 as of the year ending June 2026. If trends for 2026 continue, around 27,500 irregular migrants are expected to make the Channel crossing through the course of 2026.</p>
+<p>Ultimately, while Brexit did give the UK the legal tools to reduce legal immigration, the failure to use those tools effectively, combined with the additional post-Brexit challenges of repatriating irregular migrant arrivals from EU member states, meant that Brexit was instead followed by a record increase in migration to the UK, as we can see in Chart 3.3 below: the opposite of what many of Brexit’s proponents intended.</p>
+</div>
+<figure class="qv-fig" id="fig-c33"><figcaption class="qv-cap">Chart 3.3. UK migration flows excluding British citizens, 1991 to 2025.</figcaption><div class="qv-legend" data-legend></div><div class="qv-chart" data-chart="c33"></div><p class="qv-src">Source: ‘Estimates of UK Net Migration, Immigration, and Emigration: 1991 to 2025’, Migration Observatory, October 2026 &lt;<a class=”qv-link” href=”https://migrationobservatory.ox.ac.uk/wp-content/uploads/2026/10/F2-Net-migration-1991-2025.html” rel=”noopener”>https://migrationobservatory.ox.ac.uk/wp-content/uploads/2026/10/F2-Net-migration-1991-2025.html</a>&gt; [accessed 21 November 2026].</p><p class="qv-src">Note: Net migration refers to total immigration of non-UK citizens minus total emigration of non-UK citizens.</p><p class="qv-src">The Office for National Statistics (ONS), which produces the data visualised above, has changed its methodology from 2012 onwards. This is why data from 2012 onwards is discontinuous with pre-2012 data.</p></figure>
+<div class="qv-prose">
+<h3>3.3 Lessons for Poland</h3>
+<h4>Lesson one: If Brexit was economically disadvantageous for the UK, Polexit would be economically disastrous for Poland</h4>
+<p>While synthetic control analysis suggests that Brexit was a slight net negative for the UK economy, with the UK’s GDP per capita up to 11% lower than it would have been had the UK remained in the EU, the same method suggests that Polexit would be an economic disaster for Poland.</p>
+<p>According to one 2019 synthetic control study, Polish GDP per capita in PPP terms was between 20% and 50% higher by 2019 than it would have been had Poland never joined the EU. Another study, from 2026, suggests that Polish GDP was 54% higher in 2025 than it would have been had Poland not joined the EU, even adjusting for inflation. And perhaps most famously, a 2024 study from PIE suggested that Polish GDP per capita in PPP terms was 39.6% higher that year than it would have been had Poland never joined the EU, again after adjusting for inflation. A later 2026 synthetic control study from PIE which looked at GDP adjusting only for inflation instead of through PPP similarly found that Polish GDP per capita was between 22 and 61% higher that year than it would have been had Poland never joined the EU.</p>
+<h4>Lesson two: Concerns around sovereignty, not economics, are enough for a country to leave the EU</h4>
+<p>Relatedly, although the economic argument against Polexit is even stronger than the economic argument against Brexit ever was, no matter its strength, that argument alone will never be a sure guarantee against Polexit.</p>
+<p>Survey evidence backs this up. The people who voted for Brexit rarely did so for economic reasons. Polling by Lord Ashcroft from 2016 shows that the pro-’Remain’ side comprehensively won the argument on the economy. Job prospects, the cost of living, economic security, investment by international companies and, crucially, “the economy as a whole” were considered, on average, to turn out better if the UK remained in the EU than if it left. By far the strongest arguments for Brexit, on the other hand, were, in descending order, “ability to control our own laws,” “border controls” and “the immigration system.” In other words, while the pro-’Remain’ side won the economy argument, they lost the sovereignty and immigration arguments, explained earlier in this chapter. As the Director of the Brussels Institute for Geopolitics, Luuk van Middelaar, identifies, feelings of national belonging trumped economic interests in the Brexit vote.</p>
+<h4>Lesson three: Populism and Euroscepticism go hand-in-hand</h4>
+<p>As explored in chapter two, it is the populist parties in Poland which have spearheaded Eurosceptic narratives in Poland. KKP in particular is a populist party par excellence, but Confederation and PiS likewise exhibit characteristics of populist parties. And, as explored in this chapter, it was a populist party which provided the political fuel for the 2016 Brexit referendum: UKIP.</p>
+<p>This means that populist parties will always tend towards Eurosceptic positions. And Poland already sees a higher level of support for Eurosceptic, populist parties than the UK ever did in the run-up to Brexit: the combined polling share of KKP and Confederation in Poland has been consistently above 20% in all polls for several months now, something which UKIP had never consistently achieved, as can be seen in Chart 3.4 below, and continues to rise at the time of writing.</p>
+</div>
+<figure class="qv-fig" id="fig-c34"><figcaption class="qv-cap">Chart 3.4. A comparison of the polling averages of strongly Eurosceptic parties in Poland in the seven years before November 2026 and in the UK in the seven years before the 2016 Brexit referendum.</figcaption><div class="qv-legend" data-legend></div><div class="qv-chart" data-chart="c34"></div><p class="qv-src">Source: All Polish parliamentary and UK general election opinion polls aggregated on Wikipedia in the years 2009 to 2026.</p></figure>
+<div class="qv-prose">
+<p>Worth noting is also that support for UKIP collapsed after the Brexit referendum, as the party lost its raison d’être. At the 2017 general election, which happened under a year after the 2016 Brexit referendum, UKIP only won 1.8% of the vote. This should serve as a caution for KKP and Confederation.</p>
+<h4>Lesson four: The support of the Government is not needed in order to facilitate an exit from the EU</h4>
+<p>Polish pro-Europeans must not rest easy in the assumption that, as long as the likely parties of government are against Polexit, Polexit will not happen.</p>
+<p>With that said, as we can see in Chart 3.5 below, at least according to CBOS data, Polish opinion is still far more pro-EU than British public opinion ever was in the 14 years running up to Brexit or since.</p>
+</div>
+<figure class="qv-fig" id="fig-c35"><figcaption class="qv-cap">Chart 3.5. Net support for EU membership in Poland and the United Kingdom, 2002 to 2026.</figcaption><div class="qv-legend" data-legend></div><div class="qv-chart" data-chart="c35"></div><p class="qv-src">Source: Ipsos, YouGov and CBOS surveys between 2002 and 2026.</p></figure>
+<div class="qv-prose">
+<p>Despite this, Eurosceptic parties are also more consistently popular in Poland than UKIP ever was in the UK, as shown in Chart 3.4 earlier. If KKP and Confederation manage to convert their party-political support into support for Polexit, net support for EU membership in Poland could fall yet further. Note in Chart 3.5 how quickly support for EU membership collapsed in the UK between 2015 and the Brexit referendum under pressure from effective pro-Brexit campaigning groups.</p>
+<p>In sum, Farage never had to become Prime Minister, or even enter government, in order to facilitate Brexit. He exerted enough political pressure on the governing Conservatives from outside government to make Cameron agree to a referendum, which ended in Brexit. Indeed, as mentioned earlier in section 2.2, Poland’s main opposition party leader now says that if the EU cannot be reformed otherwise, Poland could open talks on leaving. By teasing the remote prospect of Polexit, Kaczyński is copying Cameron’s answer to UKIP in an attempt to win back voters from KKP and Confederation. The result could well also be a copy of what happened in the UK.</p>
+<h4>Lesson five: Exiting the EU itself solves nothing</h4>
+<p>Of the sources of Eurosceptic feeling in the UK in the run-up to Brexit discussed earlier in this chapter, none of them have disappeared. On the contrary, as discussed, many of them have worsened: the UK is, in practice, less sovereign; has likely suffered economically; and has only seen the annual number of immigrants arriving into the country increase since Brexit, as shown in Chart 3.3 earlier.</p>
+<p>An analogous story could play out with Poland and Polexit. Polexit would be no guarantee that problems to do with democracy, migration, environmental policy, cronyism and social policy would be addressed. On the contrary, Polexit could consume so much of Polish politicians’ political capital that they would be left unable to legislate to address any of the above, only making the problems worse.</p>
+<h4>Lesson six: The EU is neither intrinsically left- nor right-coded</h4>
+<p>Whereas the EU used to be seen more negatively by the British left and more positively by the British right at the time of the 1975 referendum, this had changed by 2016: largely because the EU itself had changed, but also because interpretations of the same values within the UK have changed. Where the EU used to be seen as an abode of free trade, this changed as the EU introduced more and more regulation, but also as British free-marketeers began looking less to Europe and more to the outside world.</p>
+<p>In the same vein, pro-Europeans in Poland should not give up on entire political blocs because they see them as inevitably anti-European or, conversely, rest easy in the assurance that a bloc will always remain pro-European. Should migration, for example, worsen as a problem outside of the EU at the same time as the EU toughens its own borders, the anti-migration sentiments as a source of Euroscepticism might disappear altogether.</p>
+<h4>Lesson seven: People do not become pro-EU when EU funds are spent on them</h4>
+<p>In the UK, the regions which received the most EU funding voted in favour of Brexit. A 2019 study from the London School of Economics (LSE) looked at the causal relationship between EU funding and Brexit support, and concluded that “EU money does not influence citizens’ support for the EU.” The two UK regions which received the most EU funding per capita were Cornwall and West Wales: both have received more than €750 per person in EU funding up to the point of the 2016 referendum and, indeed, “were entitled to receive around 26% of the total amount of total EU development funds allocated to the UK” despite constituting only 4% of the UK population.</p>
+<p>The same is true for Poland. As can be seen in Chart 3.6 below, there is no strong correlation in Poland between Euroscepticism and the level of EU funds invested where one lives.</p>
+</div>
+<figure class="qv-fig" id="fig-c36"><figcaption class="qv-cap">Chart 3.6. Relationship between EU funds spent per capita and percentage of votes cast for radical anti-European candidates in the 2025 presidential election in each Polish <em>powiat</em>.</figcaption><div class="qv-legend" data-legend></div><div class="qv-chart" data-chart="c36"></div><p class="qv-src">Source: ‘Mapa dotacji UE’, 23 November 2026 &lt;<a class=”qv-link” href=”https://mapadotacji.gov.pl” rel=”noopener”>https://mapadotacji.gov.pl</a>&gt; [accessed 21 November 2026]; Państwowa Komisja Wyborcza, ‘Wybory Prezydenta Rzeczypospolitej Polskiej’, 23 September 2025 &lt;<a class=”qv-link” href=”https://prezydent2025.pkw.gov.pl/prezydent2025/pl/dane_w_arkuszach” rel=”noopener”>https://prezydent2025.pkw.gov.pl/prezydent2025/pl/dane_w_arkuszach</a>&gt; [accessed 21 November 2026].</p></figure>
+<div class="qv-prose">
+<p>To measure this, we looked at the amount of EU funding per capita given to each Polish <em>powiat</em> and compared this with the percentage of voters in said <em>powiat</em> who voted in the first round of the 2025 Polish presidential election for either of the most Eurosceptic candidates: Mentzen or Braun. If EU funds positively influenced voters’ perceptions of the EU, we would expect that, the more a <em>powiat</em> receives in EU funds, the less likely it is to support either Mentzen or Braun.</p>
+<p>In the chart, each dot represents one <em>powiat</em>. Its colouring reflects how much of the <em>powiat</em> voted for Mentzen or Braun, with blue reflecting a more pro-EU vote, red reflecting a more Eurosceptic vote and yellow representing being close to the average. The line is drawn using polynomial regression and shows how support for either Mentzen or Braun in the 2025 election (the first variable) changes together with the amount of EU funds spent per capita in an area (the second variable). The shaded area illustrates a 95% confidence interval for the relationship between the two variables.</p>
+<p>The coefficient of determination (R<sup>2</sup>) there — namely the proportion of the variation in the percentage of the vote cast in a <em>powiat</em> for either Mentzen or Braun that can be predicted from the amount of EU funds spent per capita in said <em>powiat</em> using our polynomial regression — is only 0.055, which suggests that the relationship between the two variables is nigh random: the closer R<sup>2</sup> is to 1, the more one variable explains the other, and the closer it is to 0, the less one variable explains the other.</p>
+<h3>3.4 Conclusion</h3>
+<p>There are many parallels to be drawn between Poland and the UK when it comes to their relationship with the EU. Both are concerned about their sovereignty. Both are concerned about migration. Both have a mainstream right-of-centre party which, in an attempt to court the Eurosceptic populist right, pushes the country away from the EU.</p>
+<p>But there are also differences. Support for Polexit is lower than support for Brexit ever was. At the same time, however, support for Eurosceptic parties in Poland is strong and growing, and more sources fuel Euroscepticism and anti-Europeanism in Poland than had been the case in the UK. Polexit would also be far more damaging for Poland than Brexit ever had the potential to be, yet unless pro-Europeans in Poland make a positive case for Europe, that disaster could well come to be.</p>
+</div></div></section>
+<section id="chapter-four" class="qv-sec">
+<div class="qv-opener"><img src="qvp-cupid.jpg" alt="" loading="lazy" style="object-position:50% 35%"><div class="qv-opener-text"><h2>Chapter four: Recommendations for a stronger Poland in Europe</h2></div></div>
+<div class="qv-wrap qv-block"><div class="qv-prose">
+<p>So far, this report has examined the nature of the anti-European narratives in Poland and the UK, as well as drawn lessons from the latter for the former.</p>
+<p>This chapter now presents some recommendations to strengthen Poland’s position in Europe and ultimately outline a positive vision of Poland in Europe.</p>
+<h3>4.1 Policy approach</h3>
+<p>So far, pro-Europeans in Poland have largely used two tactics in order to oppose Polish anti-Europeans: re-using pro-Europe arguments which worked in the noughties, when Poland first joined the EU; and scaremongering over the potential negative consequences of anti-Europeanism.</p>
+<p>The first of those tactics no longer works, as Poles are already familiar with those arguments: namely, that the EU offers a rich export market for Poles, and that it represents a post-communist “return to Europe.” In that, even if they have merit, they are no longer sufficient to fully address the counterarguments against Europe which have appeared since Poland’s accession to the EU. Indeed, many of the sources of anti-European sentiment in Poland, discussed in section 2.3 of this report, have only manifested in the last few years, be that concerns over migration or environmental policy.</p>
+<p>The second of those tactics does little to persuade Poles who are already anti-European. When presented with two alternatives, both of which have negative consequences, voters will often pick the one which is untested. And anti-Europeans already see the status quo as bad, so convincing them that anti-Europeanism would lead to a scenario which, too, is bad, is not enough to persuade them. Indeed, attempts to do so in the UK, branded ‘Project fear,’ as discussed in section 3.1, have only been counterproductive.</p>
+<p>At heart, both Brexit and the spectre of Polexit are ultimately the result of the EU representing one side in a binary division: in the words of the best diagnostician of Brexit, the author David Goodhart, that between the “Somewheres,” who are rooted in their homes, and the “Anywheres,” who do not associate their home with any one physical place.</p>
+<p>The Anywheres “dominate our culture and society. They tend to do well at school ... then usually move from home to a residential university in their late teens and on to a career in the professions that might take them to [a big city] or even abroad for a year or two. Such people have portable ‘achieved’ identities, based on educational and career success which makes them generally comfortable and confident with new places and people.” They place “a high value on autonomy, mobility and novelty and a much lower value on group identity, tradition and national social contracts.” They are “comfortable with immigration, European integration and the spread of human rights legislation.” They often love to travel, meet different people and learn about different cultures, and while they would rarely express this out loud, often look down on the Somewheres.</p>
+<p>The Somewheres, on the other hand, “are more rooted and usually have ‘ascribed’ identities.” They “are more socially conservative and communitarian.” They feel uncomfortable about many aspects of cultural and economic change. To them, the local church, football club, factory or high street is not merely an amenity, but the centre of their identity. They often see the Anywheres as patronising and representatives of distant, unrelatable elites.</p>
+<p>Unless the EU appeals to the Somewheres, it will not survive in Poland. Polish Somewheres must be persuaded that integration with Europe is to the benefit of their home. That it is in the interests of Polish sovereignty, and the interests of their local voivodeship, town, village, neighbourhood and church or football club — rather than having some other, less localised benefits, whether that be environmental, economic or social.</p>
+<p>The only solution, then, is to offer a unified, cohesive — and therefore easy to explain and sell, as opposed to a series of tangentially related facts and arguments — vision, narrative and policy programme of a stronger, richer Poland in Europe in which Poland is an essential part of Europe and which is unlike the status quo, underlaid by real, substantive policy change to legitimise said change in narrative.</p>
+<h3>4.2 Policy tests</h3>
+<p>When formulating our recommendations, we applied four key principles that our recommendations seek to exemplify.</p>
+<ul class="qv-ul"><li><strong>Fiscal and political realism.</strong> There is no point recommending policies which can never come to be. This involves both fiscal realism — only recommending proposals which would not come at an excessive cost to a state’s finances — and political realism — only recommending proposals for which there is some political appetite and which would not be so difficult to implement as to require a disproportionate amount of time and effort to be implemented.</li><li><strong>Concreteness.</strong> The recommendations of this report concern the subject-matter of the rest of this report. Therefore, while we could recommend proposals that are so extensive as to help with almost anything — say, aim for Poland’s higher education sector to be one of the best in Europe — they would hardly be focused on the topic at hand. We will eschew such recommendations.</li><li><strong>Sovereignty.</strong> All our recommendations seek to respect or increase Poland’s ability to assert its identity and sovereignty as Poland. As such, when formulating them, we discriminated against any suggestions which would in any way decrease Poland’s ability to self-determine, surrender Poland’s decision-making ability to non-Poles or erase Poland’s national distinctiveness.</li><li><strong>Europeanness.</strong> All our recommendations seek to bring Poland closer to Europe. As argued throughout this report, Poland stands to benefit massively from improving its standing within Europe and reaping more of the potential benefits of Poland being a European country. For Poland to further distance itself from Europe, conversely, would forgo said benefits. Indeed, the main purpose of this report is to learn from the UK to outline a positive vision of the future of Poland in Europe, and so all our recommendations seek to serve just that vision.</li></ul>
+<p>We also distinguish between tactical and policy recommendations. The former concern the way politicians and political operators should act aside from policy implementation; the latter concern strictly what policies a pro-European Polish government ought to look to implement.</p>
+<h3>4.3 Tactical recommendations</h3>
+</div><ol class="qv-recs">
+<li class="qv-rec"><details><summary><span class="t"><strong>Recommendation one:</strong> Identify issues where moderate anti-Europeans will support deeper integration with the rest of Europe and build ad hoc policy coalitions around said issues.</span><span class="pm" aria-hidden="true"></span></summary><div class="qv-rec-body"><p>While Eurorealists express opposition to some aspects of European integration, as the term would suggest, they are open to or even supportive of other aspects of it. Politically, therefore, the easiest way to bring Poland closer to Europe is to form broad coalitions for just those aspects.</p><p>As Natasza Styczyńska, Assistant Professor at the Jagiellonian University, has argued, “although the [Polish anti-Europeans] criticise the current state of affairs and argue for less political cooperation, they do express support for specific EU policies. They advocate for cooperation with the neighbours, for example Eastern Partnership, energy union or the common defence and foreign policy.” Since Styczyńska wrote the above, Kaczyński has also expressed support for putting forward a new EU founding treaty, which would form the basis for a reformed EU, one more conducive to the political ambitions of the Law and Justice leader.</p><p>In general, then, pro-Europeans should identify where specific EU and European policies are supported by moderate Polish anti-Europeans, Eurosceptics and Eurorealists — in particular, PiS as well as R+ — and form ad hoc coalitions around said issues, across party lines. Indeed, as former Foreign Affairs Minister and R+ MP Szymon Szynkowski vel Sęk has opined, “Instead of merely criticising, we should be looking for allies — for which there is space ... not just blocking subsequent proposals and bills, but also actively attempting to find solutions.”</p><p>Given that such coalitions would almost certainly command the majority in both Polish parliamentary chambers, as well as in public opinion polls, they would have unprecedented legitimacy, as far as Polish politics goes, to push their proposals through. This would also allow for them to be represented in Brussels and not just — as has been the case thus far for a lot of Polish European policy — merely in Warsaw.</p></div></details></li>
+<li class="qv-rec"><details><summary><span class="t"><strong>Recommendation two:</strong> Use the language of the sovereigntist right whenever possible when talking about Europe.</span><span class="pm" aria-hidden="true"></span></summary><div class="qv-rec-body"><p>As shown earlier in this report, the issue of sovereignty is underlying nigh all sources of anti-European sentiment in Poland, much as it underlaid much of the support for Brexit in the UK in the run-up to the 2016 referendum. The sovereigntist right in Poland, however, currently owns the language of sovereignty and, furthermore, is moderately anti-European at best.</p><p>To counter this, pro-Europeans ought to use the language of the sovereigntist right as much as possible. While this might bring further attention to the issue of sovereignty and so move the debate to the sovereigntists’ ‘home turf,’ otherwise Polish pro-Europeans risk making the same mistake that the supporters of ‘Remain’ in the UK made before 2016 in respect to immigration, as discussed in section 3.1.</p><p>Campaigning around Europe and the EU should talk about the strength and prosperity of Europe and portray Poland as one of an elite band of self-selecting countries, each of which has remarkably rich ancestry and culture. It should talk about Europeans being stronger together and emphasise the historical strength of Europe. Campaigning material could even make direct historical references to European historical figures banding together with Polish characters: Copernicus could be portrayed chatting with Descartes and Thomas Aquinas; a Polish seventeenth-century hussar could be portrayed drinking together with a French soldier from the Napoleonic Wars and a German High Gothic knight; John Paul II could be shown giving a speech in the same video as Socrates and Emperor Justinian. The image of a centuries-long band of brothers should be cultivated in which Poland is an intrinsic and long-lasting member of a shared, European community, with the EU serving as a continuation of its centuries-old institutions: as discussed in section 2.3, the EU has a conservative, religious historical heritage. Polish voters should feel patriotic pangs not just when thinking of Casimir the Great or John Sobieski, but also — albeit, naturally, to a lesser extent — about Charlemagne or Isabella I, and not just when thinking of Frédéric Chopin and Adam Mickiewicz, but also of Franz Liszt and Lord Byron. Going to visit Versailles or St Peter’s Basilica should inspire not just awe, but also patriotic pride. In other words, Europe should be presented as a home for Polish Somewheres.</p><p>This tactic would flip the Polish ‘cronyism’ critique of Europe, discussed in section 2.3, on its head: it would concede that Europe is an exclusive club of countries, but that Poland is a part of it just as much as the countries of Western Europe, appealing to Polish sovereigntists’ sense of national pride and exclusivity. In the words of the Polish sociologist Jan Grzymski, “Poland joining the EU completed an important aspect of Poland’s [post-communist] transformation: at its start, it was often spoken and written of a ‘return to Europe,’ from which Poland has, in some way, been pushed out by communist rule.” This emotion ought to be resurrected in new form.</p><p>First, polling regarding Polish membership in the EU sometimes juxtaposes EU membership with sovereignty, or at least asks whether it has a negative impact on Polish sovereignty, with no option for respondents to answer that it has a positive impact on Polish sovereignty. Instead, as a standard practice, polling framed in this way should include the option that the EU has a positive impact on Polish sovereignty.</p><p>Second, in official state documents, too, the EU and other European institutions Poland is a member of ought not to be referred to in the third person, but instead in the first-person plural, clearly demarcating that Poland is an intrinsic member of a shared European community and contributing to a change in Polish public consciousness in that direction.</p></div></details></li>
+<li class="qv-rec"><details><summary><span class="t"><strong>Recommendation three:</strong> Emphasise Poland’s existing decision-making achievements within the EU.</span><span class="pm" aria-hidden="true"></span></summary><div class="qv-rec-body"><p>Also to negate the ‘cronyism’ critique of the EU, as well as to negate feelings of Poland as lacking decision-making power in the EU, whether that be where it comes to environmental, social, migration or other policy, pro-Europeans ought to portray Poland as a leading stakeholder in the EU and talk up Poland’s achievements in getting its way in the EU.</p><p>There are multiple Polish achievements within the EU which could be lauded, but victories achieved under the PiS Government of 2015 to 2023, and especially under the 2017 to 2023 premiership of Morawiecki, are of particular importance. This is because achievements made by Eurorealists will be more appealing when attempting to sway anti-European and Eurosceptic voters. Focusing on them would demonstrate that moderate anti-Europeans’ goals can be met without leaving the EU but are rather best achieved by working with the EU.</p><p>Some examples include the successful negotiation with the EU on the European Green Deal, discussed in section 2.3; the successful push for reform, together with Czechia, Hungary and Slovakia, of the EU’s proposals for a permanent asylum seeker relocation mechanism between 2016 and 2020; the successful push for a more punitive approach towards Russia following the 2022 Invasion of Ukraine; and the design and introduction of the popular ‘Clean Air’ and ‘My Electricity’ programmes in 2018 and 2019 respectively, in line with the EU’s own environmental policy of the time — of the 15.5 million households in Poland, almost 700,000 had taken part in the former programme by September 2023, and over 715,000 in the latter by the end of 2025.</p></div></details></li>
+</ol><div class="qv-prose">
+<h3>4.4 Policy recommendations</h3>
+</div><ol class="qv-recs">
+<li class="qv-rec"><details><summary><span class="t"><strong>Recommendation four:</strong> Lead on a coalition of European countries to deepen the EU’s common market.</span><span class="pm" aria-hidden="true"></span></summary><div class="qv-rec-body"><p>It is in Poland’s interests to deepen the EU common market and to pivot away from EU funds as the main benefit of Poland’s membership of the EU. As the Polish economy continues to grow, Poland will receive less and less from EU funds, the contributions to which are mostly based on a country’s Gross National Income (GNI), but will continue to benefit from the common market.</p><p>EU funds resulted in the Polish economy being 5.3% larger in PPP terms than it otherwise would have been by 2026, including by providing 48% of the funding for motorway expansion and 25% of the funding for telecommunications expansion. However, the impact of Poland’s membership of the EU in general has been an economy between 20 and 54% larger in PPP terms than it otherwise would have been, as discussed in section 3.3. Consequently, we can infer that EU funds have been responsible for only between about a fourth and a tenth of the total economic benefit Poland gets from EU membership, the rest being the result of deeper economic integration with the rest of the EU. Were the common market deepened, the economic argument in favour of the EU would be even stronger, and the EU funds argument would be weakened in relative terms.</p><p>And there is plenty of scope for the European common market to go further. According to estimates by the International Monetary Fund (IMF), existing barriers within the EU common market are equivalent to an eye-watering 44% tariff on goods and 110% on services.</p><p>The exact ways in which the EU common market could be deepened, as well as their effects, go beyond the topic of this report, and could be the subject of their own series of extensive reports. To flag merely some of the most important, they include: harmonising the regulation and certification of EU service providers so as to allow businesses from each EU country to provide their services in another without having to acquire separate certifications; shared EU labelling and waste management rules on goods sold across the EU, to allow EU businesses to easily sell their goods in other EU countries and to avoid the need for exporting waste; ensuring that ‘EU Inc’ legislation is not diluted; the integration of EU energy markets to smooth out intermittency and ensure the security of supply; or deepening EU-level regulatory sandboxes — a framework under which private initiatives can apply to test business models which are not covered by, or which even disobey, existing regulations, akin to, for example, Estonia’s ‘Accelerate Estonia’ initiative — to make sure they truly have the power to circumvent existing EU and willing member state regulations.</p></div></details></li>
+<li class="qv-rec"><details><summary><span class="t"><strong>Recommendation five:</strong> Lead on the creation of an <em>Intermarium</em> coalition within the EU.</span><span class="pm" aria-hidden="true"></span></summary><div class="qv-rec-body"><p>The aim of this proposal is to counterbalance the EU’s focus on the interests and perspectives of Western Europe. While it is understandable that, since the largest countries of the EU are in Western Europe, the interests, perspectives and language of Western Europe are the primary focus of the EU, this creates a feeling of neglect and destroys the legitimacy of the EU in the rest of Europe — including in Poland, as discussed in section 2.3. In effect, the citizens of EU countries outside of Western Europe do not feel like the citizens of sovereign entities, but rather as the citizens of minor powers forced to accept the dictates and culture of larger, richer, historically dominant Western European states.</p><p><em>Intermarium</em> — a coalition of states spanning Poland, Czechia, Slovakia, Hungary, Romania, Croatia, Lithuania, Latvia, Estonia, Slovenia and even potentially Austria, with strong interest also in the EU’s eastern flank, namely Ukraine, Belarus, central Asia and, most of all, Russia — would itself constitute a form of European integration by bringing Poland closer to <em>Intermarium</em>’s other member states. Moreover, by leading on the creation of <em>Intermarium</em>, Poland and other member states could assert their own sovereignty within the EU as members of a powerful bloc, outstripping even France, hitherto the EU’s second-largest economy, in GDP PPP terms.</p><p>Worth flagging is also that <em>Intermarium</em> is a popular initiative among some Eurorealists, including the former President Andrzej Duda, and so should command broad-spanning support if also embraced by pro-Europeans.</p></div></details></li>
+<li class="qv-rec"><details><summary><span class="t"><strong>Recommendation six:</strong> Lead on the creation of an anti-foreign interference unit within the EU.</span><span class="pm" aria-hidden="true"></span></summary><div class="qv-rec-body"><p>Russian influence as a source of anti-Europeanism in Poland could be addressed in a way which not only confronts the source itself, but through its very means brings Poland closer to Europe: by leading on the creation of an EU anti-foreign interference unit.</p><p>Such a unit would confront foreign interference in domestic politics not just in Poland, but also in Germany, France, Italy and all the other countries of the EU where such a threat is real. Poland is the natural candidate to lead on such a unit, given both its unique strategic position as the largest EU member state neighbouring Russia and extensive Polish institutional expertise in Russian modes of operation.</p><p>While there exists no polling on the popularity of this sort of unit in Poland operating specifically at the EU level, the 2026 Polish-German barometer identifies “working together to combat Russian disinformation” as the single most popular proposal for Polish-German co-operation among Poles from the ones tested in the barometer, with 69% of Poles considering it an “important” form of co-operation (and 55% considering it “very important”): even more than co-operation on energy security (66%) or military co-operation (65%). This is despite Poles’ unique dislike of Germany relative to other EU countries, discussed earlier in Box 2.2. An EU-level initiative of this sort should prove even more popular.</p><p>The details of how such a unit ought to operate and the scope and nature of its powers go beyond the scope of the report, and should be based on studies of the nature of and effective institutional responses to hybrid warfare and foreign political interference, but at this stage it is most important to emphasise that the unit must be politically neutral and independent.</p></div></details></li>
+<li class="qv-rec"><details><summary><span class="t"><strong>Recommendation seven:</strong> Lead on the creation of an EU-level coalition of countries using shared regulatory assessments, procurement and technical requirements for nuclear energy development.</span><span class="pm" aria-hidden="true"></span></summary><div class="qv-rec-body"><p>Nuclear energy would, in the long term, allow its adopters to eliminate carbon emissions from energy generation as well as provide a plentiful and secure supply of cheap electricity. It also boasts impressive support among the Polish population: 92% of Poles support the development of more nuclear power plants in Poland. In that, it avoids both the environmental and future-proofing concerns surrounding fossil fuels as well as the political and intermittency difficulties linked to renewable energy sources, described in section 2.3. By positioning Poland as a leader in the promotion of nuclear energy, it would be possible to allay both Polish Eurosceptics’ concerns surrounding EU environmental policy as well as EU policy concerns around Polish carbon emissions.</p><p>What is more, this can be at least in part done by integrating Poland more deeply with the rest of the EU. One of the chief barriers to the development of more nuclear energy generation, both in Poland and in many other countries of the EU, is the cost involved in the regulatory and technical oversight of such development as well as the procurement of the necessary capital and fuel. Currently, this is done in the EU largely on a country-by-country basis: each country has its own nuclear energy regulator with its own standards and technical rulebook, as well as different procurement routes — for example, while Czechia has favoured a competitive tendering process, the Polish Government appointed a third-party vendor directly, while France has a state-owned vendor, EDF, which it uses for all projects.</p><p>Following this philosophy — approving a design once, then allowing for it to be replicated, rather than reassessing it each time — has contributed to South Korea having some of the lowest nuclear energy infrastructure development costs in the world, almost three times lower than Poland’s neighbour Slovakia and about four times lower than the United Kingdom, as of 2024. Indeed, the nuclear power plant Hinkley Point C in the UK is set to cost double (£10 million per MW, or 50 million zł per MW; by comparison, nuclear energy infrastructure development in Poland currently costs only 18% less) what a plant with the exact same reactor design in France had cost, partly due to the added costs of the UK regulators re-assessing the design which had already been assessed by the French regulators, and partly due to the stop-start nature of nuclear energy infrastructure development and procurement in the UK, as opposed to the more constant pipeline of projects that exists in France.</p></div></details></li>
+<li class="qv-rec"><details><summary><span class="t"><strong>Recommendation eight:</strong> Subsidise Polish citizens to sit on European standardisation committees.</span><span class="pm" aria-hidden="true"></span></summary><div class="qv-rec-body"><p>While research on this is scarce, finance is a known barrier to participation in European standardisation committees — the committees charged with standardising regulation across the EU, and so taking part in the design process for said regulation.</p><p>Participating in each involves a financial cost. For CEN and CENELEC, each EU member state participating in a given committee sends a national delegation, and to participate in the delegation, a person or organisation needs to volunteer or be nominated. For ETSI, an organisation needs to apply and pay a membership fee, which varies from €2,100 to €162,450 (mostly depending on revenue), to gain access to the committees.</p><p>To have more influence on EU regulation, and for EU regulation to better reflect the needs and wants of Polish businesses — including where it comes to environmental policy, a source of Euroscepticism in Poland as discussed in section 2.3, but not only — more Poles should be incentivised and enabled to attend European standardisation committee meetings. As such, the Government ought to compensate Polish citizens who sit on said committees for their time lost and travel costs.</p><p>Time lost could be compensated as 80% of a person’s hourly or daily — in the case of committee meetings which span multiple days — earnings, while travel costs could be compensated in full up to a daily limit of 1,000 zł. The compensation could either be done directly or, if the Polish citizen in question is already being compensated by their organisation, could be paid to said organisation. The total cost of this programme, on the scale of the government budget, would be negligible.</p></div></details></li>
+<li class="qv-rec"><details><summary><span class="t"><strong>Recommendation nine:</strong> Allow small- and micro-sized Polish enterprises to access export vouchers covering translation, legal advice and certification abroad for the first 10,000 zł of such costs related to foreign contracts in the EU.</span><span class="pm" aria-hidden="true"></span></summary><div class="qv-rec-body"><p>Another major barrier stopping Polish businesses reaping in full the benefits of EU markets and so hindering further economic integration between the EU and Poland is the difficulty understanding unfamiliar markets. Especially for small businesses, the initial costs of expanding to a new market — and therefore acquiring the relevant expertise, legal advice, certification and so on — are very high relative to the business’ profits, and the risks involved disproportionate. Indeed, although 67.5% of Polish businesses are small- or medium-sized, measured by GDP contribution, only 33.1% of Polish exports are conducted by small- or medium-sized businesses, with 77% of those destined for the EU. Compliance costs for Polish small and medium businesses exporting to the EU average €8,000 per country per year.</p><p>To cushion those initial costs and kick-start smaller Polish businesses’ operations in the EU, the Polish Government should make available export vouchers covering translation, legal advice and certification abroad for a Polish small- or micro-sized business’ first foreign contract in the EU. The voucher should be worth 10,000 zł — based on the approximate minimum costs of conducting due diligence analysis for a small firm by a legal firm before a large business transaction — and could be used to reimburse the aforementioned costs only after a business signs its first EU export contract, but before two years have elapsed since the contract was signed. The voucher should also be available only for micro- and small-sized Polish enterprises as defined by the European Commission, namely those with fewer than 50 employees and with a yearly turnover of less than €10,000,000.</p><p>Given that, between 2020 and 2024, the number of Polish small and micro businesses trading with the EU has grown by, on average, around 17,000 a year (with almost all this growth being driven by an increase in the number of firms exporting to the EU), and that we expect this policy to increase this number, the total cost of this policy would be, at minimum, 170 million zł (€39.5 million) a year, under the assumption that every Polish firm trading with the EU incurs at least 10,000 zł in trading costs — the true minimum cost would likely be lower — and the assumption that the policy does not improve the number of Polish firms trading with the EU.</p><p>Poland’s current goods and services balance of payments with the rest of the EU was a positive €32.5 billion in 2025, and it has been positive every year since 2012. This, combined with the fact that Polish small- and micro-sized businesses are almost six times as likely to be exporting to rather than importing from the EU, means that the policy should contribute much more to Polish GDP than is spent on it: indeed, its cost may even be recouped through an increase in business tax receipts, though more data and more detailed econometric analysis would be needed to know that for certain.</p></div></details></li>
+<li class="qv-rec"><details><summary><span class="t"><strong>Recommendation ten:</strong> Add an extra 30% of European stocks and shares to the tax-free allowance in OKI from 2027.</span><span class="pm" aria-hidden="true"></span></summary><div class="qv-rec-body"><p>In 2027, Poland is set to adopt OKI: an instrument that will allow Poles to save up to 100,000 zł’s worth of stocks and shares tax-free, so long as the stocks and shares in question are either listed on the Polish stock exchange or form a part of a fund or index that is at least 70% composed of Polish stocks and shares.</p><p>The introduction of OKI should make it easier for Poles to accumulate savings and avoid the 19% tax rate which is otherwise charged on dividends and gains made from selling stocks and shares. However, limiting the instrument to, at a minimum, 70% Polish stocks and shares means that returns for Polish investors will be more limited, and their savings more exposed, than would be the case if OKI allowed for more diversified investments. While there is an obvious benefit from more people investing in Polish stocks and shares, it would likewise be a benefit for Poles to accumulate more savings and produce higher returns on them, making them more financially secure and allowing their higher returns to translate into higher expenditures in the Polish economy.</p><p>There is, therefore, a case for allowing more diversification within OKI, at least in principle. The Government should look to allow a higher percentage of investments in OKI to come from outside of Poland, and specifically from Europe — a market with which Poland is already well-integrated, and so a market the growth of which would also benefit Poland. A by-effect of this would be more Poles who are literally more invested in Europe and European interests, hence facilitating deeper Polish-European integration.</p><p>So as not to make the instrument excessively complicated for Polish investors, OKI could be modified such that up to 30% more of the stocks and shares in an investor’s portfolio could come from a European stock exchange and still qualify for OKI’s tax break; and that shares in funds and indices that are at least 40% composed of Polish stocks and shares and at least 70% composed of European stocks and shares — including Polish — could also qualify for OKI’s tax break: in other words, an extra 30% allowance would be created for European investments on top of the existing allowance for non-Polish investments, as visualised in Chart 4.1 below.</p><figure class="qv-fig" id="fig-c41"><figcaption class="qv-cap">Chart 4.1. Comparison of current OKI plans and how OKI would look under recommendation ten.</figcaption><div class="qv-legend" data-legend></div><div class="qv-chart" data-chart="c41"></div></figure></div></details></li>
+<li class="qv-rec"><details><summary><span class="t"><strong>Recommendation eleven:</strong> Offer top Polish students subsidies to study at top EU universities on the condition that they return to Poland for a minimum of five years after the completion of their studies.</span><span class="pm" aria-hidden="true"></span></summary><div class="qv-rec-body"><p>The Polish higher education sector is one of the weakest in the EU. Despite Poland being the EU’s sixth-largest economy, of the 53 universities in the EU which are in the top 200 of the THE World University Ranking, none are in Poland. What is more, over a fifth of students at Polish universities have the literacy skills expected of ten-year-olds or worse, the highest such proportion in the OECD, and 15% have the numeracy skills expected of ten-year-olds or worse.</p><p>The Polish Government should offer the best 0.5% of Polish <em>liceum</em> graduates, ranked by their <em>matura</em> results, scholarships covering both full course fees and maintenance, up to €20,000 a year, if they manage to secure a place for an undergraduate degree at a university which is in the top 100 of either the THE or QS world university rankings. This would be about 1,000 students a year.</p><p>While course fees at European universities vary significantly, the maximum cost of this programme should not exceed €80 million (around 345 million zł) a year, depending on the courses students choose: longer courses would prove more expensive, but most European undergraduate degrees are only three years long.</p><p>The scholarships could be offered in the form of an after-inflation 0% interest, government-backed loan which is completely written off if the student returns to Poland within a year of graduation and is continuously resident in Poland for a minimum of five years after their return. This would ensure that the programme does not inadvertently contribute to the emigration of top Polish talents away from Poland.</p><p>As a by-effect, the students, after finishing their studies, would return to Poland having a better understanding of the opportunities available when doing business in the rest of the EU and having established strong links with another part of Europe and other Europeans — much superseding any links which can be established during student exchange programmes such as Erasmus — further facilitating Polish-European integration, especially if said students end up working in Polish media, politics or other opinion-shaping roles. It would serve to, again, flip the ‘cronyism’ critique of the EU on its head by involving Poles in networks of well-educated Europeans, and make Europe feel more at-home to those who participate in the scheme.</p></div></details></li>
+</ol><div class="qv-prose">
+<h3>4.5 Conclusion</h3>
+<p>The suggestions in this chapter would go some way to bringing Poland closer to Europe while, at the same time, not provoking — and perhaps even appeasing — the concerns of Polish anti-Europeans. Of course, they do not go all the way. As hinted at in section 4.2, many more important changes could be made, but which go far beyond the scope of this report: further prioritising Polish economic growth, improving Poland’s demographic situation, improving the Polish higher education sector, modernising the Polish military and so on.</p>
+<p>In particular, defence is an important area where Poland could be brought much closer to Europe: 79% of Poles are in support of a “common security and defence policy among [EU] Member States,” and only 18% are opposed. And there is scope for Poland to be much more integrated into European defence procurement and manufacturing than it currently is: as of 2024, for example, the Polish Government was losing about €2.4 billion a year just in the opportunity cost of the missing economies of scale from joint EU-level defence procurement. But we deliberately avoided the topic of defence, partly because social and economic, rather than defence policy, has the greater effect on people’s sentiments towards Europe; and partly because the topic of defence integration is so deep and complex that we could not do it due justice without going on a very lengthy tangent.</p>
+<p>Nonetheless, following our targeted interventions should go a long way to shoring up Poland’s standing within Europe and facilitating a future where Poland is stronger and more sovereign than it has ever been since regaining independence.</p>
+</div></div></section>
+<section id="conclusion" class="qv-sec qv-close"><div class="qv-wrap qv-block"><div class="qv-prose">
+<h2>Conclusion</h2>
+<p>There is much to learn from Brexit but, as with many things, people often draw the lessons they want to draw rather than the ones they ought to draw.</p>
+<p>For Eurosceptics, Brexit demonstrates that you can leave the EU without any catastrophic consequences, and that the tide is turning against the EU. It shows that ordinary, hard-working, rooted people are against the EU and, if they unite, they will overcome opposition from the pro-EU establishment.</p>
+<p>For enthusiasts of the EU, it is a case study in regret. It goes to show how leaving the EU fixes nothing, but instead only deepens your problems, and that after leaving, you will wish to have remained.</p>
+<p>Both are right in some respects. The problems that the UK had before Brexit are still with the UK, some of them worse than before. And public opinion in the UK has become more pro-EU since Brexit. But Polish Europhiles pointing at the UK and gloating will do nothing to help Poland remain in the EU, and indeed in Europe more broadly.</p>
+<p>For a European Poland to survive and prosper, Europe must become a place where ordinary, hard-working, rooted people can see their home, with Poland at the heart and brain of it and with other Europeans as their inalienable friends and neighbours — this is what the recommendations of this report have tried to achieve. Otherwise, no matter how disastrous the economic projections look, or how pro-EU the political establishment might appear, if the political winds keep blowing where they are blowing now, Poland will head the way of the UK, towards Polexit and away from Europe.</p>
+</div></div></section>
+<section id="report" class="qv-sec"><div class="qv-wrap qv-block"><div class="qv-report"><img src="qvp-cover.jpg" alt="Cover of Quo vadis, Polonia?" loading="lazy" width="700" height="1074"><div><p class="qv-report-title">Quo vadis, Polonia?</p><p class="qv-report-sub">Lessons from Brexit for a stronger Poland in Europe</p><div class="qv-report-actions"><a href="quo-vadis-polonia.pdf" class="btn-gold" download>Download the report (PDF)</a></div><div class="qv-meta"><div><h3>About the authors</h3><h4>Bartłomiej Staniszewski</h4><p>Bartek is the Head of Policy at Bright Blue and an Executive Director of Bright Blue Europe. He graduated with a BA in Philosophy and Theology from the University of Oxford in 2021 and with an MSt in Philosophical Theology in 2022. There, he sat on the editorial board of the Journal of the Oxford Graduate Theological Society. He has been featured, among others, in <em>the Spectator</em>, <em>the Telegraph</em>, <em>the Critic</em>, <em>City AM</em>, <em>the Guardian</em>, <em>Dziennik Gazeta Prawna</em>, Klub Jagielloński and on the BBC, GB News, TVP and Radio Poland. He is the author of numerous think-tank reports, including on political philosophy, populism, social policy and economic and employment policy. He is also an IPR Policy Fellow at the University of Bath, an Associate Fellow of the Centre for Family and Education and the Editor-in-Chief of Bright Blue’s in-house magazine, Centre Write.</p><h4>William Prescott</h4><p>Dr William Prescott is the Head of Research at Bright Blue. He previously worked, among other roles, as a Senior Associate at Nurole and as a civil servant in the South Australian Education Department. He has been published in or appeared on, among others, <em>the Spectator</em>, BBC, <em>UnHerd</em>, <em>the Critic</em>, <em>the Conversation</em> and Times Radio. In 2020, Will finished a DPhil in history at the University of Oxford on the British Conservative Party and the role of the state between 1929 and 1940. Before this, he completed his undergraduate and master’s degrees at the University of Adelaide, Australia.</p></div><div><h3>Acknowledgements</h3><p>Bright Blue Europe is particularly grateful for the financial and intellectual partnership of the Konrad Adenauer Foundation on this project.</p><p>We are also grateful to Lukas Wick for his help throughout the project; to Tomislav Delinić, without whom this project would not have happened; and to many others with whom we informally consulted before and during the course of this project, including Julian Jessop and Andrew Lilico, who pointed us to some helpful pro-Brexit economics literature.</p><p>This report is the first ever produced by Bright Blue Europe explicitly under the Bright Blue Europe umbrella, and so we also wish to thank everybody who helped us as we were trying to make Bright Blue Europe a reality, and in particular Lukas Wick again, as well as Ryan Shorthouse, Jakub Wilk, Karolina Koryciorz and others who asked to remain anonymous.</p><p>The cover image uses the painting <em>Porwanie Europy</em> by Guido Reni, currently in the collections of the National Gallery, London.</p></div></div></div></div></div></section>
+</main>
+
+<footer>
+  <div class="footer-brand"><strong>Bright Blue Europe</strong> &nbsp;·&nbsp; The future of the centre-right across Europe</div>
+  <ul class="footer-nav">
+    <li><a href="index.html#home">Home</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#staff">Team</a></li>
+    <li><a href="index.html#publications">Publications</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+    <li><a href="https://www.brightblue.org.uk" target="_blank" rel="noopener">Bright Blue UK</a></li>
+  </ul>
+  <div class="footer-copy">&copy; 2026 Bright Blue Europe. All rights reserved.</div>
+</footer>
+
+<script>
+const D={"c21":{"cbos_support":[[2007.0,89.0],[2008.0,84.0],[2009.0,85.0],[2010.0,86.0],[2011.0,83.0],[2012.0,79.0],[2013.0,76.0],[2014.0,84.0],[2015.0,84.0],[2016.0,84.0],[2017.0,86.5],[2018.0,87.3],[2019.0,90.0],[2020.0,88.0],[2021.0,89.0],[2022.0,92.0],[2023.0,85.0],[2024.0,78.5],[2025.0,81.0],[2026.0,82.0]],"cbos_oppose":[[2007.0,5.0],[2008.0,9.5],[2009.0,10.0],[2010.0,9.0],[2011.0,11.0],[2012.0,13.0],[2013.0,16.5],[2014.0,10.0],[2015.0,11.0],[2016.0,10.0],[2017.0,8.5],[2018.0,8.3],[2019.0,6.0],[2020.0,7.0],[2021.0,6.0],[2022.0,5.0],[2023.0,10.0],[2024.0,15.0],[2025.0,13.0],[2026.0,14.0]],"cbos_net":[[2007.0,84.0],[2008.0,74.5],[2009.0,75.0],[2010.0,77.0],[2011.0,72.0],[2012.0,66.0],[2013.0,59.5],[2014.0,74.0],[2015.0,73.0],[2016.0,74.0],[2017.0,78.0],[2018.0,79.0],[2019.0,84.0],[2020.0,81.0],[2021.0,83.0],[2022.0,87.0],[2023.0,75.0],[2024.0,63.5],[2025.0,68.0],[2026.0,68.0]],"eb_support":[[2007.0,69.0],[2008.0,68.0],[2009.0,62.0],[2010.0,64.0],[2011.0,55.0],[2012.0,53.0],[2013.0,54.0],[2015.0,63.0],[2016.0,61.0],[2017.0,68.0],[2018.0,70.0],[2019.0,66.3],[2020.0,70.0],[2021.0,68.0],[2022.0,72.0],[2023.0,62.5],[2024.0,60.0],[2025.0,57.0]],"eb_oppose":[[2007.0,6.0],[2009.0,8.7],[2010.0,8.0],[2011.0,10.0],[2012.0,6.0],[2013.0,10.0],[2015.0,5.0],[2016.0,9.0],[2017.0,6.0],[2018.0,6.0],[2019.0,7.0],[2020.0,8.0],[2021.0,9.0],[2022.0,8.0],[2024.0,14.0],[2025.0,11.0]],"eb_net":[[2007.0,63.0],[2009.0,53.3],[2010.0,56.0],[2011.0,45.0],[2012.0,47.0],[2013.0,44.0],[2015.0,58.0],[2016.0,52.0],[2017.0,62.0],[2018.0,64.0],[2019.0,59.3],[2020.0,62.0],[2021.0,59.0],[2022.0,64.0],[2024.0,46.0],[2025.0,46.0]]},"c22":{"pol_lag":[[2006.0,0.8],[2010.0,-0.61],[2014.0,0.42],[2019.0,0.84],[2024.0,-1.74]],"pub":[[2002.0,-2.71],[2003.0,-2.19],[2004.0,-1.83],[2005.0,-0.68],[2006.0,0.24],[2007.0,0.89],[2008.0,0.37],[2009.0,0.37],[2010.0,0.54],[2011.0,0.17],[2012.0,-0.28],[2013.0,-0.78],[2014.0,0.33],[2015.0,0.24],[2016.0,0.26],[2017.0,0.6],[2018.0,0.69],[2019.0,1.06],[2020.0,0.84],[2021.0,0.99],[2022.0,1.28],[2023.0,0.39],[2024.0,-0.46],[2025.0,-0.13],[2026.0,-0.13]],"pol":[[2002.0,0.8],[2006.0,-0.61],[2010.0,0.42],[2014.0,0.84],[2019.0,-1.74],[2024.0,0.29]]},"c33":{"imm_old":[[1991,219000],[1992,175000],[1993,179000],[1994,206000],[1995,228000],[1996,224000],[1997,237000],[1998,287000],[1999,338000],[2000,379000],[2001,370000],[2002,418000],[2003,411000],[2004,497000],[2005,468000],[2006,513000],[2007,500000],[2008,505000],[2009,471000],[2010,511000],[2011,521000]],"net_old":[[1991,89000],[1992,49000],[1993,62000],[1994,94000],[1995,127000],[1996,116000],[1997,107000],[1998,162000],[1999,187000],[2000,220000],[2001,220000],[2002,241000],[2003,239000],[2004,349000],[2005,293000],[2006,322000],[2007,330000],[2008,250000],[2009,242000],[2010,294000],[2011,319000]],"imm_new":[[2012,564000],[2013,637000],[2014,697000],[2015,719000],[2016,702000],[2017,668000],[2018,751000],[2019,717000],[2020,610000],[2021,783000],[2022,1232000],[2023,1291000],[2024,872000],[2025,703000]],"net_new":[[2012,267000],[2013,325000],[2014,364000],[2015,376000],[2016,343000],[2017,289000],[2018,348000],[2019,266000],[2020,171000],[2021,536000],[2022,972000],[2023,952000],[2024,448000],[2025,307000]]},"c34":{"conf":[[-7.313,3.9],[-7.24,4.2],[-7.155,4.7],[-7.073,5.4],[-6.988,7.5],[-6.906,7.8],[-6.821,6.8],[-6.736,7.3],[-6.657,7.2],[-6.572,8.4],[-6.49,8.7],[-6.405,8.1],[-6.323,8.3],[-6.238,7.3],[-6.153,8.2],[-6.071,8.2],[-5.986,7.4],[-5.904,7.0],[-5.819,7.9],[-5.734,7.6],[-5.658,8.3],[-5.573,7.6],[-5.491,8.0],[-5.406,7.7],[-5.324,7.0],[-5.239,7.7],[-5.154,8.1],[-5.072,7.7],[-4.987,8.0],[-4.905,8.3],[-4.82,9.0],[-4.735,8.7],[-4.659,7.3],[-4.574,6.7],[-4.492,6.3],[-4.407,6.1],[-4.325,6.8],[-4.24,6.6],[-4.155,6.2],[-4.073,6.3],[-3.988,6.0],[-3.906,6.4],[-3.821,7.1],[-3.736,6.8],[-3.66,8.4],[-3.575,9.4],[-3.493,9.9],[-3.408,11.8],[-3.326,13.4],[-3.241,11.0],[-3.156,11.6],[-3.074,6.5],[-2.989,7.7],[-2.907,7.9],[-2.822,8.0],[-2.737,9.1],[-2.658,10.1],[-2.573,10.1],[-2.491,9.7],[-2.406,10.5],[-2.324,12.2],[-2.239,13.0],[-2.154,10.6],[-2.072,11.3],[-1.987,12.0],[-1.905,11.8],[-1.82,13.9],[-1.736,15.2],[-1.659,17.4]],"conf_kkp":[[-1.659,17.4],[-1.659,17.3],[-1.574,16.5],[-1.492,15.1],[-1.407,19.8],[-1.325,19.3],[-1.24,18.1],[-1.155,18.0],[-1.073,19.9],[-0.988,20.4],[-0.906,19.9],[-0.821,20.5],[-0.737,21.3],[-0.66,20.6],[-0.575,20.9],[-0.493,21.2],[-0.408,20.5],[-0.326,22.8],[-0.241,22.1],[-0.156,22.1],[-0.074,21.3],[-0.0,22.7]],"ukip":[[-7.272,1.1],[-7.187,1.4],[-7.105,5.6],[-7.021,6.9],[-6.939,5.1],[-6.854,4.2],[-6.769,3.5],[-6.687,3.0],[-6.602,4.1],[-6.52,4.4],[-6.435,3.4],[-6.35,3.6],[-6.273,3.7],[-6.189,3.3],[-6.106,2.9],[-6.022,2.3],[-5.94,2.2],[-5.855,2.5],[-5.77,2.5],[-5.688,2.6],[-5.603,3.4],[-5.521,3.7],[-5.436,4.1],[-5.351,3.8],[-5.274,5.0],[-5.19,4.7],[-5.107,4.3],[-5.023,4.3],[-4.941,4.6],[-4.856,4.7],[-4.771,4.9],[-4.689,5.5],[-4.604,5.7],[-4.522,3.8],[-4.437,4.5],[-4.352,4.7],[-4.273,5.3],[-4.188,7.4],[-4.106,7.5],[-4.021,7.3],[-3.939,7.2],[-3.854,7.2],[-3.769,7.4],[-3.687,7.7],[-3.602,8.2],[-3.52,10.4],[-3.435,9.8],[-3.35,9.7],[-3.274,12.5],[-3.189,12.5],[-3.107,16.1],[-3.022,14.2],[-2.94,12.4],[-2.855,12.3],[-2.77,11.5],[-2.688,11.5],[-2.603,11.9],[-2.521,11.0],[-2.436,12.6],[-2.351,12.6],[-2.275,12.0],[-2.19,14.0],[-2.108,14.8],[-2.023,14.9],[-1.941,13.1],[-1.856,13.4],[-1.771,15.0],[-1.689,16.3],[-1.604,16.1],[-1.522,15.6],[-1.437,15.2],[-1.352,14.5],[-1.276,14.1],[-1.191,13.6],[-1.109,12.9],[-1.024,10.7],[-0.942,10.7],[-0.857,11.8],[-0.772,13.1],[-0.69,12.7],[-0.605,13.5],[-0.523,13.6],[-0.438,13.7],[-0.353,14.3],[-0.274,13.2],[-0.189,15.9],[-0.107,15.3],[-0.022,16.9]]},"c35":{"pl":[[2002.045,35.0],[2002.129,29.0],[2002.211,26.0],[2002.296,32.0],[2002.378,40.0],[2002.46,28.0],[2002.546,31.0],[2002.627,30.0],[2002.713,37.0],[2002.795,37.0],[2002.879,39.0],[2002.961,35.0],[2003.044,42.0],[2003.128,35.0],[2003.21,34.0],[2003.295,35.0],[2003.377,48.0],[2003.459,49.0],[2003.711,47.0],[2003.794,46.0],[2003.878,33.0],[2003.96,34.0],[2004.043,31.0],[2004.127,29.0],[2004.209,33.0],[2004.294,35.0],[2004.376,51.0],[2004.458,47.0],[2004.625,49.0],[2004.71,48.0],[2004.793,52.0],[2004.877,61.0],[2004.959,60.0],[2005.129,63.0],[2005.211,57.0],[2005.296,62.0],[2005.378,62.0],[2005.46,59.0],[2005.545,64.0],[2005.712,57.0],[2006.043,68.0],[2006.295,69.0],[2006.626,73.0],[2006.793,82.0],[2007.042,80.0],[2007.294,79.0],[2007.376,84.0],[2007.543,84.0],[2008.293,81.0],[2008.542,75.0],[2008.875,68.0],[2009.043,76.0],[2009.21,72.0],[2009.294,76.0],[2009.459,75.0],[2010.293,77.0],[2011.292,72.0],[2012.039,69.0],[2012.54,63.0],[2012.956,66.0],[2013.125,63.0],[2013.293,54.0],[2013.375,51.0],[2013.875,69.0],[2014.04,72.0],[2014.124,70.0],[2014.207,82.0],[2014.292,77.0],[2014.374,70.0],[2014.456,74.0],[2014.708,75.0],[2014.79,73.0],[2015.291,74.0],[2015.707,68.0],[2015.789,76.0],[2015.873,74.0],[2016.122,71.0],[2016.371,74.0],[2016.453,74.0],[2016.539,73.0],[2016.788,74.0],[2017.124,75.0],[2017.291,80.0],[2017.456,79.0],[2017.957,77.0],[2018.038,77.0],[2018.29,80.0],[2018.873,80.0],[2019.122,80.0],[2019.205,86.0],[2019.289,86.0],[2020.121,82.0],[2020.411,79.0],[2020.953,82.0],[2021.788,84.0],[2021.829,82.0],[2022.453,87.0],[2023.287,75.0],[2024.202,60.0],[2024.869,67.0],[2025.537,68.0],[2026.035,68.0]],"uk_pre":[[2002.003,3.8],[2003.473,8.0],[2007.723,12.0],[2011.809,-8.0],[2012.866,-4.0],[2014.357,17.0],[2014.781,20.0],[2015.452,34.0],[2015.794,13.0],[2015.947,17.0],[2016.062,12.0],[2016.122,15.0],[2016.218,8.0],[2016.292,10.0],[2016.369,18.0],[2016.448,-6.0]],"uk_post":[[2016.495,-1.0],[2016.665,-4.0],[2016.746,1.0],[2016.832,-1.0],[2016.914,1.0],[2016.998,-1.0],[2017.083,-2.0],[2017.494,3.0],[2017.745,4.0],[2017.997,4.0],[2018.244,3.0],[2018.493,6.0],[2018.744,5.0],[2018.996,7.0],[2019.242,4.0],[2019.492,5.0],[2019.743,6.0],[2019.995,5.0],[2020.244,2.0],[2020.493,4.0],[2020.745,6.0],[2020.83,9.0],[2021.063,2.0],[2021.082,-2.0],[2021.159,-1.0],[2021.243,-5.0],[2021.325,-5.0],[2021.41,-1.0],[2021.492,-2.0],[2021.577,0.0],[2021.662,2.0],[2021.744,4.0],[2021.829,5.0],[2021.911,8.0],[2021.995,3.0],[2022.081,8.0],[2022.157,8.0],[2022.242,5.0],[2022.324,3.0],[2022.409,9.0],[2022.491,7.0],[2022.576,8.0],[2022.661,10.0],[2022.743,11.0],[2022.828,15.0],[2022.91,10.0],[2022.994,13.0],[2023.08,16.0],[2023.156,12.0],[2023.241,14.0],[2023.323,13.0],[2023.525,19.0],[2023.999,15.0],[2024.554,17.0],[2025.201,17.0],[2025.373,18.0],[2025.453,22.0],[2026.01,19.0],[2026.054,20.0],[2026.284,22.0],[2026.38,21.0],[2026.413,21.0],[2026.725,27.0]]},"c36":{"pts":[[2230,13.1],[3340,16.3],[3781,14.0],[2230,15.0],[4119,19.1],[2352,12.9],[4018,15.3],[5302,23.4],[1998,13.7],[4477,15.9],[2116,15.1],[2481,15.0],[2632,20.7],[4276,16.4],[2226,22.9],[3393,17.6],[3942,15.5],[2223,13.7],[5627,26.2],[1075,16.9],[2719,29.6],[3352,21.0],[3279,15.7],[1894,25.7],[2322,17.7],[5859,21.2],[2518,19.7],[2626,18.2],[1870,16.1],[4068,22.5],[2038,18.7],[8601,16.5],[2092,25.4],[3022,22.9],[1568,17.0],[1489,26.9],[2740,17.7],[1909,27.4],[3068,24.1],[2266,26.8],[2024,19.5],[1051,22.4],[1769,22.0],[1492,23.0],[2468,26.1],[1573,25.1],[1263,20.3],[2017,19.7],[1251,28.9],[1705,20.3],[1804,22.4],[1535,24.6],[2061,22.2],[2289,22.1],[1348,23.0],[1437,20.6],[1852,17.7],[1501,23.7],[1624,21.1],[2067,24.6],[1566,26.7],[1379,19.4],[1616,21.3],[1811,16.6],[894,22.7],[1229,18.7],[1773,16.4],[2388,22.0],[1858,21.4],[1766,16.1],[1581,18.4],[1328,17.3],[1222,25.8],[1316,21.2],[1739,22.6],[1635,21.8],[1362,20.8],[936,20.2],[2324,22.9],[2076,29.3],[1156,25.3],[1146,26.6],[3216,19.3],[1118,19.6],[1747,20.3],[2670,26.1],[1616,14.8],[1593,30.8],[2343,21.6],[1767,25.5],[1724,23.4],[1745,25.1],[1411,26.8],[1427,25.6],[2062,20.1],[2103,24.8],[1415,30.8],[1470,15.6],[744,27.3],[1387,26.1],[1108,23.9],[899,22.6],[1345,16.3],[1162,22.4],[1395,17.5],[1932,22.8],[1560,25.3],[1889,22.5],[1247,22.7],[1606,20.7],[2337,30.7],[1378,20.3],[1780,26.5],[2822,25.8],[2048,26.7],[1498,20.4],[2361,22.3],[1506,16.8],[1852,23.7],[1371,29.4],[1134,28.2],[1914,23.5],[1469,21.8],[1694,29.1],[2135,21.9],[1111,23.6],[1376,21.9],[2102,23.6],[1440,20.5],[1182,19.5],[1213,20.9],[1237,28.7],[1139,25.1],[989,24.2],[2184,17.5],[1294,23.5],[920,20.8],[1461,22.4],[2939,20.1],[1447,20.5],[2246,21.1],[897,27.8],[987,20.4],[1439,24.0],[1211,21.3],[1543,21.6],[1568,22.9],[2618,20.6],[2022,21.9],[1507,23.9],[1151,22.1],[1716,27.4],[1530,20.7],[1050,26.5],[2918,26.7],[1577,22.8],[1782,20.7],[1622,23.5],[1307,17.0],[701,22.4],[1477,15.3],[1378,21.4],[2962,22.0],[1491,29.9],[869,19.3],[863,20.2],[1625,16.0],[972,24.5],[950,23.1],[960,21.5],[1420,25.9],[2081,28.1],[4257,24.4],[1750,17.5],[2009,27.2],[803,22.1],[1946,22.9],[1095,24.3],[1340,22.3],[1530,24.2],[1529,19.9],[1779,21.5],[1005,18.9],[1542,23.2],[1204,21.8],[1256,23.5],[2663,21.4],[1306,22.0],[3925,25.7],[1249,20.9],[1175,24.2],[1214,30.0],[1063,20.8],[1437,23.0],[2071,25.6],[731,18.2],[537,17.1],[1502,21.4],[1338,24.1],[1843,24.6],[1537,23.5],[1496,17.5],[1108,16.3],[2404,22.0],[1522,25.0],[1199,22.6],[989,16.2],[844,20.6],[1460,23.0],[1590,24.6],[2013,17.4],[684,27.2],[967,27.9],[1448,29.0],[405,17.9],[1963,26.4],[991,23.3],[1360,28.9],[2013,20.3],[1120,15.8],[1024,27.1],[1216,24.4],[1009,21.6],[1114,21.3],[1009,21.9],[1480,32.1],[1362,21.1],[1131,20.6],[1190,23.5],[1087,28.4],[865,17.9],[1342,26.2],[1675,21.8],[1618,24.7],[957,23.8],[1573,29.4],[936,22.4],[1291,23.4],[1133,19.4],[961,24.8],[2102,25.2],[863,23.5],[1244,25.5],[1683,19.6],[1061,22.8],[1540,22.3],[904,31.1],[890,20.2],[1713,26.4],[974,20.8],[1236,26.4],[1636,20.4],[1270,27.1],[1022,26.7],[1285,20.9],[1167,16.6],[1523,21.5],[1661,27.6],[1294,20.8],[1505,24.0],[1110,21.6],[1583,23.5],[1266,26.8],[858,22.7],[2146,10.3],[2153,24.3],[1012,23.4],[1285,21.1],[897,23.3],[1250,28.8],[1496,20.7],[781,19.7],[1230,20.7],[1050,23.8],[889,31.5],[1143,22.7],[1307,20.2],[1444,17.5],[798,22.9],[1195,24.2],[591,23.4],[2125,24.4],[1219,22.9],[1422,19.1],[704,20.3],[1214,25.9],[867,20.0],[1140,30.1],[1235,24.5],[1016,23.9],[1236,26.7],[1054,25.2],[1305,26.1],[964,28.8],[1339,21.5],[1004,19.8],[1419,27.6],[1493,25.7],[987,24.4],[1228,22.2],[1108,21.9],[1319,20.5],[1434,26.1],[1744,20.1],[818,29.7],[741,20.8],[951,22.5],[1219,20.9],[1755,30.4],[1497,26.1],[1213,24.0],[992,28.5],[822,24.8],[1125,23.5],[1279,25.4],[1491,24.1],[1432,22.5],[1665,25.9],[1086,26.2],[1285,24.2],[912,25.8],[1444,28.4],[615,22.5],[1060,21.8],[2476,25.9],[1139,20.8],[942,21.5],[574,30.1],[513,25.1],[1177,23.7],[1263,23.9],[595,25.4],[811,20.6],[1421,24.0],[646,25.2],[1461,24.7],[923,19.5],[772,26.0],[891,18.2],[894,24.2],[1290,23.5],[1214,29.8],[601,25.0],[1173,21.4],[1367,25.3],[1295,19.6],[994,27.4],[1224,30.7],[767,23.6],[742,20.7],[1087,25.9],[926,22.2],[624,25.1],[921,27.8],[1042,22.6],[716,20.0],[487,25.6],[1787,22.2],[606,23.0],[1016,24.2],[950,23.3],[1160,23.4],[824,22.1],[863,19.5],[824,25.0],[676,24.6],[811,22.1],[552,25.4],[566,25.0],[583,24.6],[791,23.4],[1503,26.7],[938,31.1],[676,23.3],[449,23.9],[409,23.3],[762,25.8],[606,26.4],[727,24.3],[540,26.4]],"curve":[[405,22.93],[421,23.01],[438,23.1],[455,23.17],[473,23.24],[492,23.31],[511,23.37],[531,23.42],[552,23.47],[574,23.51],[597,23.54],[620,23.57],[645,23.6],[670,23.61],[696,23.63],[724,23.63],[752,23.64],[782,23.63],[813,23.62],[845,23.61],[878,23.59],[913,23.56],[949,23.53],[986,23.5],[1025,23.46],[1066,23.41],[1108,23.36],[1151,23.31],[1197,23.25],[1244,23.19],[1293,23.12],[1344,23.05],[1397,22.97],[1452,22.89],[1509,22.81],[1569,22.73],[1631,22.64],[1695,22.54],[1762,22.45],[1831,22.35],[1903,22.25],[1979,22.15],[2056,22.04],[2138,21.93],[2222,21.82],[2309,21.71],[2401,21.6],[2495,21.49],[2594,21.38],[2696,21.26],[2802,21.15],[2913,21.03],[3027,20.92],[3147,20.8],[3271,20.69],[3400,20.58],[3534,20.47],[3673,20.36],[3818,20.25],[3969,20.15],[4125,20.05],[4288,19.95],[4457,19.85],[4632,19.76],[4815,19.67],[5005,19.59],[5202,19.51],[5408,19.43],[5621,19.36],[5843,19.3],[6073,19.24],[6312,19.19],[6561,19.15],[6820,19.11],[7089,19.08],[7368,19.06],[7659,19.04],[7961,19.04],[8275,19.04],[8601,19.06]],"band":[[405,26.59],[421,26.23],[438,25.91],[455,25.63],[473,25.39],[492,25.2],[511,25.03],[531,24.9],[552,24.8],[574,24.72],[597,24.66],[620,24.62],[645,24.58],[670,24.55],[696,24.52],[724,24.49],[752,24.46],[782,24.42],[813,24.37],[845,24.32],[878,24.27],[913,24.21],[949,24.14],[986,24.07],[1025,24.0],[1066,23.93],[1108,23.86],[1151,23.79],[1197,23.72],[1244,23.66],[1293,23.59],[1344,23.52],[1397,23.45],[1452,23.38],[1509,23.31],[1569,23.23],[1631,23.16],[1695,23.08],[1762,22.99],[1831,22.91],[1903,22.82],[1979,22.73],[2056,22.65],[2138,22.56],[2222,22.48],[2309,22.4],[2401,22.32],[2495,22.25],[2594,22.18],[2696,22.11],[2802,22.05],[2913,22.0],[3027,21.94],[3147,21.89],[3271,21.84],[3400,21.8],[3534,21.75],[3673,21.71],[3818,21.67],[3969,21.63],[4125,21.6],[4288,21.57],[4457,21.54],[4632,21.52],[4815,21.51],[5005,21.52],[5202,21.54],[5408,21.58],[5621,21.65],[5843,21.75],[6073,21.89],[6312,22.06],[6561,22.29],[6820,22.57],[7089,22.9],[7368,23.29],[7659,23.75],[7961,24.27],[8275,24.87],[8601,25.53],[8601,12.58],[8275,13.22],[7961,13.8],[7659,14.34],[7368,14.82],[7089,15.26],[6820,15.65],[6561,16.0],[6312,16.32],[6073,16.6],[5843,16.85],[5621,17.08],[5408,17.28],[5202,17.47],[5005,17.65],[4815,17.83],[4632,18.0],[4457,18.16],[4288,18.33],[4125,18.5],[3969,18.67],[3818,18.84],[3673,19.01],[3534,19.19],[3400,19.36],[3271,19.54],[3147,19.72],[3027,19.89],[2913,20.07],[2802,20.24],[2696,20.41],[2594,20.57],[2495,20.73],[2401,20.88],[2309,21.03],[2222,21.17],[2138,21.3],[2056,21.43],[1979,21.56],[1903,21.68],[1831,21.79],[1762,21.9],[1695,22.01],[1631,22.12],[1569,22.22],[1509,22.32],[1452,22.41],[1397,22.5],[1344,22.58],[1293,22.65],[1244,22.72],[1197,22.78],[1151,22.83],[1108,22.87],[1066,22.89],[1025,22.91],[986,22.92],[949,22.93],[913,22.92],[878,22.91],[845,22.9],[813,22.87],[782,22.85],[752,22.82],[724,22.78],[696,22.73],[670,22.68],[645,22.61],[620,22.53],[597,22.42],[574,22.29],[552,22.13],[531,21.94],[511,21.7],[492,21.42],[473,21.09],[455,20.71],[438,20.28],[421,19.8],[405,19.26],[405,26.59]]},"c24":[["Italians",58,29,7,7],["Czechs",55,31,9,6],["Slovaks",52,29,11,8],["English",49,30,16,5],["Americans",47,30,18,6],["Croats",45,33,9,13],["Swedes",44,37,10,10],["French",44,36,13,7],["Dutch",44,34,13,9],["Lithuanians",43,33,15,9],["Hungarians",41,31,21,8],["Bulgarians",35,36,16,13],["Germans",35,28,32,4],["Vietnamese",33,34,19,15],["Chinese",30,32,27,11],["Ukrainians",29,25,43,3],["Palestinians",24,31,30,15],["Jews",22,30,40,9],["Belarusians",19,26,46,8],["Roma",18,27,46,9],["Russians",7,15,74,3]]};
+/* ── SITE NAV (same behaviour as the home page) ── */
+const burger=document.getElementById('navBurger');
+const mobileNav=document.getElementById('navMobile');
+function closeMobileNav(){burger.classList.remove('open');burger.setAttribute('aria-expanded','false');mobileNav.classList.remove('open');mobileNav.setAttribute('aria-hidden','true');document.body.style.overflow='';}
+burger.addEventListener('click',()=>{
+  if(mobileNav.classList.contains('open')){closeMobileNav();return;}
+  burger.classList.add('open');burger.setAttribute('aria-expanded','true');
+  mobileNav.classList.add('open');mobileNav.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';
+});
+mobileNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMobileNav));
+window.addEventListener('scroll',()=>{if(mobileNav.classList.contains('open'))closeMobileNav();},{passive:true});
+const nav=document.getElementById('nav');
+function updateNav(){const y=window.scrollY;nav.classList.toggle('solid',y<80);nav.classList.toggle('light',y>=80);}
+window.addEventListener('scroll',updateNav,{passive:true});updateNav();
+
+/* ── CHAPTER BAR: active chapter and reading progress ── */
+(function(){
+  const links=[...document.querySelectorAll('.qv-chapters a.ch')];
+  const ids=links.map(a=>a.getAttribute('href').slice(1));
+  const secs=ids.map(id=>document.getElementById(id));
+  const bar=document.getElementById('qvProgress');
+  function onScroll(){
+    const y=window.scrollY+window.innerHeight*0.3;
+    let cur=-1;secs.forEach((s,i)=>{if(s&&s.offsetTop<=y)cur=i;});
+    links.forEach((a,i)=>{const on=i===cur;a.classList.toggle('active',on);if(on)a.setAttribute('aria-current','true');else a.removeAttribute('aria-current');});
+    const act=links[cur];
+    if(act){const ol=act.closest('ol');const l=act.offsetLeft-ol.offsetLeft;if(l<ol.scrollLeft||l+act.offsetWidth>ol.scrollLeft+ol.clientWidth)ol.scrollLeft=l-16;}
+    const h=document.documentElement.scrollHeight-window.innerHeight;
+    bar.style.transform='scaleX('+(h>0?Math.min(1,window.scrollY/h):0)+')';
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});window.addEventListener('resize',onScroll);onScroll();
+})();
+
+/* ═════════════ CHART ENGINE ═════════════ */
+const NS='http://www.w3.org/2000/svg';
+const C={pl:'#b8293d',uk:'#2d5b86',ochre:'#b07d0c',slate:'#455763',grid:'#e1e6e8',axis:'#9aa3a9',ink:'#111217',text:'#3a424b',sand:'#d9d1c3',grey:'#a7afb5',ukip:'#6f2c80',conf:'#1f2d3a',con:'#2f6fb0',lab:'#c8323f',other:'#a9b1b7'};
+function el(t,a,p){const e=document.createElementNS(NS,t);if(a)for(const k in a)e.setAttribute(k,a[k]);if(p)p.appendChild(e);return e;}
+function tx(p,x,y,s,a){const t=el('text',Object.assign({x:x,y:y},a||{}),p);t.textContent=s;return t;}
+const lin=(d0,d1,r0,r1)=>v=>r0+(v-d0)*(r1-r0)/(d1-d0);
+const fmt=(v,d)=>v.toLocaleString('en-GB',{minimumFractionDigits:d||0,maximumFractionDigits:d||0});
+const signed=(v,d)=>(v>0?'+':v<0?'−':'')+fmt(Math.abs(v),d);
+const MONTHS=['January','February','March','April','May','June','July','August','September','October','November','December'];
+function decToMonth(t){const y=Math.floor(t);const m=Math.min(11,Math.floor((t-y)*12+1e-6));return MONTHS[m]+' '+y;}
+
+function swatch(color,dash,kind){
+  const s=el('svg',{width:26,height:12,'aria-hidden':'true'});
+  if(kind==='dot')el('circle',{cx:6,cy:6,r:5,fill:color},s);
+  else if(kind==='box')el('rect',{x:1,y:1,width:12,height:10,fill:color},s);
+  else el('line',{x1:1,x2:25,y1:6,y2:6,stroke:color,'stroke-width':3,'stroke-dasharray':dash||'','stroke-linecap':'butt'},s);
+  return s;
+}
+function legend(fig,items){
+  const L=fig.querySelector('[data-legend]');if(!L)return;L.innerHTML='';
+  items.forEach(it=>{const sp=document.createElement('span');sp.appendChild(swatch(it.color,it.dash,it.kind));sp.appendChild(document.createTextNode(it.name));L.appendChild(sp);});
+}
+
+const charts=[];
+function register(node,draw){
+  const tip=document.createElement('div');tip.className='qv-tip';tip.setAttribute('aria-hidden','true');node.appendChild(tip);
+  const c={node,draw,tip,w:0};charts.push(c);
+  const run=()=>{const w=Math.round(node.clientWidth);if(w&&w!==c.w){c.w=w;redraw(c);}};
+  if('ResizeObserver' in window){new ResizeObserver(run).observe(node);}else{window.addEventListener('resize',run);}
+  run();return c;
+}
+function redraw(c){const old=c.node.querySelector('svg');if(old)old.remove();hideTip(c);c.draw(c,c.node.clientWidth);}
+function makeSvg(c,W,H,label){const s=el('svg',{viewBox:`0 0 ${W} ${H}`,width:W,height:H,role:'img','aria-label':label});c.node.insertBefore(s,c.tip);return s;}
+function showTip(c,px,py,html){
+  const t=c.tip;t.innerHTML=html;t.classList.add('on');
+  const W=c.node.clientWidth,tw=t.offsetWidth,th=t.offsetHeight;
+  let left=px+16;if(left+tw>W)left=px-tw-16;if(left<0)left=Math.max(0,Math.min(W-tw,px-tw/2));
+  let top=py-th-12;if(top<0)top=py+18;
+  t.style.left=left+'px';t.style.top=top+'px';
+}
+function hideTip(c){c.tip.classList.remove('on');}
+function ptr(svg,e){const r=svg.getBoundingClientRect();return{x:e.clientX-r.left,y:e.clientY-r.top};}
+function row(color,name,val,dash){return `<span class="r"><i style="background:${color}${dash?';background:repeating-linear-gradient(90deg,'+color+' 0 4px,transparent 4px 6px)':''}"></i>${name}<em>${val}</em></span>`;}
+function small(W){return W<560;}
+
+/* Generic line chart */
+function lineChart(node,cfg){
+  return register(node,(c,W)=>{
+    const sm=small(W);
+    const H=cfg.height?cfg.height(W):Math.round(Math.max(270,Math.min(430,W*0.5)));
+    const m=Object.assign({t:22,r:sm?14:28,b:36,l:sm?42:56},cfg.margin?cfg.margin(W):{});if(cfg.yTitle&&!sm)m.l+=20;if(cfg.xTitle)m.b+=24;
+    const svg=makeSvg(c,W,H,cfg.aria);
+    const x=lin(cfg.x[0],cfg.x[1],m.l,W-m.r),y=lin(cfg.y[0],cfg.y[1],H-m.b,m.t);
+    const xi=lin(m.l,W-m.r,cfg.x[0],cfg.x[1]);
+    cfg.yTicks.forEach(v=>{el('line',{x1:m.l,x2:W-m.r,y1:y(v),y2:y(v),stroke:v===cfg.zero?C.axis:C.grid,'stroke-width':1},svg);tx(svg,m.l-8,y(v)+4,cfg.yFmt(v),{'text-anchor':'end',class:'tick'});});
+    if(cfg.yTitle&&!sm){const yt=tx(svg,0,0,cfg.yTitle,{class:'lab','text-anchor':'middle',transform:`translate(14 ${(m.t+H-m.b)/2}) rotate(-90)`});}
+    if(cfg.xTitle)tx(svg,(m.l+W-m.r)/2,H-6,cfg.xTitle,{class:'lab','text-anchor':'middle'});
+    (sm&&cfg.xTicksSmall?cfg.xTicksSmall:cfg.xTicks).forEach(v=>tx(svg,x(v),H-m.b+21,cfg.xFmt(v),{'text-anchor':'middle',class:'tick'}));
+    (cfg.vlines||[]).forEach(a=>{
+      el('line',{x1:x(a.x),x2:x(a.x),y1:m.t-6,y2:H-m.b,stroke:C.axis,'stroke-dasharray':'2 3'},svg);
+      const end=a.anchor==='end';tx(svg,x(a.x)+(end?-6:6),a.bottom?H-m.b-8:m.t+4,sm&&a.short?a.short:a.label,{class:'anno','text-anchor':end?'end':'start'});
+    });
+    if(cfg.under)cfg.under(svg,x,y,W,H,m);
+    const series=cfg.series();
+    series.forEach(s=>{
+      (s.segments||[s.data]).forEach((seg,si)=>{
+        const d=seg.map((p,i)=>(i?'L':'M')+x(p[0]).toFixed(1)+','+y(p[1]).toFixed(1)).join('');
+        el('path',{d,fill:'none',stroke:s.color,'stroke-width':s.width||2.4,'stroke-dasharray':(s.segDash?s.segDash[si]:s.dash)||'','stroke-linejoin':'round','stroke-linecap':(s.segDash?s.segDash[si]:s.dash)?'butt':'round'},svg);
+      });
+      if(s.markers)s.data.forEach(p=>el('circle',{cx:x(p[0]),cy:y(p[1]),r:4.2,fill:'#fff',stroke:s.color,'stroke-width':2},svg));
+      if(s.dots)s.data.forEach(p=>el('circle',{cx:x(p[0]),cy:y(p[1]),r:2.4,fill:s.color},svg));
+      if(s.endLabel&&!sm){const all=s.segments?s.segments[s.segments.length-1]:s.data;const p=all[all.length-1];tx(svg,x(p[0])+8,y(p[1])+4+(s.endDy||0),s.endLabel,{class:'endlab',fill:s.color});}
+    });
+    if(cfg.over)cfg.over(svg,x,y,W,H,m);
+    // hover
+    const g=el('g',{'pointer-events':'none'},svg);
+    const rule=el('line',{y1:m.t,y2:H-m.b,stroke:C.slate,'stroke-width':1,opacity:0},g);
+    const dots=series.map(s=>el('circle',{r:4.5,fill:s.color,stroke:'#fff','stroke-width':1.5,opacity:0},g));
+    const hit=el('rect',{x:m.l,y:m.t,width:W-m.l-m.r,height:H-m.t-m.b,fill:'transparent'},svg);
+    const move=e=>{
+      const p=ptr(svg,e);const xv=xi(p.x);
+      let best=null;
+      const found=series.map(s=>{
+        const pts=s.segments?s.segments.flat():s.data;let bp=null,bd=Infinity;
+        pts.forEach(q=>{const d=Math.abs(q[0]-xv);if(d<bd){bd=d;bp=q;}});
+        if(bp&&bd<=(cfg.tol||0.75)){if(!best||Math.abs(bp[0]-xv)<Math.abs(best[0]-xv))best=bp;return bp;}return null;
+      });
+      if(!best){hideTip(c);rule.setAttribute('opacity',0);dots.forEach(d=>d.setAttribute('opacity',0));return;}
+      rule.setAttribute('x1',x(best[0]));rule.setAttribute('x2',x(best[0]));rule.setAttribute('opacity',.35);
+      let html=`<b>${cfg.tipTitle(best[0],found)}</b>`;
+      found.forEach((q,i)=>{const d=dots[i];if(q&&(!cfg.sameX||Math.abs(q[0]-best[0])<0.51)){d.setAttribute('cx',x(q[0]));d.setAttribute('cy',y(q[1]));d.setAttribute('opacity',1);html+=row(series[i].color,series[i].name,cfg.tipVal(q,series[i]),series[i].dash);}else d.setAttribute('opacity',0);});
+      showTip(c,x(best[0]),Math.min(...found.filter(Boolean).map(q=>y(q[1]))),html);
+    };
+    hit.addEventListener('pointermove',move);hit.addEventListener('pointerdown',move);
+    hit.addEventListener('pointerleave',()=>{hideTip(c);rule.setAttribute('opacity',0);dots.forEach(d=>d.setAttribute('opacity',0));});
+  });
+}
+
+
+const fig=id=>document.getElementById('fig-'+id);
+const chartNode=id=>fig(id).querySelector('[data-chart]');
+
+/* Chart 2.1 */
+(function(){
+  const f=fig('c21');
+  let mode='support';
+  const lab={support:'Support for EU membership',oppose:'Opposition to EU membership',net:'Net support for EU membership'};
+  const dash={support:'',oppose:'8 4',net:'2 4'};
+  const setLegend=()=>legend(f,[{name:'CBOS: '+lab[mode],color:C.uk,dash:dash[mode]},{name:'Eurobarometer: '+lab[mode],color:C.ochre,dash:dash[mode]}]);
+  const ch=lineChart(chartNode('c21'),{
+    aria:'Line chart of support for, opposition to and net support for EU membership in Poland, 2007 to 2026, according to CBOS and Eurobarometer data.',
+    x:[2006.6,2026.4],y:[0,100],yTicks:[0,20,40,60,80,100],yFmt:v=>v+'%',zero:0,
+    xTicks:[2008,2010,2012,2014,2016,2018,2020,2022,2024,2026],xTicksSmall:[2008,2012,2016,2020,2024],xFmt:v=>v,sameX:true,tol:0.6,
+    series:()=>[{name:'CBOS',color:C.uk,dash:dash[mode],data:D.c21['cbos_'+mode]},{name:'Eurobarometer',color:C.ochre,dash:dash[mode],data:D.c21['eb_'+mode]}],
+    tipTitle:t=>Math.round(t),tipVal:q=>(mode==='net'?signed(q[1],0)+' pts':fmt(q[1],0)+'%')
+  });
+  setLegend();
+  f.querySelectorAll('.qv-seg button').forEach(b=>b.addEventListener('click',()=>{
+    mode=b.dataset.m;f.querySelectorAll('.qv-seg button').forEach(o=>o.setAttribute('aria-pressed',o===b?'true':'false'));setLegend();redraw(ch);
+  }));
+})();
+
+/* Chart 2.2 */
+(function(){
+  const f=fig('c22');const node=chartNode('c22');
+  let v='lag';
+  const polLab={2002:['536',-1],2006:['434',1],2010:['508',1],2014:['539',-1],2019:['351',1],2024:['499',-1]};
+  const pubLab={2002:['+33',1],2006:['+73',-1],2010:['+77',-1],2014:['+74',1],2019:['+84',-1],2024:['+64',1]};
+  const lagSrc={2006:2002,2010:2006,2014:2010,2019:2014,2024:2019};
+  const sd=n=>n===0?'Average':(n>0?'+':'−')+Math.abs(n)+' SD';
+  const corr=['Correlation with public opinion','Politicians in the same wave: r = −0.57','Politicians one wave earlier: r = +0.74'];
+  const setLegend=()=>legend(f,[v==='lag'?{name:'Politicians’ views, one survey wave earlier',color:C.uk,dash:'6 4'}:{name:'Politicians’ views',color:C.uk},{name:'Public views',color:C.pl}]);
+  const ch=lineChart(node,{
+    aria:'Line chart of support for the EU among the Polish public and party-political establishment, 2002 to 2026, in standard deviations from the average.',
+    x:[2001.5,2026.6],y:[-3.5,2.4],yTicks:[-3,-2,-1,0,1,2],yFmt:sd,zero:0,margin:W=>({l:small(W)?50:66,t:28}),
+    xTicks:[2002,2004,2006,2008,2010,2012,2014,2016,2018,2020,2022,2024,2026],xTicksSmall:[2002,2006,2010,2014,2018,2022,2026],xFmt:v=>v,tol:0.6,
+    vlines:[{x:2004,label:'EU accession',bottom:true}],
+    series:()=>[
+      {name:'Public views',color:C.pl,data:D.c22.pub,dots:true},
+      v==='lag'?{name:'Politicians’ views, one survey wave earlier',color:C.uk,dash:'6 4',width:2.6,data:D.c22.pol_lag,markers:true}
+               :{name:'Politicians’ views',color:C.uk,data:D.c22.pol,markers:true,width:2.8}
+    ],
+    over:(svg,x,y,W,H,m)=>{
+      D.c22.pub.forEach(p=>{const yr=Math.round(p[0]);if(pubLab[yr]){el('circle',{cx:x(p[0]),cy:y(p[1]),r:4.6,fill:'#fff',stroke:C.pl,'stroke-width':2},svg);
+        tx(svg,x(p[0]),y(p[1])+(pubLab[yr][1]>0?18:-10),pubLab[yr][0],{'text-anchor':'middle','font-size':11.5,'font-weight':500,fill:C.pl});}});
+      if(v==='same')D.c22.pol.forEach(p=>{const yr=Math.round(p[0]);tx(svg,x(p[0]),y(p[1])+(polLab[yr][1]>0?19:-11),polLab[yr][0],{'text-anchor':'middle','font-size':11.5,'font-weight':500,fill:C.uk});});
+      if(!small(W)){const bx=m.l+8,by=m.t+2;el('rect',{x:bx,y:by,width:236,height:54,fill:'#eef0ef',stroke:'#dfe3e4'},svg);
+        corr.forEach((t,i)=>tx(svg,bx+9,by+16+i*15,t,{'font-size':11.5,fill:C.text,'font-weight':(i===1&&v==='same')||(i===2&&v==='lag')?600:400}));}
+    },
+    tipTitle:t=>Math.round(t),
+    tipVal:(q,s)=>{const yr=Math.round(q[0]);const z=(q[1]>=0?'+':'−')+fmt(Math.abs(q[1]),2)+' SD';
+      if(s.name==='Public views')return pubLab[yr]?z+' ('+pubLab[yr][0]+')':z;
+      const src=v==='lag'?lagSrc[yr]:yr;return z+(polLab[src]?' ('+src+': '+polLab[src][0]+')':'');}
+  });
+  setLegend();
+  const n=document.createElement('p');n.className='qv-src qv-small-only';n.textContent=corr.join('. ')+'.';node.after(n);
+  f.querySelectorAll('.qv-seg button').forEach(b=>b.addEventListener('click',()=>{
+    v=b.dataset.v;f.querySelectorAll('.qv-seg button').forEach(o=>o.setAttribute('aria-pressed',o===b?'true':'false'));setLegend();redraw(ch);
+  }));
+})();
+
+/* Chart 2.3 */
+(function(){
+  const node=chartNode('c23');
+  const rows=['Civic Coalition (KO)','Law and Justice (PiS)','Confederation','Confederation of the Polish Crown (KKP)'];
+  register(node,(c,W)=>{
+    const sm=small(W);const lw=sm?0:285;const rh=sm?78:66;const top=40;
+    const H=top+rows.length*rh+46;const svg=makeSvg(c,W,H,'Chart of net support for and opposition to Polexit among the supporters of four Polish parties, 2019 and 2026.');
+    const x0=sm?6:lw,x1=W-(sm?6:20);const x=lin(-100,100,x0,x1);
+    el('rect',{x:x(-100),y:top-14,width:x(0)-x(-100),height:rows.length*rh+14,fill:'#f6ecec'},svg);
+    el('rect',{x:x(0),y:top-14,width:x(100)-x(0),height:rows.length*rh+14,fill:'#edf1f5'},svg);
+    tx(svg,x(-100)+8,top-22,'← Net support for Polexit',{class:'lab-b',fill:C.pl});
+    tx(svg,x(100)-8,top-22,'Net opposition to Polexit →',{class:'lab-b','text-anchor':'end',fill:C.uk});
+    el('line',{x1:x(0),x2:x(0),y1:top-14,y2:top+rows.length*rh,stroke:C.axis},svg);
+    [-100,-50,0,50,100].forEach(v=>tx(svg,x(v),top+rows.length*rh+18,Math.abs(v),{class:'tick','text-anchor':'middle'}));
+    tx(svg,x(0),H-4,'Percentage point change',{class:'tick','text-anchor':'middle'});
+    const cy=i=>top+i*rh+(sm?48:rh/2);
+    rows.forEach((r,i)=>{if(sm)tx(svg,x0+4,top+i*rh+18,r,{class:'lab-b'});else tx(svg,lw-16,cy(i)+4,r,{class:'lab-b','text-anchor':'end'});});
+    // KO
+    el('circle',{cx:x(96),cy:cy(0),r:6,fill:'#fff',stroke:C.uk,'stroke-width':2},svg);el('circle',{cx:x(97),cy:cy(0),r:6.5,fill:C.uk},svg);
+    tx(svg,x(96)-14,cy(0)+4,'97 pts against  (96 in 2019)',{class:'lab','text-anchor':'end',fill:C.uk,'font-weight':500});
+    // PiS
+    const a=x(77),b=x(3),y1=cy(1);
+    el('line',{x1:a-7,x2:b+14,y1,y2:y1,stroke:C.uk,'stroke-width':2.2},svg);
+    el('path',{d:`M${b+8},${y1} l9,-5 v10 z`,fill:C.uk},svg);
+    el('circle',{cx:a,cy:y1,r:6,fill:'#fff',stroke:C.uk,'stroke-width':2},svg);el('circle',{cx:b,cy:y1,r:6.5,fill:C.uk},svg);
+    tx(svg,b-12,y1+4,'3 pts against',{class:'lab','text-anchor':'end',fill:C.uk,'font-weight':500});
+    tx(svg,a,y1-14,'2019: 77 pts against',{class:'tick','text-anchor':'middle',fill:C.uk});
+    tx(svg,(a+b)/2,y1+20,'−74 points since 2019',{class:'anno','text-anchor':'middle'});
+    // Confederation and KKP
+    el('circle',{cx:x(-5),cy:cy(2),r:6.5,fill:C.pl},svg);tx(svg,x(-5)-12,cy(2)+4,'5 pts in favour',{class:'lab','text-anchor':'end',fill:C.pl,'font-weight':500});
+    el('circle',{cx:x(-67),cy:cy(3),r:6.5,fill:C.pl},svg);tx(svg,x(-67)-12,cy(3)+4,'67 pts in favour',{class:'lab','text-anchor':'end',fill:C.pl,'font-weight':500});
+  });
+})();
+
+/* Chart 2.4 */
+(function(){
+  const f=fig('c24');const node=chartNode('c24');
+  const cols=[{n:'Like',c:C.uk,t:'#fff'},{n:'Indifferent',c:C.sand,t:C.ink},{n:'Dislike',c:C.pl,t:'#fff'},{n:'Hard to say',c:C.grey,t:C.ink}];
+  legend(f,cols.map(k=>({name:k.n,color:k.c,kind:'box'})));
+  register(node,(c,W)=>{
+    const sm=small(W);const lw=sm?92:118;const bh=sm?20:22,gap=6;const n=D.c24.length;
+    const H=n*(bh+gap)+28;const svg=makeSvg(c,W,H,'Stacked bar chart of Poles’ attitudes towards 21 nations in 2026.');
+    const x=lin(0,100,lw,W-4);
+    D.c24.forEach((r,i)=>{
+      const y=i*(bh+gap);
+      tx(svg,lw-10,y+bh/2+4.5,r[0],{class:'lab','text-anchor':'end'});
+      let acc=0;
+      cols.forEach((k,j)=>{const v=r[j+1];const rx=x(acc),rw=x(acc+v)-x(acc);
+        el('rect',{x:rx,y,width:Math.max(0,rw-1),height:bh,fill:k.c},svg);
+        if(rw>(sm?18:22))tx(svg,rx+rw/2,y+bh/2+4.5,v,{'text-anchor':'middle',fill:k.t,'font-size':sm?11:12,'font-weight':500});
+        acc+=v;});
+      const hit=el('rect',{x:0,y:y-gap/2,width:W,height:bh+gap,fill:'transparent'},svg);
+      const show=e=>{const p=ptr(svg,e);showTip(c,p.x,y,`<b>${r[0]}</b>`+cols.map((k,j)=>row(k.c,k.n,r[j+1]+'%')).join(''));};
+      hit.addEventListener('pointermove',show);hit.addEventListener('pointerdown',show);hit.addEventListener('pointerleave',()=>hideTip(c));
+    });
+    [0,20,40,60,80,100].forEach(v=>tx(svg,x(v),H-6,v+'%',{class:'tick','text-anchor':v===0?'start':v===100?'end':'middle'}));
+  });
+})();
+
+/* Chart 3.1 */
+(function(){
+  const f=fig('c31');const node=chartNode('c31');
+  legend(f,[{name:'Conservative',color:C.con,kind:'dot'},{name:'Labour',color:C.lab,kind:'dot'},{name:'Other',color:C.other,kind:'dot'}]);
+  const groups=[['Remain','Labour',218,C.lab],['Remain','Other',76,C.other],['Remain','Conservative',185,C.con],['Leave','Conservative',138,C.con],['Leave','Other',10,C.other],['Leave','Labour',10,C.lab]];
+  const N=637,rowsN=12,r0=0.38;
+  const radii=[...Array(rowsN)].map((_,i)=>r0+(1-r0)*i/(rowsN-1));
+  const tot=radii.reduce((a,b)=>a+b,0);
+  let counts=radii.map(r=>Math.round(N*r/tot));let diff=N-counts.reduce((a,b)=>a+b,0);
+  for(let i=rowsN-1;diff!==0;i=(i-1+rowsN)%rowsN){counts[i]+=Math.sign(diff);diff-=Math.sign(diff);}
+  const seats=[];radii.forEach((r,i)=>{const k=counts[i];for(let j=0;j<k;j++)seats.push({r,a:Math.PI*(1-j/(k-1))});});
+  seats.sort((p,q)=>q.a-p.a||q.r-p.r);
+  let gi=0,used=0;seats.forEach(s=>{while(used>=groups[gi][2]){gi++;used=0;}s.g=groups[gi];used++;});
+  register(node,(c,W)=>{
+    const sm=small(W);const R=Math.min(W,760)/2-14;const H=R+70;const cx=W/2,cy=R+16;
+    const svg=makeSvg(c,W,H,'Views of British MPs on Brexit at the time of the 2016 referendum. Remain: 479 MPs (218 Labour, 185 Conservative, 76 other). Leave: 158 MPs (138 Conservative, 10 Labour, 10 other).');
+    const dot=Math.max(1.8,0.4*Math.min(R*(1-r0)/(rowsN-1),Math.PI*R*tot/N));
+    let split=null,minR=9;
+    seats.forEach(s=>{el('circle',{cx:cx+Math.cos(s.a)*s.r*R,cy:cy-Math.sin(s.a)*s.r*R,r:dot,fill:s.g[3]},svg);
+      if(s.g[0]==='Leave'&&split===null)split=s.a;if(s.g[0]==='Remain')minR=Math.min(minR,s.a);});
+    const sa=(split+minR)/2;
+    el('line',{x1:cx+Math.cos(sa)*(r0-0.06)*R,y1:cy-Math.sin(sa)*(r0-0.06)*R,x2:cx+Math.cos(sa)*1.06*R,y2:cy-Math.sin(sa)*1.06*R,stroke:C.ink,'stroke-width':1,'stroke-dasharray':'2 3'},svg);
+    tx(svg,cx-R,cy+40,'Remain: 479 MPs',{'font-size':sm?14:17,'font-weight':500,fill:C.ink});
+    tx(svg,cx+R,cy+40,'Leave: 158 MPs',{'font-size':sm?14:17,'font-weight':500,fill:C.ink,'text-anchor':'end'});
+    const hit=el('rect',{x:0,y:0,width:W,height:cy+4,fill:'transparent'},svg);
+    const move=e=>{const p=ptr(svg,e);const dx=p.x-cx,dy=cy-p.y;const rr=Math.hypot(dx,dy)/R;if(rr<r0-0.05||rr>1.05||dy<-4){hideTip(c);return;}
+      const a=Math.atan2(Math.max(dy,0),dx);const side=a>=sa?'Remain':'Leave';
+      showTip(c,p.x,p.y,`<b>${side}: ${side==='Remain'?479:158} MPs</b>`+groups.filter(g=>g[0]===side).map(g=>row(g[3],g[1],g[2])).join(''));};
+    hit.addEventListener('pointermove',move);hit.addEventListener('pointerdown',move);hit.addEventListener('pointerleave',()=>hideTip(c));
+  });
+})();
+
+/* Chart 3.2 */
+(function(){
+  const node=chartNode('c32');
+  const d=[[2018,0.3],[2019,1.8],[2020,8.5],[2021,28.5],[2022,45.8],[2023,29.4],[2024,36.8],[2025,41.5],[2026,27.5]];
+  register(node,(c,W)=>{
+    const sm=small(W);const H=Math.round(Math.max(260,Math.min(380,W*0.42)));const m={t:26,r:6,b:46,l:sm?40:50};
+    const svg=makeSvg(c,W,H,'Bar chart of irregular migrants entering the UK each year, 2018 to 2026.');
+    const y=lin(0,50,H-m.b,m.t);const bw=(W-m.l-m.r)/d.length;
+    [0,10,20,30,40,50].forEach(v=>{el('line',{x1:m.l,x2:W-m.r,y1:y(v),y2:y(v),stroke:v?C.grid:C.axis},svg);tx(svg,m.l-8,y(v)+4,v?v+'k':'0k',{class:'tick','text-anchor':'end'});});
+    d.forEach((p,i)=>{const exp=p[0]===2026;const bx=m.l+i*bw+bw*0.16,w=bw*0.68;
+      el('rect',{x:bx,y:y(p[1]),width:w,height:y(0)-y(p[1]),fill:exp?'#c5d2de':C.uk,stroke:exp?C.uk:'none','stroke-dasharray':exp?'3 3':'','stroke-width':1.2},svg);
+      tx(svg,bx+w/2,y(p[1])-7,fmt(p[1],1)+'k',{'text-anchor':'middle','font-size':sm?10.5:12.5,fill:C.uk,'font-weight':500});
+      tx(svg,bx+w/2,H-m.b+19,sm?"’"+String(p[0]).slice(2):p[0],{class:'tick','text-anchor':'middle'});
+      if(exp)tx(svg,bx+w/2,H-m.b+34,'(expected)',{class:'tick','text-anchor':'middle'});
+    });
+  });
+})();
+
+/* Chart 3.3 */
+(function(){
+  const f=fig('c33');
+  legend(f,[{name:'Immigration, old method (1991–2011)',color:C.uk,dash:'6 4'},{name:'Net migration, old method (1991–2011)',color:C.pl,dash:'6 4'},{name:'Immigration, new method (2012–2025)',color:C.uk},{name:'Net migration, new method (2012–2025)',color:C.pl}]);
+  lineChart(chartNode('c33'),{
+    aria:'Line chart of UK migration flows excluding British citizens, 1991 to 2025.',
+    x:[1990.2,2025.8],y:[0,1400000],yTicks:[0,200000,400000,600000,800000,1000000,1200000,1400000],yFmt:v=>fmt(v),zero:0,margin:W=>({l:small(W)?62:76}),
+    xTicks:[1990.5,1992.5,1994.5,1996.5,1998.5,2000.5,2002.5,2004.5,2006.5,2008.5,2010.5,2012.5,2014.5,2016.5,2018.5,2020.5,2022.5,2024.5],xTicksSmall:[1990.5,1998.5,2006.5,2014.5,2022.5],xFmt:v=>v+0.5,tol:0.6,sameX:true,
+    vlines:[{x:2011.5,label:'Change of method',anchor:'end'},{x:2018.55,label:'Brexit',anchor:'end'}],
+    series:()=>[
+      {name:'Immigration',color:C.uk,segments:[D.c33.imm_old,D.c33.imm_new],segDash:['6 4',''],data:D.c33.imm_old.concat(D.c33.imm_new)},
+      {name:'Net migration',color:C.pl,segments:[D.c33.net_old,D.c33.net_new],segDash:['6 4',''],data:D.c33.net_old.concat(D.c33.net_new)}
+    ],
+    tipTitle:t=>Math.round(t)+(t<2012?', old method':', new method'),tipVal:q=>'c. '+fmt(Math.round(q[1]/1000)*1000)
+  });
+})();
+
+/* Chart 3.4 */
+(function(){
+  const f=fig('c34');
+  legend(f,[{name:'UKIP (February 2009 – June 2016)',color:C.ukip},{name:'Confederation (July 2019 – January 2025)',color:C.conf},{name:'Confederation + KKP added together (January 2025 – November 2026)',color:C.conf,dash:'5 4'}]);
+  const ukRef=2016+174/365,plRef=2026+314/365;
+  lineChart(chartNode('c34'),{
+    aria:'Line chart comparing the polling averages of strongly Eurosceptic parties in Poland in the seven years before November 2026 and in the UK in the seven years before the 2016 Brexit referendum.',
+    x:[-7.35,0.08],y:[0,25],yTicks:[0,5,10,15,20,25],yFmt:v=>v+'%',zero:0,
+    xTicks:[-7,-6,-5,-4,-3,-2,-1,0],xFmt:v=>v<0?'−'+Math.abs(v):'0',tol:0.12,
+    xTitle:'Years before the Brexit referendum (UK) or before 11 November 2026 (Poland)',
+    vlines:[{x:-1.659,label:'Confederation and KKP split',short:'Split',anchor:'end'}],
+    series:()=>[
+      {name:'UKIP',color:C.ukip,data:D.c34.ukip},
+      {name:'Confederation',color:C.conf,data:D.c34.conf},
+      {name:'Confederation + KKP',color:C.conf,data:D.c34.conf_kkp,dash:'5 4'}
+    ],
+    tipTitle:t=>(Math.abs(t)<0.05?'0 years':'−'+fmt(Math.abs(t),1)+' years'),
+    tipVal:(q,s)=>fmt(q[1],1)+'% <span style="color:#6f7880;font-weight:300">('+decToMonth((s.name==='UKIP'?ukRef:plRef)+q[0])+')</span>'
+  });
+})();
+
+/* Chart 3.5 */
+(function(){
+  lineChart(chartNode('c35'),{
+    aria:'Line chart of net support for EU membership in Poland and the United Kingdom, 2002 to 2026.',
+    x:[2001.6,2027.2],y:[-24,104],yTicks:[-20,0,20,40,60,80,100],yFmt:v=>v>0?'+'+v:v<0?'−'+Math.abs(v):'0',zero:0,margin:W=>({r:small(W)?14:118}),
+    yTitle:'Net support for EU membership (percentage points)',
+    xTicks:[2002,2004,2006,2008,2010,2012,2014,2016,2018,2020,2022,2024,2026],xTicksSmall:[2002,2006,2010,2014,2018,2022,2026],xFmt:v=>v,tol:0.5,
+    vlines:[{x:2004.33,label:'Poland’s EU accession',short:'Accession'},{x:2016.48,label:'Brexit referendum',short:'Referendum'}],
+    series:()=>[
+      {name:'Poland',color:C.pl,data:D.c35.pl,endLabel:'Poland'},
+      {name:'United Kingdom',color:C.uk,segments:[D.c35.uk_pre,D.c35.uk_post],data:D.c35.uk_pre.concat(D.c35.uk_post),endLabel:'United Kingdom'}
+    ],
+    over:(svg,x,y,W,H,m)=>{const cx=x(2016.48),cy=y(-3.8);el('rect',{x:cx-4.5,y:cy-4.5,width:9,height:9,fill:C.uk,transform:`rotate(45 ${cx} ${cy})`},svg);
+      if(!small(W)){tx(svg,cx-8,cy+20,'Referendum result:',{class:'tick','text-anchor':'end',fill:C.uk});tx(svg,cx-8,cy+34,'Leave 51.9%, Remain 48.1%',{class:'tick','text-anchor':'end',fill:C.uk});}},
+    tipTitle:t=>decToMonth(t),tipVal:q=>signed(q[1],0)
+  });
+})();
+
+/* Chart 3.6 */
+(function(){
+  const f=fig('c36');const node=chartNode('c36');
+  const lo=[45,91,134],mid=[230,214,170],hi=[184,41,61];
+  const mix=(a,b,t)=>a.map((v,i)=>Math.round(v+(b[i]-v)*t));
+  const col=v=>{const t=Math.max(-1,Math.min(1,(v-21.5)/8));return 'rgb('+(t<0?mix(mid,lo,-t):mix(mid,hi,t))+')';};
+  f.querySelector('[data-legend]').innerHTML='<span>Vote share</span><span><svg width="150" height="26" aria-hidden="true"><defs><linearGradient id="vg"><stop offset="0" stop-color="rgb(45,91,134)"/><stop offset=".5" stop-color="rgb(230,214,170)"/><stop offset="1" stop-color="rgb(184,41,61)"/></linearGradient></defs><rect width="150" height="9" y="1" fill="url(#vg)"/>'+
+    [15,20,25,30].map(v=>{const px=14+(v-15)/15*122;return `<text x="${px}" y="24" font-size="11" fill="#6f7880" text-anchor="middle">${v}%</text>`;}).join('')+'</svg></span>';
+  register(node,(c,W)=>{
+    const sm=small(W);const H=Math.round(Math.max(320,Math.min(480,W*0.54)));const m={t:14,r:sm?12:20,b:48,l:sm?42:76};
+    const svg=makeSvg(c,W,H,'Scatter chart of EU funds per capita and the percentage of votes cast for radical anti-European candidates in the 2025 presidential election in each Polish powiat.');
+    const L=Math.log10;const x=v=>m.l+(L(v)-L(380))/(L(9200)-L(380))*(W-m.l-m.r);const y=lin(9.5,33,H-m.b,m.t);
+    [10,15,20,25,30].forEach(v=>{el('line',{x1:m.l,x2:W-m.r,y1:y(v),y2:y(v),stroke:C.grid},svg);tx(svg,m.l-8,y(v)+4,v+'%',{class:'tick','text-anchor':'end'});});
+    (sm?[500,1000,2000,5000]:[400,500,750,1000,1500,2000,3000,5000,8000]).forEach(v=>{el('line',{x1:x(v),x2:x(v),y1:m.t,y2:H-m.b,stroke:C.grid},svg);tx(svg,x(v),H-m.b+20,fmt(v).replace(',',' '),{class:'tick','text-anchor':'middle'});});
+    tx(svg,(m.l+W-m.r)/2,H-6,'EU funds per capita (zł)',{class:'lab-b','text-anchor':'middle'});
+    if(!sm){const t=tx(svg,0,0,'',{class:'lab-b','text-anchor':'middle','font-size':11.5,transform:`translate(12 ${(m.t+H-m.b)/2}) rotate(-90)`});el('tspan',{x:0,dy:0},t).textContent='Percentage of votes cast for either of';el('tspan',{x:0,dy:14},t).textContent='the two most Eurosceptic candidates';}
+    el('path',{d:D.c36.band.map((p,i)=>(i?'L':'M')+x(p[0]).toFixed(1)+','+y(p[1]).toFixed(1)).join('')+'Z',fill:C.pl,opacity:.12},svg);
+    const pts=D.c36.pts.map(p=>({p,cx:x(p[0]),cy:y(p[1])}));
+    pts.forEach(o=>el('circle',{cx:o.cx,cy:o.cy,r:sm?3:3.6,fill:col(o.p[1]),stroke:'#fff','stroke-width':.6},svg));
+    el('path',{d:D.c36.curve.map((p,i)=>(i?'L':'M')+x(p[0]).toFixed(1)+','+y(p[1]).toFixed(1)).join(''),fill:'none',stroke:C.pl,'stroke-width':2.6},svg);
+    const ring=el('circle',{r:7,fill:'none',stroke:C.ink,'stroke-width':1.5,opacity:0,'pointer-events':'none'},svg);
+    const hit=el('rect',{x:m.l,y:m.t,width:W-m.l-m.r,height:H-m.t-m.b,fill:'transparent'},svg);
+    const move=e=>{const q=ptr(svg,e);let b=null,bd=24*24;pts.forEach(o=>{const d=(o.cx-q.x)**2+(o.cy-q.y)**2;if(d<bd){bd=d;b=o;}});
+      if(!b){hideTip(c);ring.setAttribute('opacity',0);return;}
+      ring.setAttribute('cx',b.cx);ring.setAttribute('cy',b.cy);ring.setAttribute('opacity',1);
+      showTip(c,b.cx,b.cy,row(col(b.p[1]),'EU funds per capita',fmt(b.p[0])+' zł')+row(col(b.p[1]),'Vote share',fmt(b.p[1],1)+'%'));};
+    hit.addEventListener('pointermove',move);hit.addEventListener('pointerdown',move);hit.addEventListener('pointerleave',()=>{hideTip(c);ring.setAttribute('opacity',0);});
+  });
+})();
+
+/* Chart 4.1 */
+(function(){
+  const f=fig('c41');const node=chartNode('c41');
+  const parts=[['Polish stocks and shares',C.pl],['European stocks and shares (including Polish)',C.uk],['Any stocks and shares','#bcb3a5']];
+  legend(f,parts.map(p=>({name:p[0],color:p[1],kind:'box'})));
+  const pies=[['Current OKI plans',[70,0,30]],['Reformed OKI',[40,30,30]]];
+  register(node,(c,W)=>{
+    const sm=small(W);const cw=W/2;const r=Math.min(cw/2-14,150);const H=2*r+56;
+    const svg=makeSvg(c,W,H,'Two pie charts. Current OKI plans: 70% Polish stocks and shares, 30% any stocks and shares. Reformed OKI: 40% Polish, 30% European (including Polish), 30% any.');
+    pies.forEach((p,k)=>{const cx=cw*k+cw/2,cy=r+46;
+      tx(svg,cx,22,p[0],{'text-anchor':'middle','font-family':'Fraunces, Georgia, serif','font-size':sm?16:21,fill:C.ink});
+      let a0=-Math.PI/2;
+      p[1].forEach((v,j)=>{if(!v)return;const a1=a0+v/100*2*Math.PI;const large=v>50?1:0;
+        const d=`M${cx},${cy} L${cx+r*Math.cos(a0)},${cy+r*Math.sin(a0)} A${r},${r} 0 ${large} 1 ${cx+r*Math.cos(a1)},${cy+r*Math.sin(a1)} Z`;
+        el('path',{d,fill:parts[j][1],stroke:'#fff','stroke-width':3},svg);
+        const am=(a0+a1)/2;tx(svg,cx+r*0.6*Math.cos(am),cy+r*0.6*Math.sin(am)+7,v+'%',{'text-anchor':'middle','font-size':sm?15:20,'font-weight':500,fill:'#fff'});
+        a0=a1;});
+    });
+  });
+})();
+
+document.querySelectorAll('details').forEach(d=>d.addEventListener('toggle',()=>{charts.forEach(c=>{if(d.contains(c.node)){c.w=0;const w=Math.round(c.node.clientWidth);if(w){c.w=w;redraw(c);}}});}));
+
+</script>
+</body>
+</html>
