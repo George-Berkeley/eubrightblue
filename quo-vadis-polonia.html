@@ -123,7 +123,7 @@ body{
 /* ───────── LAYOUT ───────── */
 section[id]{scroll-margin-top:calc(var(--nav-h) + var(--bar-h))}
 .qv-wrap{max-width:1180px;margin:0 auto;padding:0 clamp(1.25rem,4vw,3rem)}
-.qv-block{padding:clamp(3.5rem,7vw,6.5rem) 0}
+.qv-block{padding-top:clamp(3rem,7vw,6.5rem);padding-bottom:clamp(3rem,7vw,6.5rem)}
 a.qv-link{color:var(--navy);text-decoration:underline;text-decoration-color:var(--gold);text-decoration-thickness:2px;text-underline-offset:3px}
 a.qv-link:hover{text-decoration-color:var(--navy)}
 
@@ -345,6 +345,45 @@ sup.fn a:hover,sup.fn a[aria-expanded="true"]{color:var(--navy);text-decoration:
 }
 @media(max-width:559px){.qv-small-only{display:block}}
 
+
+/* ───────── PHONES ───────── */
+.qv-src,.qv-notes li,.qv-meta p{overflow-wrap:anywhere}
+@media(max-width:600px){
+  .qv-wrap{padding-left:1.375rem;padding-right:1.375rem}
+  .qv-block{padding-top:2.75rem;padding-bottom:3rem}
+  .qv-prose p,.qv-box > p,.qv-ol li,.qv-ul li{font-size:16.5px;line-height:1.62}
+  .qv-prose p,.qv-box > p{margin-bottom:1em}
+  .qv-ol li,.qv-ul li{padding-left:1.7rem;margin-bottom:.75em}
+  .qv-ul li::before{left:.3rem;top:.7em;width:6px;height:6px}
+  .qv-sec h2{font-size:32px;line-height:1.1;margin-bottom:1.4rem}
+  .qv-prose h3{font-size:24px;line-height:1.22;margin:2.6rem 0 .9rem}
+  .qv-prose h4{font-size:19px;margin:2rem 0 .6rem}
+  .qv-prose h4.qv-rec-h,.qv-prose h4.qv-lesson-h{font-size:19.5px;line-height:1.35;margin-top:2.4rem}
+  .qv-opener{min-height:260px}
+  .qv-opener-text{padding:0 1.375rem 1.75rem}
+  .qv-opener h2{font-size:31px;line-height:1.1}
+  .qv-box{margin-left:-1.375rem;margin-right:-1.375rem;padding:1.75rem 1.375rem 2rem;margin-top:2.25rem;margin-bottom:2.25rem}
+  .qv-box-h{font-size:21px;margin-bottom:1rem}
+  .qv-fig{margin:2.25rem 0}
+  .qv-cap{font-size:17px;line-height:1.38}
+  .qv-legend{font-size:13px;gap:.3rem 1rem}
+  .qv-seg button{font-size:13px;padding:.45rem .7rem}
+  .qv-src{font-size:12.5px}
+  .qv-t31{font-size:14.5px}
+  .qv-t31 td{font-size:16px}
+  .qv-t31 th,.qv-t31 td{padding:.75rem .5rem .75rem 0}
+  .qv-notes{margin-top:2.5rem}
+  .qv-notes ol{padding-left:2.2rem}
+  .qv-notes li{font-size:13px}
+  .qv-hero-text{padding:1.25rem 1.375rem 2.5rem}
+  .qv-sub{font-size:21px}
+  .qv-hero-actions{gap:.75rem}
+  .qv-hero-actions a{flex:1 1 100%;text-align:center;padding:14px 18px}
+  .qv-report-title{font-size:32px}
+  .qv-report-actions a{flex:1 1 100%;text-align:center}
+  .qv-meta h3{font-size:21px}
+  .qv-fn-pop{font-size:13px}
+}
 </style>
 </head>
 <body>
@@ -389,7 +428,7 @@ sup.fn a:hover,sup.fn a[aria-expanded="true"]{color:var(--navy);text-decoration:
     <p class="qv-authors"><strong>Bartłomiej Staniszewski</strong> and <strong>William Prescott</strong></p>
     <div class="qv-hero-actions">
       <a href="#introduction" class="btn-ghost">Read the report</a>
-      <a href="Quo vadis, Polonia.pdf" class="btn-gold" download>Download the report (PDF)</a>
+      <a href="quo-vadis-polonia.pdf" class="btn-gold" download>Download the report (PDF)</a>
       <a href="quo-vadis-polonia-executive-summary.pdf" class="btn-ghost" target="_blank" rel="noopener">Read the executive summary</a>
     </div>
   </div>
@@ -409,7 +448,7 @@ sup.fn a:hover,sup.fn a[aria-expanded="true"]{color:var(--navy);text-decoration:
       <li><a class="ch" href="#chapter-four">Chapter four</a></li>
       <li><a class="ch" href="#conclusion">Conclusion</a></li>
     </ol>
-    <a class="pdf" href="Quo vadis, Polonia.pdf" download>PDF</a>
+    <a class="pdf" href="quo-vadis-polonia.pdf" download>PDF</a>
   </div>
   <div class="qv-progress" id="qvProgress"></div>
 </nav>
@@ -977,7 +1016,7 @@ sup.fn a:hover,sup.fn a[aria-expanded="true"]{color:var(--navy);text-decoration:
 <p>For a European Poland to survive and prosper, Europe must become a place where ordinary, hard-working, rooted people can see their home, with Poland at the heart and brain of it and with other Europeans as their inalienable friends and neighbours — this is what the recommendations of this report have tried to achieve. Otherwise, no matter how disastrous the economic projections look, or how pro-EU the political establishment might appear, if the political winds keep blowing where they are blowing now, Poland will head the way of the UK, towards Polexit and away from Europe.</p>
 </div>
 </div></section>
-<section id="report" class="qv-sec"><div class="qv-wrap qv-block"><div class="qv-report"><img src="qvp-cover.jpg" alt="Cover of Quo vadis, Polonia?" loading="lazy" width="700" height="1074"><div><p class="qv-report-title">Quo vadis, Polonia?</p><p class="qv-report-sub">Lessons from Brexit for a stronger Poland in Europe</p><div class="qv-report-actions"><a href="Quo vadis, Polonia.pdf" class="btn-gold" download>Download the report (PDF)</a><a href="quo-vadis-polonia-executive-summary.pdf" class="btn-ghost" target="_blank" rel="noopener">Read the executive summary</a></div><div class="qv-meta"><div><h3>About the authors</h3><h4>Bartłomiej Staniszewski</h4><p>Bartek is the Head of Policy at Bright Blue and an Executive Director of Bright Blue Europe. He graduated with a BA in Philosophy and Theology from the University of Oxford in 2021 and with an MSt in Philosophical Theology in 2022. There, he sat on the editorial board of the Journal of the Oxford Graduate Theological Society. He has been featured, among others, in <em>the Spectator</em>, <em>the Telegraph</em>, <em>the Critic</em>, <em>City AM</em>, <em>the Guardian</em>, <em>Dziennik Gazeta Prawna</em>, Klub Jagielloński and on the BBC, GB News, TVP and Radio Poland. He is the author of numerous think-tank reports, including on political philosophy, populism, social policy and economic and employment policy. He is also an IPR Policy Fellow at the University of Bath, an Associate Fellow of the Centre for Family and Education and the Editor-in-Chief of Bright Blue’s in-house magazine, Centre Write.</p><h4>William Prescott</h4><p>Dr William Prescott is the Head of Research at Bright Blue. He previously worked, among other roles, as a Senior Associate at Nurole and as a civil servant in the South Australian Education Department. He has been published in or appeared on, among others, <em>the Spectator</em>, BBC, <em>UnHerd</em>, <em>the Critic</em>, <em>the Conversation</em> and Times Radio. In 2020, Will finished a DPhil in history at the University of Oxford on the British Conservative Party and the role of the state between 1929 and 1940. Before this, he completed his undergraduate and master’s degrees at the University of Adelaide, Australia.</p></div><div><h3>Acknowledgements</h3><p>Bright Blue Europe is particularly grateful for the financial and intellectual partnership of the Konrad Adenauer Foundation on this project.</p><p>We are also grateful to Lukas Wick for his help throughout the project; to Tomislav Delinić, without whom this project would not have happened; and to many others with whom we informally consulted before and during the course of this project, including Julian Jessop and Andrew Lilico, who pointed us to some helpful pro-Brexit economics literature.</p><p>This report is the first ever produced by Bright Blue Europe explicitly under the Bright Blue Europe umbrella, and so we also wish to thank everybody who helped us as we were trying to make Bright Blue Europe a reality, and in particular Lukas Wick again, as well as Ryan Shorthouse, Jakub Wilk, Karolina Koryciorz and others who asked to remain anonymous.</p><p>The cover image uses the painting <em>Porwanie Europy</em> by Guido Reni, currently in the collections of the National Gallery, London.</p></div></div></div></div></div></section>
+<section id="report" class="qv-sec"><div class="qv-wrap qv-block"><div class="qv-report"><img src="qvp-cover.jpg" alt="Cover of Quo vadis, Polonia?" loading="lazy" width="700" height="1074"><div><p class="qv-report-title">Quo vadis, Polonia?</p><p class="qv-report-sub">Lessons from Brexit for a stronger Poland in Europe</p><div class="qv-report-actions"><a href="quo-vadis-polonia.pdf" class="btn-gold" download>Download the report (PDF)</a><a href="quo-vadis-polonia-executive-summary.pdf" class="btn-ghost" target="_blank" rel="noopener">Read the executive summary</a></div><div class="qv-meta"><div><h3>About the authors</h3><h4>Bartłomiej Staniszewski</h4><p>Bartek is the Head of Policy at Bright Blue and an Executive Director of Bright Blue Europe. He graduated with a BA in Philosophy and Theology from the University of Oxford in 2021 and with an MSt in Philosophical Theology in 2022. There, he sat on the editorial board of the Journal of the Oxford Graduate Theological Society. He has been featured, among others, in <em>the Spectator</em>, <em>the Telegraph</em>, <em>the Critic</em>, <em>City AM</em>, <em>the Guardian</em>, <em>Dziennik Gazeta Prawna</em>, Klub Jagielloński and on the BBC, GB News, TVP and Radio Poland. He is the author of numerous think-tank reports, including on political philosophy, populism, social policy and economic and employment policy. He is also an IPR Policy Fellow at the University of Bath, an Associate Fellow of the Centre for Family and Education and the Editor-in-Chief of Bright Blue’s in-house magazine, Centre Write.</p><h4>William Prescott</h4><p>Dr William Prescott is the Head of Research at Bright Blue. He previously worked, among other roles, as a Senior Associate at Nurole and as a civil servant in the South Australian Education Department. He has been published in or appeared on, among others, <em>the Spectator</em>, BBC, <em>UnHerd</em>, <em>the Critic</em>, <em>the Conversation</em> and Times Radio. In 2020, Will finished a DPhil in history at the University of Oxford on the British Conservative Party and the role of the state between 1929 and 1940. Before this, he completed his undergraduate and master’s degrees at the University of Adelaide, Australia.</p></div><div><h3>Acknowledgements</h3><p>Bright Blue Europe is particularly grateful for the financial and intellectual partnership of the Konrad Adenauer Foundation on this project.</p><p>We are also grateful to Lukas Wick for his help throughout the project; to Tomislav Delinić, without whom this project would not have happened; and to many others with whom we informally consulted before and during the course of this project, including Julian Jessop and Andrew Lilico, who pointed us to some helpful pro-Brexit economics literature.</p><p>This report is the first ever produced by Bright Blue Europe explicitly under the Bright Blue Europe umbrella, and so we also wish to thank everybody who helped us as we were trying to make Bright Blue Europe a reality, and in particular Lukas Wick again, as well as Ryan Shorthouse, Jakub Wilk, Karolina Koryciorz and others who asked to remain anonymous.</p><p>The cover image uses the painting <em>Porwanie Europy</em> by Guido Reni, currently in the collections of the National Gallery, London.</p></div></div></div></div></div></section>
 </main>
 
 <footer>
